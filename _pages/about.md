@@ -23,7 +23,7 @@ I am Hao Wu, currently a second-year master's student in the Department of Compu
 
 * **AI/ML for Science**: Under the guidance of Xiao Luo, I study machine learning and fluid dynamics.
 
-* **Spatiotemporal Sequence Prediction**: With the guidance of Kun Wang and Yuxuan Liang, I explore foundational models for spatiotemporal data mining. Additionally, I am honored to collaborate with Xingjian Shi, whose ConvLSTM introduced me to this field.
+* **Spatio-temporal Prediction**: With the guidance of Kun Wang and Yuxuan Liang, I explore foundational models for spatiotemporal data mining. Additionally, I am honored to collaborate with Xingjian Shi, whose ConvLSTM introduced me to this field.
 
 * **AI for Earth**: I am privileged to be part of Xiaomeng Huang's AI4Earth Lab, where I learn a lot about geophysics.
 
