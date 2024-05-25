@@ -63,13 +63,14 @@ In addition, I have a strong interest in machine learning frameworks and scienti
 # 📝 Publications 
 
 #### Spatio-temporal Prediction
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``AAAI2024``</span> [Neural Manifold Operators for Learning the Evolution of Physical Dynamics](https://openreview.net/pdf?id=r7n0Q4P66V). **Hao Wu**, Kangyu Weng, Shuyi Zhou, Xiaomeng Huang#, Wei Xiong#. AAAI, 2024.
+- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``AAAI2024``</span> [Earthfarseer: versatile spatio-temporal dynamical systems modeling in one model](https://ojs.aaai.org/index.php/AAAI/article/view/29521/30866). **Hao Wu**, Yuxuan Liang, Wei Xiong#, Zhengyang Zhou, Wei Huang, Shilong Wang, Kun Wang#. AAAI, 2024.
 
 - <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``ARXIV``</span> [PastNet: introducing physical inductive biases for spatio-temporal video prediction](https://arxiv.org/abs/2305.11421). **Hao Wu**, Wei Xiong, Fan Xu, Xiao Luo#, Chong Chen, Xian-Sheng Hua, Haixin Wang#. Arxiv, 2024.
 
 #### Neural Operator Learning 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``KDD2024``</span> [Earthfarseer: versatile spatio-temporal dynamical systems modeling in one model](https://ojs.aaai.org/index.php/AAAI/article/view/29521/30866). **Hao Wu**, Yuxuan Liang, Wei Xiong#, Zhengyang Zhou, Wei Huang, Shilong Wang, Kun Wang#. KDD, 2024.
 
+
+- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``KDD2024``</span> [Neural Manifold Operators for Learning the Evolution of Physical Dynamics](https://openreview.net/pdf?id=r7n0Q4P66V). **Hao Wu**, Kangyu Weng, Shuyi Zhou, Xiaomeng Huang#, Wei Xiong#. KDD, 2024.
 
 # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
