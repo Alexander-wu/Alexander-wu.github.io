@@ -87,6 +87,11 @@ In addition, I have a strong interest in machine learning frameworks and scienti
 
 - <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``Arxiv``</span> [Spatio-temporal Twins with A Cache for Modeling Long-term System Dynamics](https://openreview.net/forum?id=aE6HazMgRz&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2024%2FConference%2FAuthors%23your-submissions)). Hao Wu, Kun Wang, Fan Xu, Yue Li, Xu Wang, Weiyan Wang, Haixin Wang, Xiao Luo#.  Arxiv, 2024.
 
+### Information Retrieval
+
+- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``NeurIPS``</span> [IDEA: An Invariant Perspective for Efficient Domain Adaptive Image Retrieval](https://openreview.net/forum?id=77i6itptQW&referrer=%5Bthe%20profile%20of%20Haixin%20Wang%5D(%2Fprofile%3Fid%3D~Haixin_Wang3)). **Haixin Wang^**, **Hao Wu^**, Jinan Sun, Shikun Zhang, Chong Chen, Xian-Sheng Hua, Xiao Luo#. NeurIPS, 2023.
+
+
 # 🎖 Honors and Awards
 - *2022.10* National Scholarship, China (top 0.1% nation-wide).
 - *2022.09* First-class Academic Scholarship of the University of Science and Technology of China.
