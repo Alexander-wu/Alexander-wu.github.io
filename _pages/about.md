@@ -51,6 +51,15 @@ In addition, I have a strong interest in machine learning frameworks and scienti
   </ul>
 </div>
 
+
+<div style="display: flex; align-items: center;">
+  <img src="../images/hkust.png" alt="" style="width: 90px; margin-right: 50px; margin-left: 20px;"/>
+  <ul style="list-style-type: disc; padding-left: 20px;">
+    <li style="list-style-type: none;">CityMind Lab, Hong Kong University of Science and Technology (Guangzhou)</li>
+    <li style="list-style-type: none;"><em>2023.06 - 2024.06</em>, <strong>Research intern</strong></li>
+    <li style="list-style-type: none;">Advisor <a href="http://buaahsh.github.io/">Yuxuan Liang</a></li>
+  </ul>
+</div>
 # 📝 Publications 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
