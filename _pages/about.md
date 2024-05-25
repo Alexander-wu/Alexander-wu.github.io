@@ -35,7 +35,7 @@ In addition, I have a strong interest in machine learning frameworks and scienti
 # 🔥 News
 - *2024.0517*: &nbsp;🎉🎉 2 paper was accepted to KDD2024 (First Author).
 -  *2024.0501*: &nbsp;🎉🎉 1 paper was accepted to ICML2024 (First Author).
--   *2024.0116*: &nbsp;🎉🎉 1 paper was accepted to ICLR2024 Spotlight (Co-First Author).
+-   *2024.0116*: &nbsp;🎉🎉 1 paper was accepted to ICLR2024  (<span style="color:red">Spotlight</span>) (Co-First Author).
 -   *2024.0221*: &nbsp;🎉🎉 1 paper was accepted to TKDE2024 (Co-First Author).
 -   *2023.1209*: &nbsp;🎉🎉 1 paper was accepted to AAAI2024 (First Author).
 -   *2023.0922*: &nbsp;🎉🎉 1 paper was accepted to NeurIPS2023 (Co-First Author).
