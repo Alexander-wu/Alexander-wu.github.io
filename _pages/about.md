@@ -42,7 +42,14 @@ In addition, I have a strong interest in machine learning frameworks and scienti
 -   *2022.1009*: &nbsp;🎉🎉 National Scholarship, China, 2023 (top 0.1% nation-wide).
 
 #  📖 Research Experience
-
+<div style="display: flex; align-items: center;">
+  <img src="../images/tencent.png" alt="" style="width: 90px; margin-right: 50px; margin-left: 20px;"/>
+  <ul style="list-style-type: disc; padding-left: 20px;">
+    <li style="list-style-type: none;">Machine Learning Platform Department, Large model training group (<a href="[https://ccvl.jhu.edu/](https://www.microsoft.com/en-us/research/group/natural-language-computing/)">NLC</a>), Microsoft Research Asia</li>
+    <li style="list-style-type: none;"><em>2023.08 - present</em>, <strong>Research intern</strong></li>
+    <li style="list-style-type: none;">mentored by <a href="http://buaahsh.github.io/">Jinbao Xue</a></li>
+  </ul>
+</div>
 
 # 📝 Publications 
 
