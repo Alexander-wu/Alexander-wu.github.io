@@ -17,7 +17,19 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-My name is Hao Wu,
+
+I am Hao Wu, currently a second-year master's student in the Department of Computer Science at the University of Science and Technology of China. I am also a joint training student in the large model training group of the Machine Learning Platform Department at Tencent. My research interests are as follows:
+
+
+* **AI/ML for Science**: Under the guidance of Xiao Luo, I study machine learning and fluid dynamics.
+
+* **Spatiotemporal Sequence Prediction**: With the guidance of Kun Wang and Yuxuan Liang, I explore foundational models for spatiotemporal data mining. Additionally, I am honored to collaborate with Xingjian Shi, whose ConvLSTM introduced me to this field.
+
+* **AI for Earth**: I am privileged to be part of Xiaomeng Huang's AI4Earth Lab, where I learn a lot about geophysics.
+
+* **Large Models (Text-to-Video)**: I am diligently studying this field.
+
+In addition, I have a strong interest in machine learning frameworks and scientific large models, currently researching this area with Shuaipeng Li and others.
 
 
 # 🔥 News
