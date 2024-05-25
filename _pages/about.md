@@ -39,7 +39,7 @@ In addition, I have a strong interest in machine learning frameworks and scienti
 -   *2024.0221*: &nbsp;🎉🎉 1 paper was accepted to TKDE2024 (Co-First Author).
 -   *2023.1209*: &nbsp;🎉🎉 1 paper was accepted to AAAI2024 (First Author).
 -   *2023.0922*: &nbsp;🎉🎉 1 paper was accepted to NeurIPS2023 (Co-First Author).
-
+-   *2022.1009*: &nbsp;🎉🎉 National Scholarship, China, 2023 (top 0.1% nation-wide).
 
 #  📖 Research Experience
 
