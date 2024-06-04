@@ -1,4 +1,3 @@
-
 ---
 permalink: /
 title: ""
@@ -7,6 +6,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+
 ---
 
 {% if site.google_scholar_stats_use_cdn %}
@@ -16,8 +16,7 @@ redirect_from:
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
-
-
+<span class='anchor' id='about-me'></span>
 
 
 I am Hao Wu, currently a second-year master's student in the Department of Computer Science at the [University of Science and Technology of China (USTC)](https://www.ustc.edu.cn/). I am also a joint training student in the large model training group of the Machine Learning Platform Department at [Tencent](https://www.tencent.com/en-us/). My research interests are as follows:
@@ -31,6 +30,7 @@ I am Hao Wu, currently a second-year master's student in the Department of Compu
 * **Large Models (Text-to-Video)**: I am diligently studying this field.
 
 In addition, I have a strong interest in machine learning frameworks and scientific large models, currently researching this area with Shuaipeng Li and others.
+
 
 
 # 🔥 News
