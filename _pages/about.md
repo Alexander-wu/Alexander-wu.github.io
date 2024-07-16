@@ -1,3 +1,23 @@
+---
+permalink: /
+title: ""
+excerpt: ""
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+
+---
+
+{% if site.google_scholar_stats_use_cdn %}
+{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
+{% else %}
+{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
+{% endif %}
+{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+
+<span class='anchor' id='about-me'></span>
+
 I am Hao Wu, currently a second-year master's student in the Department of Computer Science at the [University of Science and Technology of China (USTC)](https://www.ustc.edu.cn/). I am also a joint training student in the large model training group of the Machine Learning Platform Department at [Tencent](https://www.tencent.com/en-us/). My research interests are as follows:
 
 * **Spatio-temporal Prediction**: With the guidance of [Kun Wang](https://scholar.google.com/citations?user=UnyqjWQAAAAJ&hl=en) and [Yuxuan Liang](https://yuxuanliang.com/), I explore foundational models for spatiotemporal data mining. Additionally, I am honored to collaborate with [Xingjian Shi](https://sxjscience.github.io/) and [Weiyan Wang](https://weiyan-wang.github.io/), whose ConvLSTM introduced me to this field.
@@ -14,7 +34,7 @@ In addition, I have a strong interest in machine learning frameworks and scienti
 
 # 🔥 News
 
-- *2024.0420*: &nbsp;🎉🎉 1 paper was submitted to ACM MM2024.
+- *2024.0716*: &nbsp;🎉🎉 1 paper was accepted to ACM MM2024 (First Author).
 - *2024.0517*: &nbsp;🎉🎉 2 papers were accepted to KDD2024 (First Author).
 - *2024.0501*: &nbsp;🎉🎉 1 paper was accepted to ICML2024 (First Author).
 - *2024.0116*: &nbsp;🎉🎉 1 paper was accepted to ICLR2024  (<span style="color:red">Spotlight</span>) (Co-First Author).
@@ -63,7 +83,7 @@ In addition, I have a strong interest in machine learning frameworks and scienti
 
 
 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``Arxiv``</span> [PastNet: introducing physical inductive biases for spatio-temporal video prediction](https://arxiv.org/abs/2305.11421).**Hao Wu**, Wei Xiong, Fan Xu, Xiao Luo#, Chong Chen, Xian-Sheng Hua, Haixin Wang#. Arxiv, 2024.
+- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``ACM MM2024``</span> [PastNet: introducing physical inductive biases for spatio-temporal video prediction](https://arxiv.org/abs/2305.11421).**Hao Wu**, Wei Xiong, Fan Xu, Xiao Luo#, Chong Chen, Xian-Sheng Hua, Haixin Wang#. ACM MM, 2024.
 
 #### Neural Operator Learning 
 
