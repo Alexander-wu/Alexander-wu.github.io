@@ -26,9 +26,8 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 * **AI for Earth**: I am privileged to be part of Xiaomeng Huang's AI4Earth Lab [Xiaomeng Huang](http://faculty.dess.tsinghua.edu.cn/huangxiaomeng/en/index.htm), where I learn a lot about geophysics. 
 
-* **Large Models (Text-to-Video)**: I am diligently studying this field.
+* **Scaling Law**: I am collaborating with students from Tsinghua University's Yao Class to research the intersectional theory and applications of Scaling Law in large scientific computing models.
 
-In addition, I have a strong interest in machine learning frameworks and scientific large models, currently researching this area with Shuaipeng Li and others.
 
 
 
