@@ -210,9 +210,9 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 **Kun Wang**, **Hao Wu**, Yifan Duan, Guibin Zhang, Kai Wang, Xiaojiang Peng, Yu Zheng, Yuxuan Liang, Yang Wang
 
 
-*International Conference on Learning Representations (ICLR spotlight), 2024*  
+*International Conference on Learning Representations (ICLR), 2024*  
 
-<span style="color:red;">*(CCF Rank A)*</span>  
+<span style="color:red;">*(CCF Rank A spotlight)*</span>  
 
 
 </div>
