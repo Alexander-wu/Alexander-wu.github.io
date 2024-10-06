@@ -25,8 +25,6 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 * **AI/ML for Science**: Under the guidance of [Xiao Luo](https://luoxiao12.github.io/), I study machine learning and fluid dynamics. We are currently researching the integration of LLMs and dynamical systems.
 
-* **AI for Earth**: I am privileged to be part of Xiaomeng Huang's AI4Earth Lab [Xiaomeng Huang](http://faculty.dess.tsinghua.edu.cn/huangxiaomeng/en/index.htm), where I learn a lot about geophysics. 
-
 * **Scaling Law**: I am collaborating with students from Tsinghua University's Yao Class to research the intersectional theory and applications of Scaling Law in large scientific computing models.
 
 
