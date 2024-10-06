@@ -128,6 +128,24 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 </div>
 
 ---
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/Earthfarseer.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Earthfarsser: Versatile Spatio-Temporal Dynamical Systems Modeling in One Model](https://ojs.aaai.org/index.php/AAAI/article/view/29521)
+
+
+**Hao Wu**, Yuxuan Liang, Wei Xiong, Zhengyang Zhou, Wei Huang, Shilong Wang, Kun Wang
+
+
+*Association for the Advancement of Artificial Intelligence (AAAI), 2024*  
+
+<span style="color:red;">*(CCF Rank A)*</span>  
+
+
+</div>
+</div>
+
+---
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/Prometheus.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -184,24 +202,7 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 ---
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/Earthfarseer.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
 
-[Earthfarsser: Versatile Spatio-Temporal Dynamical Systems Modeling in One Model](https://ojs.aaai.org/index.php/AAAI/article/view/29521)
-
-
-**Hao Wu**, Yuxuan Liang, Wei Xiong, Zhengyang Zhou, Wei Huang, Shilong Wang, Kun Wang
-
-
-*Association for the Advancement of Artificial Intelligence (AAAI), 2024*  
-
-<span style="color:red;">*(CCF Rank A)*</span>  
-
-
-</div>
-</div>
-
----
 
 
 
