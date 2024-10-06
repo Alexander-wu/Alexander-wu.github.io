@@ -202,6 +202,23 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 ---
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/nuwa.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[NuwaDynamics: Discovering and Updating in Causal Spatio-Temporal Modeling](https://easylearningscores.github.io/)
+
+**Kun Wang**, **Hao Wu**, Yifan Duan, Guibin Zhang, Kai Wang, Xiaojiang Peng, Yu Zheng, Yuxuan Liang, Yang Wang
+
+
+*International Conference on Learning Representations (ICLR spotlight), 2024*  
+
+<span style="color:red;">*(CCF Rank A)*</span>  
+
+
+</div>
+</div>
+
+---
 
 
 
