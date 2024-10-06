@@ -147,6 +147,24 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 ---
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/pastnet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[PastNet: Introducing Physical Inductive Biases for Spatio-temporal Video Prediction](https://openreview.net/forum?id=mL0KvSwXzk&referrer=%5Bthe%20profile%20of%20Xian-Sheng%20Hua%5D(%2Fprofile%3Fid%3D~Xian-Sheng_Hua1))
+
+
+**Hao Wu**, Fan Xu, Chong Chen, Xian-Sheng Hua, Xiao Luo, Haixin Wang
+
+*ACM Multimedia (MM), 2024*  
+
+<span style="color:red;">*(CCF Rank A)*</span>  
+
+
+</div>
+</div>
+
+---
+
 
 
 # 🎖 Honors and Awards
