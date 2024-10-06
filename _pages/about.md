@@ -118,7 +118,10 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 
 **Hao Wu**, Kangyu Weng, Shuyi Zhou, Xiaomeng Huang, Wei Xiong
- 
+
+*North American Chapter of the Association for Computational Linguistics (NAACL), 2024*  
+
+<span style="color:red;">*(CCF Rank B)*</span>  
 
 
 </div>
