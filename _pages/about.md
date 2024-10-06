@@ -91,9 +91,9 @@ For **full** publications, please refer to my [Google Scholar](https://scholar.g
 
 **Fan Zhang**, Xian-Sheng Hua, Chong Chen, Xiao Luo  
 
-*North American Chapter of the Association for Computational Linguistics (NAACL), 2024*  
+*Knowledge Discovery and Data Mining (KDD), 2024*  
 
-<span style="color:red;">*(CCF Rank B)*</span>  
+<span style="color:red;">*(CCF Rank A)*</span>  
 </div>
 </div>
 
