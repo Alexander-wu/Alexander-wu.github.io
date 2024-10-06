@@ -210,7 +210,7 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 *International Conference on Learning Representations (ICLR), 2024*  
 
-<span style="color:red;">*(CCF Rank A spotlight)*</span>  
+<span style="color:red;">*(THU Rank A spotlight)*</span>  
 
 
 </div>
