@@ -213,7 +213,21 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 </div>
 </div>
+---
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/beam_search_mianfigure.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
+[BeamVQ: Aligning Space-Time Forecasting Model via Self-training on Physics-aware Metrics](https://easylearningscores.github.io/)
+
+**Hao Wu**, Xingjian Shi, Ziyue Huang, Penghao Zhao, Wei Xiong, Jinbao Xue, Yangyu Tao, Xiaomeng Huang, Weiyan Wang 
+
+
+*Arxiv*  
+
+
+
+</div>
+</div>
 ---
 
 
