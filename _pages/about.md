@@ -129,6 +129,28 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 ---
 
+- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``NeurIPS2023``</span> [IDEA: An Invariant Perspective for Efficient Domain Adaptive Image Retrieval](https://openreview.net/forum?id=77i6itptQW&referrer=%5Bthe%20profile%20of%20Haixin%20Wang%5D(%2Fprofile%3Fid%3D~Haixin_Wang3)). **Haixin Wang^**, **Hao Wu^**, Jinan Sun, Shikun Zhang, Chong Chen, Xian-Sheng Hua, Xiao Luo#. NeurIPS, 2023.
+
+## Selected Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/Prometheus.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Prometheus: Out-of-distribution Fluid Dynamics Modeling with Disentangled Graph ODE](https://openreview.net/forum?id=JsPvL6ExK8&referrer=%5Bthe%20profile%20of%20Hao%20Wu%5D(%2Fprofile%3Fid%3D~Hao_Wu39))
+
+
+**Hao Wu**,  Huiyuan Wang, Kun Wang, Weiyan Wang, ChanganYe, Yangyu Tao, Chong Chen, Xian-Sheng Hua, Xiao Luo
+
+*The International Conference on Machine Learning (ICML), 2024*  
+
+<span style="color:red;">*(CCF Rank A)*</span>  
+
+
+</div>
+</div>
+
+---
+
 
 
 # 🎖 Honors and Awards
