@@ -237,10 +237,10 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 # 💻 Academic service
 
 - PC Member/Conference Reviewer:
-  NeurIPS2023 Conference Reviewers,  NeurIPS2024 Conference Reviewers,  NeurIPS 2024 Datasets and Benchmarks Track Reviewers, ICLR 2024 Conference Reviewers, ICML 2024 Conference Reviewers, ACMMM 2024 Conference Reviewers
+  NeurIPS2023 Conference Reviewers,  NeurIPS2024 Conference Reviewers,  NeurIPS 2024 Datasets and Benchmarks Track Reviewers, ICLR 2024 Conference Reviewers, ICML 2024 Conference Reviewers, ACMMM 2024 Conference Reviewers,  ICLR2025 Conference Reviewers, NeurIPS 2024 Datasets and Benchmarks Track Reviewers, AISTATS 2025 Conference Reviewers
 
 
 # 👨🏻 Miscellaneous
 
 - 🏀 I am a big fan of basketball, i love Kobe Bryant and i like Fadeaway Shot. I also like Curry.
-- 👑 I am very interested in history. Although I am a science student, I particularly enjoy studying the history of the Han, Tang, Ming, and Qing dynasties. I especially like Emperor Wu of Han, Emperor Taizong of Tang, Emperor Chengzu (Emperor Taizong) of Ming, and Emperor Yongzheng. I believe Yongzheng is the only emperor of the Qing dynasty.
+- 👑 I am very interested in history.
