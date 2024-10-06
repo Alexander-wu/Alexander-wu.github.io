@@ -164,6 +164,24 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 </div>
 
 ---
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/pure.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[PURE: Prompt Evolution with Graph ODE for Out-of-distribution Fluid Dynamics Modeling]([https://openreview.net/forum?id=mL0KvSwXzk&referrer=%5Bthe%20profile%20of%20Xian-Sheng%20Hua%5D(%2Fprofile%3Fid%3D~Xian-Sheng_Hua1)](https://openreview.net/forum?id=z86knmjoUq&referrer=%5Bthe%20profile%20of%20Hao%20Wu%5D(%2Fprofile%3Fid%3D~Hao_Wu39)))
+
+
+**Hao Wu**, Changhu Wang, Fan Xu, Jinbao Xue, Chong Chen, Xian-Sheng Hua, Xiao Luo 
+
+
+*Conference on Neural Information Processing Systems (NeurIPS), 2024*  
+
+<span style="color:red;">*(CCF Rank A)*</span>  
+
+
+</div>
+</div>
+
+---
 
 
 
