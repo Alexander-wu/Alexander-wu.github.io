@@ -111,7 +111,7 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 ## Selected Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div>< img src='../images/NMO_main.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/NMO_main.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Neural Manifold Operators for Learning the Evolution of Physical Dynamics](https://dl.acm.org/doi/abs/10.1145/3637528.3671779)
