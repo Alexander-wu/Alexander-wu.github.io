@@ -223,6 +223,7 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 # 🎖 Honors and Awards
 
+- *2024.09* First-class Academic Scholarship of the University of Science and Technology of China.
 - *2022.10* National Scholarship, China (top 0.1% nation-wide).
 - *2022.09* First-class Academic Scholarship of the University of Science and Technology of China.
 
