@@ -113,7 +113,8 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 <div class='paper-box-text' markdown="1">
 
 [Neural Manifold Operators for Learning the Evolution of Physical Dynamics]
-([https://openreview.net/forum?id=MGNsP0LGte&referrer=%5Bthe%20profile%20of%20Fan%20Xu%5D(%2Fprofile%3Fid%3D~Fan_Xu5](https://dl.acm.org/doi/abs/10.1145/3637528.3671779)))
+(https://dl.acm.org/doi/abs/10.1145/3637528.3671779)
+
 
 **Hao Wu**, Kangyu Weng, Shuyi Zhou, Xiaomeng Huang, Wei Xiong
  
