@@ -1,3 +1,21 @@
+---
+permalink: /
+title: ""
+excerpt: ""
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
+{% if site.google_scholar_stats_use_cdn %}
+{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
+{% else %}
+{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
+{% endif %}
+{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+
+<span class='anchor' id='about-me'></span>
 
 
 I am Hao Wu, currently a third-year master's student in the Department of Computer Science at the [University of Science and Technology of China (USTC)](https://www.ustc.edu.cn/). I am also a joint training student in the large model training group of the Machine Learning Platform Department at [Tencent](https://www.tencent.com/en-us/). My research interests are as follows:
@@ -14,7 +32,7 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 
 # 🔥 News
-
+- *2024.0926*: &nbsp;🎉🎉 1 paper was accepted to NeurIPS2024 (First Author).
 - *2024.0716*: &nbsp;🎉🎉 1 paper was accepted to ACM MM2024 (First Author).
 - *2024.0517*: &nbsp;🎉🎉 2 papers were accepted to KDD2024 (First Author).
 - *2024.0501*: &nbsp;🎉🎉 1 paper was accepted to ICML2024 (First Author).
@@ -89,6 +107,18 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 - <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``NeurIPS2023``</span> [IDEA: An Invariant Perspective for Efficient Domain Adaptive Image Retrieval](https://openreview.net/forum?id=77i6itptQW&referrer=%5Bthe%20profile%20of%20Haixin%20Wang%5D(%2Fprofile%3Fid%3D~Haixin_Wang3)). **Haixin Wang^**, **Hao Wu^**, Jinan Sun, Shikun Zhang, Chong Chen, Xian-Sheng Hua, Xiao Luo#. NeurIPS, 2023.
 
+### Selected Publications
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div>< img src='../images/socst.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[SOCST: Learning Continuous Physics Simulation Overcoming Discretization from Partial Observations](https://openreview.net/forum?id=MGNsP0LGte&referrer=%5Bthe%20profile%20of%20Fan%20Xu%5D(%2Fprofile%3Fid%3D~Fan_Xu5))
+
+**Fan Xu**, Cheng Yan, Penghao Zhao, Hao Wu, Kun Wang#, Yang Wang#
+
+</div>
+</div>
+
+---
 
 # 🎖 Honors and Awards
 
