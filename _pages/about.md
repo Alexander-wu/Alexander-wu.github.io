@@ -25,7 +25,7 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 * **AI/ML for Science**: Under the guidance of [Xiao Luo](https://luoxiao12.github.io/), I study machine learning and fluid dynamics. We are currently researching the integration of LLMs and dynamical systems.
 
-* **Scaling Law**: I am collaborating with students from Tsinghua University's Yao Class to research the intersectional theory and applications of Scaling Law in large scientific computing models.
+* **Scaling Law**: I am collaborating with my teammates to research the intersectional theory and applications of Scaling Law in large scientific computing models.
 
 
 
