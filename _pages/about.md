@@ -20,7 +20,7 @@ redirect_from:
 
 I am Hao Wu, currently a third-year master's student in the Department of Computer Science at the [University of Science and Technology of China (USTC)](https://www.ustc.edu.cn/). I am also a joint training student in the large model training group of the Machine Learning Platform Department at [Tencent](https://www.tencent.com/en-us/). My research interests are as follows:
 
-* **Spatio-temporal Prediction**: With the guidance of [Kun Wang](https://scholar.google.com/citations?user=UnyqjWQAAAAJ&hl=en) and [Yuxuan Liang](https://yuxuanliang.com/), I explore foundational models for spatiotemporal data mining. Additionally, I am honored to collaborate with [Xingjian Shi](https://sxjscience.github.io/) and [Weiyan Wang](https://weiyan-wang.github.io/), whose ConvLSTM introduced me to this field.
+* **Spatio-temporal Prediction**: With the guidance of [Kun Wang](https://scholar.google.com/citations?user=UnyqjWQAAAAJ&hl=en) and [Yuxuan Liang](https://yuxuanliang.com/), I explore foundational models for spatiotemporal data mining. Additionally, I am honored to collaborate with [Xingjian Shi](https://sxjscience.github.io/), whose ConvLSTM introduced me to this field.
 
 * **AI/ML for Science**: Under the guidance of [Xiao Luo](https://luoxiao12.github.io/), I study machine learning and fluid dynamics. We are currently researching the integration of LLMs and dynamical systems.
 
