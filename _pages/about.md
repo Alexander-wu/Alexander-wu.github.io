@@ -254,4 +254,7 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 - 🏀 I am a big fan of basketball, i love Kobe Bryant and i like Fadeaway Shot. I also like Curry.
 - 👑 I am very interested in history.
 
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=hivJ3nYFAlIUly-VIveCQXOLkcQRWlgrfu6llYfxHoU"></script>
+<div style="width: 200px; height: 200px;">
+    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=hivJ3nYFAlIUly-VIveCQXOLkcQRWlgrfu6llYfxHoU"></script>
+</div>
+
