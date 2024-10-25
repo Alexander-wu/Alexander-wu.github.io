@@ -28,6 +28,8 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 
 
+<span style="color:red">I am seeking a CS Ph.D. position starting from 2025 Fall. Feel free to contact me if you think I am a good fit.</span>
+
 
 # 🔥 News
 - *2024.0926*: &nbsp;🎉🎉 3 papers were accepted to NeurIPS2024 (First Author).
