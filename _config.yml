@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "我叫吴昊 about me"
+title                    : "about me"
 description              : "坚刚不可夺其志 "
 repository               : "easylearningscores/easylearningscores.github.io"
 google_scholar_stats_use_cdn : true
