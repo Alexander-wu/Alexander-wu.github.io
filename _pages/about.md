@@ -22,9 +22,19 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 * **Spatio-temporal Prediction**: With the guidance of [Kun Wang](https://scholar.google.com/citations?user=UnyqjWQAAAAJ&hl=en) and [Yuxuan Liang](https://yuxuanliang.com/), I explore foundational models for spatiotemporal data mining. Additionally, I am honored to collaborate with [Xingjian Shi](https://sxjscience.github.io/), whose ConvLSTM introduced me to this field.
 
-* **AI/ML for Science**: Under the guidance of [Xiao Luo](https://luoxiao12.github.io/), I study machine learning and fluid dynamics. We are currently researching the integration of LLMs and dynamical systems.
+* **AI/ML for Science**: Under the guidance of [Xiao Luo](https://luoxiao12.github.io/), I study machine learning and fluid dynamics. 
 
 * **Scaling Law**: I am collaborating with my teammates to research the intersectional theory and applications of Scaling Law in large scientific computing models.
+
+<span style="color:red">Recent Focus in Scientific Computing</span>
+
+My recent efforts have been dedicated to foundational (Large) models in the field of scientific computing. I am excited to announce the upcoming release of two high-performance architectures:
+
+- **Coupled Ocean-Atmosphere Model**
+- **Advanced Machine Learning Prediction Model**
+
+These developments are the result of extensive research conducted with the computational power of 64 A100 GPUs. I sincerely thank [Tencent](https://www.tencent.com/en-us/) for their generous support in enabling this work!
+
 
 
 
