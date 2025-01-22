@@ -33,6 +33,7 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 
 # 🔥 News
+- *2025.0122*: &nbsp;🎉🎉 1 paper was accepted to ICLR2025 (Corresponding Author).
 - *2024.1116*: &nbsp;🎉🎉 1 paper was accepted to KDD2025 ADS (First Author).
 - *2024.0926*: &nbsp;🎉🎉 3 papers were accepted to NeurIPS2024 (First Author and Two co-author).
 - *2024.0716*: &nbsp;🎉🎉 1 paper was accepted to ACM MM2024 (First Author).
