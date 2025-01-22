@@ -117,7 +117,7 @@ I am Hao Wu, currently a third-year master's student in the Department of Comput
 
 Zaige Fei, Fan Xu, Junyuan Mao, Yuxuan Liang, Qingsong Wen, **Kun Wang#**, **Hao Wu#**, **Yang Wang#**
 
-*The Thirteenth International Conference on Learning Representations (ICLR), 2025*  
+*International Conference on Learning Representations (ICLR), 2025*  
 
 <span style="color:red;">*(THU Rank A)*</span>  
 
