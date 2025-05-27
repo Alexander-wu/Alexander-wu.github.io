@@ -99,9 +99,9 @@ I am Hao Wu, currently a first-year PhD student in the School of Science at [Tsi
 
 Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qingsong Wen, Xuming Hu, Kun Wang, Jiahao Wu, Li Qing, Hui Xiong, Xiaomeng Huang#
 
-*Arxiv, 2025*  
+*ICML, 2025*  
 
-<span style="color:red;">*(CCF None)*</span>  
+<span style="color:red;">*(CCF A)*</span>  
 
 
 </div>
