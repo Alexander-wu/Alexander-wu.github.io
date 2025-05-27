@@ -18,7 +18,7 @@ I am Hao Wu, currently a first-year PhD student in the School of Science at [Tsi
 - *2024.0221*: &nbsp;🎉🎉 1 paper was accepted to TKDE2024 (Co-First Author).
 - *2023.1209*: &nbsp;🎉🎉 1 paper was accepted to AAAI2024 (First Author).
 - *2023.0922*: &nbsp;🎉🎉 1 paper was accepted to NeurIPS2023 (Co-First Author).
-- *2022.1009*: &nbsp;🎉🎉 National Scholarship, China, 2023 (top 0.1% nation-wide, From USTC).
+- *2022.1009*: &nbsp;🎉🎉 National Scholarship, China, 2022 (top 0.1% nation-wide, From USTC).
 
 #  📖 Research Experience
 
