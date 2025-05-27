@@ -26,7 +26,7 @@ I am Hao Wu, currently a first-year PhD student in the School of Science at [Tsi
   <img src="../images/tencent.png" alt="" style="width: 90px; margin-right: 50px; margin-left: 20px;"/>
   <ul style="list-style-type: disc; padding-left: 20px;">
     <li style="list-style-type: none;">Machine Learning Platform Department, Large model training group, Tencent</li>
-    <li style="list-style-type: none;"><em>2023.08 - present</em>, <strong>Research intern</strong></li>
+    <li style="list-style-type: none;"><em>2023.08 - 2025.07</em>, <strong>Research intern</strong></li>
     <li style="list-style-type: none;">mentored by <a href="http://buaahsh.github.io/">Jinbao Xue</a></li>
   </ul>
 </div>
