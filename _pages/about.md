@@ -1,15 +1,9 @@
+I am Hao Wu, currently a first-year PhD student in the School of Science at [Tsinghua University](https://www.tsinghua.edu.cn/). Previously, I graduated from the Department of Computer Science at the University of Science and Technology of China (USTC)[University of Science and Technology of China (USTC)](https://www.ustc.edu.cn/). During my Master's studies at USTC, I was also a joint training student in the large model training group of the Machine Learning Platform Department at Tencent[Tencent](https://www.tencent.com/en-us/). My research interests are as follows:
 
 
-I am Hao Wu, currently a third-year master's student in the Department of Computer Science at the [University of Science and Technology of China (USTC)](https://www.ustc.edu.cn/). I am also a joint training student in the large model training group of the Machine Learning Platform Department at [Tencent](https://www.tencent.com/en-us/). My research interests are as follows:
+* **Scientific Machine Learning**: The ultimate goal of Scientific Machine Learning (SciML) is to accelerate scientific discovery and address complex scientific and engineering challenges by fusing domain knowledge with machine learning. It aims to develop more accurate, efficient, and interpretable predictive models, thereby deepening our understanding of the world and driving innovation.
 
-* **Spatio-temporal Prediction**: With the guidance of [Kun Wang](https://scholar.google.com/citations?user=UnyqjWQAAAAJ&hl=en) and [Yuxuan Liang](https://yuxuanliang.com/), I explore foundational models for spatiotemporal data mining. Additionally, I am honored to collaborate with [Xingjian Shi](https://sxjscience.github.io/), whose ConvLSTM introduced me to this field.
-
-* **AI/ML for Science**: Under the guidance of [Xiao Luo](https://luoxiao12.github.io/), I study machine learning and fluid dynamics. 
-
-* **Scaling Law**: I am collaborating with my teammates to research the intersectional theory and applications of Scaling Law in large scientific computing models.
-
-
-
+* **Vision-Language Models for Robotics**: The ultimate goal of Vision-Language Models (VLMs) for Robotics is to enable robots to deeply understand and interact with the world by grounding language in visual perception for intelligent action. It aims to build more versatile, collaborative, and general-purpose robots capable of understanding nuanced human instructions and performing complex tasks in real-world environments.
 
 
 
