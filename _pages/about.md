@@ -128,6 +128,12 @@ Hao Wu, Yuan Gao, Ruiqi Shu, Kun Wang, Ruijian Gou, Chuhan Wu, Xinliang Liu, Jun
 <span style="color:red;">*(Arxiv)*</span>  
 
 ## Selected Publications
+
+</div>
+</div>
+
+---
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/one.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
