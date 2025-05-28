@@ -88,7 +88,7 @@ I am Hao Wu, currently a first-year PhD student in the School of Science at [Tsi
 
 - <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``NeurIPS2023``</span> [IDEA: An Invariant Perspective for Efficient Domain Adaptive Image Retrieval](https://openreview.net/forum?id=77i6itptQW&referrer=%5Bthe%20profile%20of%20Haixin%20Wang%5D(%2Fprofile%3Fid%3D~Haixin_Wang3)). **Haixin Wang^**, **Hao Wu^**, Jinan Sun, Shikun Zhang, Chong Chen, Xian-Sheng Hua, Xiao Luo#. NeurIPS, 2023.
 
-## Selected Publications
+## Pre-print
 
 </div>
 </div>
@@ -107,7 +107,7 @@ Hao Wu, Yuan Gao, Ruiqi Shu, Kun Wang, Ruijian Gou, Chuhan Wu, Xinliang Liu, Jun
 
 <span style="color:red;">*(Arxiv)*</span>  
 
-
+## Selected Publications
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/one.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
