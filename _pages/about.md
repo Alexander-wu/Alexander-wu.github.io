@@ -28,6 +28,7 @@ I am Hao Wu, currently a first-year PhD student in the School of Science at [Tsi
 
 
 # 🔥 News
+- *2025.0501*: &nbsp;🎉🎉 1 paper was accepted to ICML2025, Congrats to Yuan and Ruiqi! (Co-First Author).
 - *2025.0122*: &nbsp;🎉🎉 1 paper was accepted to ICLR2025 (Corresponding Author).
 - *2024.1116*: &nbsp;🎉🎉 1 paper was accepted to KDD2025 ADS (First Author).
 - *2024.0926*: &nbsp;🎉🎉 3 papers were accepted to NeurIPS2024 (First Author and Two co-author).
@@ -128,11 +129,6 @@ Hao Wu, Yuan Gao, Ruiqi Shu, Kun Wang, Ruijian Gou, Chuhan Wu, Xinliang Liu, Jun
 <span style="color:red;">*(Arxiv)*</span>  
 
 ## Selected Publications
-
-</div>
-</div>
-
----
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/one.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
