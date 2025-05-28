@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "about me"
+title                    : "about me @ THU"
 description              : "坚刚不可夺其志 "
 repository               : "easylearningscores/easylearningscores.github.io"
 google_scholar_stats_use_cdn : true
@@ -21,10 +21,10 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Hao Wu (Hao Wu)"
-  avatar           : "images/wuhaonew.png"
-  bio              : "University of Science and Technology of China"
-  location         : "Hefei, China"
+  name             : "Hao Wu (吴昊)"
+  avatar           : "images/haowu.png"
+  bio              : "Tsinghua University"
+  location         : "Haidian, Beijing"
   employer         :
   pubmed           : 
   googlescholar    :  "https://scholar.google.com/citations?user=SCHOLAR_ID&user=HdXMhfcAAAAJ"
