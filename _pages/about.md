@@ -111,8 +111,7 @@ I am Hao Wu, currently a first-year PhD student in the School of Science at [Tsi
 
 ## Preprints
 
-</div>
-</div>
+
 
 ---
 
@@ -134,8 +133,7 @@ Hao Wu, Yuan Gao, Ruiqi Shu, Kun Wang, Ruijian Gou, Chuhan Wu, Xinliang Liu, Jun
 
 
 ## Selected Publications
-</div>
-</div>
+
 
 ---
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/one.png' alt="sym" width="100%"></div></div>
