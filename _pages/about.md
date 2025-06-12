@@ -58,7 +58,7 @@ I am Hao Wu, currently a first-year PhD student in the School of Science at [Tsi
   <img src="../images/hkust.png" alt="" style="width: 90px; margin-right: 50px; margin-left: 20px;"/>
   <ul style="list-style-type: disc; padding-left: 20px;">
     <li style="list-style-type: none;">CityMind Lab, Hong Kong University of Science and Technology (Guangzhou)</li>
-    <li style="list-style-type: none;"><em>2023.06 - 2024.06</em>, <strong>Research intern</strong></li>
+    <li style="list-style-type: none;"><em>2023.05 - 2023.08</em>, <strong>Research intern</strong></li>
     <li style="list-style-type: none;">Advisor <a href="http://buaahsh.github.io/">Yuxuan Liang</a></li>
   </ul>
 </div>
