@@ -161,7 +161,7 @@ Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qing
 
 *ICML, 2025*  
 
-<span style="color:red;">*(CCF A)*</span>  
+<span style="color:red;">*(CCF Rank A)*</span>  
 
 
 </div>
