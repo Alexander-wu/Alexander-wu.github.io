@@ -28,6 +28,7 @@ I am Hao Wu, currently a first-year PhD student in the School of Science at [Tsi
 
 
 # 🔥 News
+- *2025.0618*: &nbsp;🎉🎉 I have graduated from USTC CS.
 - *2025.0501*: &nbsp;🎉🎉 1 paper was accepted to ICML2025, Congrats to Yuan and Ruiqi! (Co-First Author).
 - *2025.0122*: &nbsp;🎉🎉 1 paper was accepted to ICLR2025 (Corresponding Author).
 - *2024.1116*: &nbsp;🎉🎉 1 paper was accepted to KDD2025 ADS (First Author).
