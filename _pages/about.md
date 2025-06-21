@@ -26,38 +26,31 @@ I am Hao Wu, currently a first-year PhD student in the School of Science at [Tsi
 * **Vision-Language Models for Robotics**: The ultimate goal of Vision-Language Models (VLMs) for Robotics is to enable robots to deeply understand and interact with the world by grounding language in visual perception for intelligent action. It aims to build more versatile, collaborative, and general-purpose robots capable of understanding nuanced human instructions and performing complex tasks in real-world environments.
 
 
-<h1 id='news'> News</h1>
+<h1 id='news'>News</h1>
 <style>
   .scrollable {
-    max-height: 260px;
-    overflow-y: auto;
-    padding-right: 10px; /* adds some spacing for scrollbar */
-  }
-  /* Custom scrollbar styling */
-  .scrollable::-webkit-scrollbar {
-    width: 6px;
-  }
-  .scrollable::-webkit-scrollbar-thumb {
-    background-color: rgba(0,0,0,0.2);
-    border-radius: 3px;
+    max-height: 260px; /* 设置最大高度 */
+    overflow-y: scroll; /* 设置垂直滚动条 */
   }
 </style>
 
 <div class="scrollable">
-- *2025.0621*: &nbsp;🎉🎉 I will soon join Tencent CSIG as a research intern @ Tencent Jarvis Research Center. (In progress)
-- *2025.0618*: &nbsp;🎉🎉 I have graduated from USTC CS.
-- *2025.0501*: &nbsp;🎉🎉 1 paper was accepted to ICML2025, Congrats to Yuan and Ruiqi! (Co-First Author).
-- *2025.0122*: &nbsp;🎉🎉 1 paper was accepted to ICLR2025 (Corresponding Author).
-- *2024.1116*: &nbsp;🎉🎉 1 paper was accepted to KDD2025 ADS (First Author).
-- *2024.0926*: &nbsp;🎉🎉 3 papers were accepted to NeurIPS2024 (First Author and Two co-author).
-- *2024.0716*: &nbsp;🎉🎉 1 paper was accepted to ACM MM2024 (First Author).
-- *2024.0517*: &nbsp;🎉🎉 1 papers was accepted to KDD2024 (First Author).
-- *2024.0501*: &nbsp;🎉🎉 1 paper was accepted to ICML2024 (First Author).
-- *2024.0116*: &nbsp;🎉🎉 1 paper was accepted to ICLR2024  (<span style="color:red">Spotlight</span>) (Co-First Author).
-- *2024.0221*: &nbsp;🎉🎉 1 paper was accepted to TKDE2024 (Co-First Author).
-- *2023.1209*: &nbsp;🎉🎉 1 paper was accepted to AAAI2024 (First Author).
-- *2023.0922*: &nbsp;🎉🎉 1 paper was accepted to NeurIPS2023 (Co-First Author).
-- *2022.1009*: &nbsp;🎉🎉 National Scholarship, China, 2022 (top 0.1% nation-wide, From USTC).
+  <ul>
+    <li><strong>2025.06.21</strong>: I will soon join Tencent CSIG as a research intern @ Tencent Jarvis Research Center. (In progress)</li>
+    <li><strong>2025.06.18</strong>: I have graduated from USTC CS.</li>
+    <li><strong>2025.05.01</strong>: 1 paper was accepted to ICML2025, Congrats to Yuan and Ruiqi! (Co-First Author).</li>
+    <li><strong>2025.01.22</strong>: 1 paper was accepted to ICLR2025 (Corresponding Author).</li>
+    <li><strong>2024.11.16</strong>: 1 paper was accepted to KDD2025 ADS (First Author).</li>
+    <li><strong>2024.09.26</strong>: 3 papers were accepted to NeurIPS2024 (First Author and Two co-author).</li>
+    <li><strong>2024.07.16</strong>: 1 paper was accepted to ACM MM2024 (First Author).</li>
+    <li><strong>2024.05.17</strong>: 1 papers was accepted to KDD2024 (First Author).</li>
+    <li><strong>2024.05.01</strong>: 1 paper was accepted to ICML2024 (First Author).</li>
+    <li><strong>2024.01.16</strong>: 1 paper was accepted to ICLR2024 (<span style="color:red">Spotlight</span>) (Co-First Author).</li>
+    <li><strong>2024.02.21</strong>: 1 paper was accepted to TKDE2024 (Co-First Author).</li>
+    <li><strong>2023.12.09</strong>: 1 paper was accepted to AAAI2024 (First Author).</li>
+    <li><strong>2023.09.22</strong>: 1 paper was accepted to NeurIPS2023 (Co-First Author).</li>
+    <li><strong>2022.10.09</strong>: National Scholarship, China, 2022 (top 0.1% nation-wide, From USTC).</li>
+  </ul>
 </div>
 
 
