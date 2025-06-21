@@ -26,7 +26,7 @@ I am Hao Wu, currently a first-year PhD student in the School of Science at [Tsi
 * **Vision-Language Models for Robotics**: The ultimate goal of Vision-Language Models (VLMs) for Robotics is to enable robots to deeply understand and interact with the world by grounding language in visual perception for intelligent action. It aims to build more versatile, collaborative, and general-purpose robots capable of understanding nuanced human instructions and performing complex tasks in real-world environments.
 
 
-<h1 id='news'>News</h1>
+<h1 id='news'>🔥 News</h1>
 <style>
   .scrollable {
     max-height: 260px; /* 设置最大高度 */
