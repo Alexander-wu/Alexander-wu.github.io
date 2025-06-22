@@ -25,6 +25,12 @@ I am Hao Wu, currently a first-year PhD student in the School of Science at [Tsi
 
 * **Vision-Language Models for Robotics**: The ultimate goal of Vision-Language Models (VLMs) for Robotics is to enable robots to deeply understand and interact with the world by grounding language in visual perception for intelligent action. It aims to build more versatile, collaborative, and general-purpose robots capable of understanding nuanced human instructions and performing complex tasks in real-world environments.
 
+I have had the privilege of working closely with several esteemed experts, including [Dr. Kun Wang](https://scholar.google.com/citations?user=UnyqjWQAAAAJ&hl=en), [Prof. Qingsong Wen](https://sites.google.com/site/qingsongwen8/), [Prof. Yuxuan Liang](https://yuxuanliang.com/), (Dr. Xiao Luo)[https://luoxiao12.github.io/], [Prof. Yu Zheng](https://scholar.google.com/citations?user=juUcdgYAAAAJ&hl=en), and [Dr. Xingjian Shi](https://sxjscience.github.io/).
+
+<span style="color:red;">So, Please feel free to contact me for communication and collaboration.</span>
+
+**Email**: <u>wuhao2022@mail.ustc.edu.cn</u>  &nbsp; &nbsp;  **Wechat**: How_Alexander_Wu
+
 
 <h1 id='news'>🔥 News</h1>
 <style>
