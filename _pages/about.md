@@ -141,7 +141,8 @@ Hao Wu, Yuan Gao, Ruiqi Shu, Zean Han, Fan Xu, Zhihong Zhu, Qingsong Wen, Xian W
 
 *Arxiv, 2025*  
 
-<span style="color:red;">*([Arxiv](https://arxiv.org/abs/2505.19432))*</span>  
+
+<a href="https://arxiv.org/abs/2505.19432" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores/TurbL1_AI4Science" target="_blank">Code</a>
 
 
 </div>
@@ -180,7 +181,7 @@ Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qing
 
 
 
-<span style="color:red;">*(*ICML, 2025*, CCF Rank A)*</span>  
+<span style="color:red;">*(ICML2025, CCF Rank A)*</span>  
 
 <a href="https://arxiv.org/abs/2502.00338" target="_blank">Paper</a> | <a href="https://github.com/YuanGao-YG/OneForecast" target="_blank">Code</a>
 
@@ -193,14 +194,14 @@ Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qing
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/DnyST.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[DynST: Dynamic Sparse Training for Resource-Constrained Spatio-Temporal Forecasting](https://openreview.net/group?id=KDD.org/2025/ADS_Track_August/Authors&referrer=%5BHomepage%5D(%2F))
+[DynST: Dynamic Sparse Training for Resource-Constrained Spatio-Temporal Forecasting](https://arxiv.org/abs/2403.02914)
 
 
 **Hao Wu**, Haomin Wen, Guibin Zhang, Yutong Xia, Yuxuan Liang, Yu Zheng, Qingsong Wen, Kun Wang
 
-*Knowledge Discovery and Data Mining (KDD), 2025*  
+<span style="color:red;">*(KDD2025, CCF Rank A)*</span>  
 
-<span style="color:red;">*(CCF Rank A)*</span>  
+<a href="https://arxiv.org/abs/2505.19432" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores" target="_blank">Code</a>
 
 
 </div>
@@ -215,10 +216,9 @@ Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qing
 
 **Hao Wu**, Kangyu Weng, Shuyi Zhou, Xiaomeng Huang, Wei Xiong
 
-*Knowledge Discovery and Data Mining (KDD), 2024*  
+<span style="color:red;">*(KDD2025, CCF Rank A)*</span>  
 
-<span style="color:red;">*(CCF Rank A)*</span>  
-
+<a href="https://dl.acm.org/doi/10.1145/3637528.3671779" target="_blank">Paper</a> | <a href="https://github.com/AI4EarthLab/Neural-Manifold-Operators" target="_blank">Code</a>
 
 </div>
 </div>
@@ -233,9 +233,9 @@ Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qing
 
 **Hao Wu**,  Huiyuan Wang, Kun Wang, Weiyan Wang, ChanganYe, Yangyu Tao, Chong Chen, Xian-Sheng Hua, Xiao Luo
 
-*The International Conference on Machine Learning (ICML), 2024*  
-
-<span style="color:red;">*(CCF Rank A)*</span>  
+<span style="color:red;">*(ICML2024, CCF Rank A)*</span>  
+ 
+<a href="https://proceedings.mlr.press/v235/wu24aa.html" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores/DGODE_ood" target="_blank">Code</a> | <a href="https://huggingface.co/datasets/easylearning/Prometheus/tree/main" target="_blank">Benchmark</a>
 
 
 </div>
@@ -269,9 +269,10 @@ Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qing
 **Hao Wu**, Yuxuan Liang, Wei Xiong, Zhengyang Zhou, Wei Huang, Shilong Wang, Kun Wang
 
 
-*Association for the Advancement of Artificial Intelligence (AAAI), 2024*  
 
-<span style="color:red;">*(CCF Rank A)*</span>  
+<span style="color:red;">*(AAAI2024, CCF Rank A)*</span>  
+
+<a href="https://ojs.aaai.org/index.php/AAAI/article/view/29521" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores/EarthFarseer" target="_blank">Code</a>
 
 
 </div>
@@ -288,9 +289,9 @@ Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qing
 **Hao Wu**, Changhu Wang, Fan Xu, Jinbao Xue, Chong Chen, Xian-Sheng Hua, Xiao Luo 
 
 
-*Conference on Neural Information Processing Systems (NeurIPS), 2024*  
+<span style="color:red;">*(NeurIPS2024, CCF Rank A)*</span>  
 
-<span style="color:red;">*(CCF Rank A)*</span>  
+<a href="https://neurips.cc/virtual/2024/poster/92971" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores" target="_blank">Code</a>
 
 
 </div>
@@ -306,9 +307,9 @@ Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qing
 **Kun Wang**, **Hao Wu**, Yifan Duan, Guibin Zhang, Kai Wang, Xiaojiang Peng, Yu Zheng, Yuxuan Liang, Yang Wang
 
 
-*International Conference on Learning Representations (ICLR), 2024*  
+<span style="color:red;">*(ICLR2024, THU Rank A spotlight)*</span>  
 
-<span style="color:red;">*(THU Rank A spotlight)*</span>  
+<a href="https://openreview.net/forum?id=sLdVl0q68X" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores/NuwaDynamics" target="_blank">Code</a>
 
 
 </div>
