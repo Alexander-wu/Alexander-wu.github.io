@@ -182,6 +182,8 @@ Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qing
 
 <span style="color:red;">*(CCF Rank A)*</span>  
 
+<a href="https://arxiv.org/abs/2502.00338" target="_blank">Paper</a> | <a href="https://github.com/YuanGao-YG/OneForecast" target="_blank">Code</a>
+
 
 </div>
 </div>
