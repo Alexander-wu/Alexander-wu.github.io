@@ -141,7 +141,7 @@ Hao Wu, Yuan Gao, Ruiqi Shu, Zean Han, Fan Xu, Zhihong Zhu, Qingsong Wen, Xian W
 
 *Arxiv, 2025*  
 
-<span style="color:red;">*(Arxiv)*</span>  
+<span style="color:red;">*([Arxiv](https://arxiv.org/abs/2505.19432))*</span>  
 
 
 </div>
