@@ -251,9 +251,11 @@ Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qing
 
 **Hao Wu**, Fan Xu, Chong Chen, Xian-Sheng Hua, Xiao Luo, Haixin Wang
 
-*ACM Multimedia (MM), 2024*  
+<span style="color:red;">*(ACM MM, CCF Rank A)*</span>  
 
-<span style="color:red;">*(CCF Rank A)*</span>  
+<a href="https://dl.acm.org/doi/10.1145/3664647.3681489" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores/PastNet" target="_blank">Code</a>
+
+
 
 
 </div>
