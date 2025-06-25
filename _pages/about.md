@@ -187,7 +187,8 @@ Yuqi Li, Chuanguang Yang, Hansheng Zeng, Zeyu Dong, Zhulin An, Yongjun Xu, Yingl
 
 <a href="https://arxiv.org/abs/2502.00338" target="_blank">Paper</a> | <a href="https://github.com/YuanGao-YG/OneForecast" target="_blank">Code</a>
 
-
+</div>
+</div>
 
 ---
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/one.png' alt="sym" width="100%"></div></div>
