@@ -42,6 +42,7 @@ I have had the privilege of working closely with several esteemed experts, inclu
 
 <div class="scrollable">
   <ul>
+    <li><strong>2025.06.26</strong>: 1 paper was accepted to ICCV2025 (Corresponding Author).</li>
     <li><strong>2025.06.21</strong>: I will soon join Tencent CSIG as a research intern @ Tencent Jarvis Research Center. (In progress)</li>
     <li><strong>2025.06.18</strong>: I have graduated from USTC CS.</li>
     <li><strong>2025.05.01</strong>: 1 paper was accepted to ICML2025, Congrats to Yuan and Ruiqi! (Co-First Author).</li>
@@ -96,6 +97,10 @@ I have had the privilege of working closely with several esteemed experts, inclu
 
 
 #### Spatio-temporal Prediction
+- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``ICCV2025``</span> [Frequency-Aligned Knowledge Distillation for Lightweight Spatiotemporal Forecasting
+](https://openreview.net/forum?id=sKEFrZ0wCj#discussion). Yuqi Li, Chuanguang Yang, Hansheng Zeng, Zeyu Dong, Zhulin An, Yongjun Xu, Yingli Tian, **Hao Wu#**. ICCV, 2025.
+
+- 
 - <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``KDD2025``</span> [DynST: Dynamic Sparse Training for Resource-Constrained Spatio-Temporal Forecasting](https://openreview.net/forum?id=sKEFrZ0wCj#discussion). **Hao Wu**, Haomin Wen, Guibin Zhang, Yutong Xia, Yuxuan Liang, Yu Zheng, Qingsong Wen, Kun Wang#. KDD, 2025.
 
 - <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``AAAI2024``</span> [Earthfarseer: versatile spatio-temporal dynamical systems modeling in one model](https://ojs.aaai.org/index.php/AAAI/article/view/29521/30866). **Hao Wu**, Yuxuan Liang, Wei Xiong#, Zhengyang Zhou, Wei Huang, Shilong Wang, Kun Wang#. AAAI, 2024.
@@ -168,6 +173,21 @@ Hao Wu, Yuan Gao, Ruiqi Shu, Kun Wang, Ruijian Gou, Chuhan Wu, Xinliang Liu, Jun
 
 
 ## Selected Publications
+
+---
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/iccv2025.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Frequency-Aligned Knowledge Distillation for Lightweight Spatiotemporal Forecasting](https://openreview.net/group?id=thecvf.com/ICCV/2025/Conference/Authors&referrer=%5BHomepage%5D(%2F))
+
+
+Yuqi Li, Chuanguang Yang, Hansheng Zeng, Zeyu Dong, Zhulin An, Yongjun Xu, Yingli Tian, **Hao Wu#**
+
+
+<span style="color:red;">*(ICCV2025, CCF Rank A)*</span>  
+
+<a href="https://arxiv.org/abs/2502.00338" target="_blank">Paper</a> | <a href="https://github.com/YuanGao-YG/OneForecast" target="_blank">Code</a>
+
 
 
 ---
