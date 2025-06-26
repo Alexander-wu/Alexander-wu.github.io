@@ -185,7 +185,7 @@ Yuqi Li, Chuanguang Yang, Hansheng Zeng, Zeyu Dong, Zhulin An, Yongjun Xu, Yingl
 
 <span style="color:red;">*(ICCV2025, CCF Rank A)*</span>  
 
-<a href="https://arxiv.org/abs/2502.00338" target="_blank">Paper</a> | <a href="https://github.com/YuanGao-YG/OneForecast" target="_blank">Code</a>
+<a href="https://arxiv.org/abs/2502.00338" target="_blank">Paper</a> | <a href="https://github.com/itsnotacie/SDKD" target="_blank">Code</a>
 
 </div>
 </div>
