@@ -68,7 +68,7 @@ I have had the privilege of working closely with several esteemed experts, inclu
   <ul style="list-style-type: disc; padding-left: 20px;">
     <li style="list-style-type: none;">Machine Learning Platform Department, Large model training group, Tencent</li>
     <li style="list-style-type: none;"><em>2023.08 - 2025.07</em>, <strong>Research intern</strong></li>
-    <li style="list-style-type: none;">mentored by <a href="http://buaahsh.github.io/">Jinbao Xue</a></li>
+    <li style="list-style-type: none;">mentored by <a href="https://github.com/easylearningscores/easylearningscores.github.io/blob/main/images/easyluwu_%E5%AE%9E%E4%B9%A0%E8%AF%81%E6%98%8E-002_637855753234bf0001efed7c.pdf">Jinbao Xue</a></li>
   </ul>
 </div>
 
