@@ -64,11 +64,21 @@ I have had the privilege of working closely with several esteemed experts, inclu
 #  📖 Research Experience
 
 <div style="display: flex; align-items: center;">
+  <img src="../images/NTU_Logo.png" alt="" style="width: 90px; margin-right: 50px; margin-left: 20px;"/>
+  <ul style="list-style-type: disc; padding-left: 20px;">
+    <li style="list-style-type: none;">School of Computer Science and Engineering, Nanyang Technological University/li>
+    <li style="list-style-type: none;"><em>2025.07 - Present</em>, <strong>Research intern</strong></li>
+    <li style="list-style-type: none;">Advisor by <a href="https://scholar.google.com/citations?user=UnyqjWQAAAAJ&hl=en">Kun Wang</a></li>
+  </ul>
+</div>
+
+
+<div style="display: flex; align-items: center;">
   <img src="../images/tencent.png" alt="" style="width: 90px; margin-right: 50px; margin-left: 20px;"/>
   <ul style="list-style-type: disc; padding-left: 20px;">
     <li style="list-style-type: none;">Machine Learning Platform Department, Large model training group, Tencent</li>
     <li style="list-style-type: none;"><em>2023.08 - 2025.07</em>, <strong>Research intern</strong></li>
-    <li style="list-style-type: none;">mentored by <a href="https://github.com/easylearningscores/easylearningscores.github.io/blob/main/images/shixi.pdf">Jinbao Xue</a></li>
+    <li style="list-style-type: none;">Mentored by <a href="https://github.com/easylearningscores/easylearningscores.github.io/blob/main/images/shixi.pdf">Jinbao Xue</a></li>
   </ul>
 </div>
 
