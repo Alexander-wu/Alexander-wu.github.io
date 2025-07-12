@@ -18,7 +18,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am Hao Wu, currently a first-year PhD student at [Tsinghua University](https://www.tsinghua.edu.cn/) (2025 - 2028 (expected)), my major is Computer Science, advised by Prof. [Xiaomeng Huang](https://scholar.google.com/). Previously, I graduated from the Department of Computer Science at the [USTC](https://www.ustc.edu.cn/). During my Master's studies at USTC, I was also a joint training student in the large model training group of the Machine Learning Platform Department at [Tencent](https://www.tencent.com/en-us/). My research interests are as follows:
+I am Hao Wu, currently a first-year PhD student at [Tsinghua University](https://www.tsinghua.edu.cn/) (2025 - 2028 (expected)), my major is Computer Science, advised by Prof. [Xiaomeng Huang](https://github.com/easylearningscores/easylearningscores.github.io/blob/main/docs/Hao_Wu_CV%20(2).pdf). Previously, I graduated from the Department of Computer Science at the [USTC](https://www.ustc.edu.cn/). During my Master's studies at USTC, I was also a joint training student in the large model training group of the Machine Learning Platform Department at [Tencent](https://www.tencent.com/en-us/). My research interests are as follows:
 
 
 * **Scientific Machine Learning**: The ultimate goal of Scientific Machine Learning (SciML) is to accelerate scientific discovery and address complex scientific and engineering challenges by fusing domain knowledge with machine learning. It aims to develop more accurate, efficient, and interpretable predictive models, thereby deepening our understanding of the world and driving innovation.
