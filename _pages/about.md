@@ -263,7 +263,7 @@ Zaige Fei, Fan Xu, Junyuan Mao, Yuxuan Liang, Qingsong Wen, Kun Wang, **Hao Wu#*
 
 **Hao Wu**, Kangyu Weng, Shuyi Zhou, Xiaomeng Huang, Wei Xiong
 
-<span style="color:red;">*(KDD2025, CCF Rank A)*</span>  
+<span style="color:red;">*(KDD2024, CCF Rank A)*</span>  
 
 <a href="https://dl.acm.org/doi/10.1145/3637528.3671779" target="_blank">Paper</a> | <a href="https://github.com/AI4EarthLab/Neural-Manifold-Operators" target="_blank">Code</a>
 
