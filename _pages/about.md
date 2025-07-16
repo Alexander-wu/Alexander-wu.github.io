@@ -215,6 +215,23 @@ Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qing
 
 <a href="https://arxiv.org/abs/2502.00338" target="_blank">Paper</a> | <a href="https://github.com/YuanGao-YG/OneForecast" target="_blank">Code</a>
 
+</div>
+</div>
+
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/openck.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Open-CK: A Large Multi-Physics Fields Coupling benchmarks in Combustion Kinetics](https://openreview.net/forum?id=A23C57icJt)
+
+
+Zaige Fei, Fan Xu, Junyuan Mao, Yuxuan Liang, Qingsong Wen, Kun Wang, **Hao Wu#**, Yang Wang
+
+<span style="color:red;">*(ICLR2025, THU Rank A)*</span>  
+
+<a href="https://openreview.net/forum?id=A23C57icJt" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores" target="_blank">Code</a>
+
 
 </div>
 </div>
