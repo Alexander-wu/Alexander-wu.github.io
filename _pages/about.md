@@ -42,8 +42,8 @@ I have had the privilege of working closely with several esteemed experts, inclu
 
 <div class="scrollable">
   <ul>
+    <li><strong>2025.08.01</strong>: I have joined Tencent CSIG as a research intern @ Tencent Jarvis Research Center. </li>
     <li><strong>2025.06.26</strong>: 1 paper was accepted to ICCV2025 (Corresponding Author).</li>
-    <li><strong>2025.06.21</strong>: I will soon join Tencent CSIG as a research intern @ Tencent Jarvis Research Center. (In progress)</li>
     <li><strong>2025.06.18</strong>: I have graduated from USTC CS.</li>
     <li><strong>2025.05.01</strong>: 1 paper was accepted to ICML2025, Congrats to Yuan and Ruiqi! (Co-First Author).</li>
     <li><strong>2025.01.22</strong>: 1 paper was accepted to ICLR2025 (Corresponding Author).</li>
@@ -64,10 +64,20 @@ I have had the privilege of working closely with several esteemed experts, inclu
 #  📖 Research Experience
 
 <div style="display: flex; align-items: center;">
+  <img src="../images/tencent.png" alt="" style="width: 90px; margin-right: 50px; margin-left: 20px;"/>
+  <ul style="list-style-type: disc; padding-left: 20px;">
+    <li style="list-style-type: none;">Jarvis Lab, Tencent</li>
+    <li style="list-style-type: none;"><em>2025.08 - Present</em>, <strong>Research intern</strong></li>
+    <li style="list-style-type: none;">Mentored by <a href="https://scholar.google.com/citations?user=lslB5jkAAAAJ&hl=zh-CN">Xian Wu</a></li>
+  </ul>
+</div>
+
+
+<div style="display: flex; align-items: center;">
   <img src="../images/NTU.png" alt="" style="width: 90px; margin-right: 50px; margin-left: 20px;"/>
   <ul style="list-style-type: disc; padding-left: 20px;">
     <li style="list-style-type: none;">School of Computer Science and Engineering, Nanyang Technological University</li>
-    <li style="list-style-type: none;"><em>2025.07 - Present</em>, <strong>Research intern</strong></li>
+    <li style="list-style-type: none;"><em>2025.07 - 2025.08</em>, <strong>Research intern</strong></li>
     <li style="list-style-type: none;">Advisor by <a href="https://scholar.google.com/citations?user=UnyqjWQAAAAJ&hl=en">Kun Wang</a></li>
   </ul>
 </div>
