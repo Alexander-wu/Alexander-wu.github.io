@@ -45,7 +45,7 @@ I have had the privilege of working closely with several esteemed experts, inclu
     <li><strong>2025.08.01</strong>: I have joined Tencent CSIG as a research intern @ Tencent Jarvis Research Center. </li>
     <li><strong>2025.06.26</strong>: 1 paper was accepted to ICCV2025 (Corresponding Author).</li>
     <li><strong>2025.06.18</strong>: I have graduated from USTC CS.</li>
-    <li><strong>2025.05.01</strong>: 1 paper was accepted to ICML2025, Congrats to Yuan and Ruiqi! (Co-First Author).</li>
+    <li><strong>2025.05.01</strong>: 1 paper was accepted to ICML2025, Congrats to Yuan ! (Co-First Author).</li>
     <li><strong>2025.01.22</strong>: 1 paper was accepted to ICLR2025 (Corresponding Author).</li>
     <li><strong>2024.11.16</strong>: 1 paper was accepted to KDD2025 ADS (First Author).</li>
     <li><strong>2024.09.26</strong>: 3 papers were accepted to NeurIPS2024 (First Author and Two co-author).</li>
