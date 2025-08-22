@@ -29,7 +29,7 @@ I have had the privilege of working closely with several esteemed experts, inclu
 
 <span style="color:red;">So, Please feel free to contact me for communication and collaboration.</span>
 
-**Email**: <u>wuhao2022@mail.ustc.edu.cn</u>  &nbsp; &nbsp;  **Wechat**: How_Alexander_Wu
+**Email**: <u>wuhao2022@mail.ustc.edu.cn</u> or <u>wu-h25@mails.tsinghua.edu.cn</u> &nbsp; &nbsp;  **Wechat**: How_Alexander_Wu
 
 
 <h1 id='news'>🔥 News</h1>
