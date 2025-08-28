@@ -155,7 +155,7 @@ I have had the privilege of working closely with several esteemed experts, inclu
 ## Preprints
 ---
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/stage2.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/sfp.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Spatio-temporal Forecasting as Planning: A Model-Based Reinforcement Learning Approach with Generative World Models](#)
