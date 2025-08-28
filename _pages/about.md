@@ -155,6 +155,23 @@ I have had the privilege of working closely with several esteemed experts, inclu
 ## Preprints
 ---
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/stage2.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Spatio-temporal Forecasting as Planning: A Model-Based Reinforcement Learning Approach with Generative World Models](#)
+
+Hao Wu, Yuan Gao, Xian Wu*, Shuaipeng Li, Xingjian Shi, Fan Xu, Fan Zhang, Zhihong Zhu, Huangshuo Dong, Kun Wang, Weiyan Wang*, Xiaomeng Huang*
+
+*Arxiv, 2025*  
+
+<a href="#" target="_blank">Paper</a> | <a href="#" target="_blank">Code</a>
+
+</div>
+</div>
+
+
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/nips_t1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -189,7 +206,6 @@ Hao Wu, Yuan Gao, Ruiqi Shu, Kun Wang, Ruijian Gou, Chuhan Wu, Xinliang Liu, Jun
 
 </div>
 </div>
-
 
 ## Selected Publications
 
