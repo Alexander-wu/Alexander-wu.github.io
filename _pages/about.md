@@ -42,7 +42,7 @@ I have had the privilege of working closely with several esteemed experts, inclu
 
 <div class="scrollable">
   <ul>
-    <li><strong>2025.09.18</strong>: 2 papers were accepted to NeurIPS2025, Congrats to All !.</li>
+    <li><strong>2025.09.18</strong>: 2 papers were accepted to NeurIPS2025, Congrats to All !</li>
     <li><strong>2025.08.01</strong>: I have joined Tencent CSIG as a research intern @ Tencent Jarvis Research Center. </li>
     <li><strong>2025.06.26</strong>: 1 paper was accepted to ICCV2025 (Corresponding Author).</li>
     <li><strong>2025.06.18</strong>: I have graduated from USTC CS, and received the Outstanding Graduation Thesis award, which was given to only 3 people in my graduating class.</li>
