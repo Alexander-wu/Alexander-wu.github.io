@@ -8,7 +8,7 @@
 # Site Settings
 title                    : "about me @ THU"
 description              : "坚刚不可夺其志 "
-repository               : "easylearningscores/easylearningscores.github.io"
+repository               : "https://alexander-wu.github.io/"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "easylearningscores"
+  github           : "Alexander-wu"
   google_plus      :
   keybase          :
   instagram        :
