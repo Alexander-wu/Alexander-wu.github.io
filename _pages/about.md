@@ -145,7 +145,22 @@ I have had the privilege of working closely with several esteemed experts, inclu
 
 ## Preprints
 ---
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><img src='../images/DINO.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
+[Differential-Integral Neural Operator for Long-Term Turbulence Forecasting](https://arxiv.org/abs/2509.21196)
+
+
+Hao Wu , Yuan Gao, Fan Xu, Fan Zhang, Qingsong Wen, Kun Wang, Xiaomeng Huang, Xian Wu
+
+*Arxiv, 2025*  
+
+
+<a href="https://arxiv.org/abs/2509.21196" target="_blank">Paper</a> | <a href="https://github.com/Alexander-wu/DINO" target="_blank">Code</a>
+
+
+</div>
+</div>
 
 
 
