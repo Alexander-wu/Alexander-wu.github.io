@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "about me @ THU"
-description              : "坚刚不可夺其志 "
+title                    : "about me"
+description              : "流水不争先，争的是滔滔不绝 "
 repository               : "https://alexander-wu.github.io/"
 google_scholar_stats_use_cdn : true
 
