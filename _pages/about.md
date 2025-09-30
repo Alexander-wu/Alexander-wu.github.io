@@ -18,14 +18,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am Hao Wu, graduated from the Department of Computer Science at the [USTC](https://www.ustc.edu.cn/). During my Master's studies at USTC, I was also a joint training student in the large model training group of the Machine Learning Platform Department at [Tencent](https://www.tencent.com/en-us/). My research interests are as follows:
-
+I am Hao Wu, graduated from the Department of Computer Science at the [USTC](https://www.ustc.edu.cn/), I was also a joint training student in the large model training group of the Machine Learning Platform Department at [Tencent](https://www.tencent.com/en-us/). My research interests are as follows:
 
 * **Scientific Machine Learning**: The ultimate goal of Scientific Machine Learning (SciML) is to accelerate scientific discovery and address complex scientific and engineering challenges by fusing domain knowledge with machine learning. It aims to develop more accurate, efficient, and interpretable predictive models, thereby deepening our understanding of the world and driving innovation.
 
 * **World Models**: The ultimate goal of Vision-Language Models (VLMs) for Robotics is to enable robots to deeply understand and interact with the world by grounding language in visual perception for intelligent action. It aims to build more versatile, collaborative, and general-purpose robots capable of understanding nuanced human instructions and performing complex tasks in real-world environments.
-
-I have had the privilege of working closely with several esteemed experts, including [Dr. Kun Wang](https://scholar.google.com/citations?user=UnyqjWQAAAAJ&hl=en), [Prof. Qingsong Wen](https://sites.google.com/site/qingsongwen8/), [Prof. Yuxuan Liang](https://yuxuanliang.com/), [Dr. Xiao Luo](https://scholar.google.com.hk/citations?user=yJgX8agAAAAJ&hl=zh-CN), [Prof. Yu Zheng](https://scholar.google.com/citations?user=juUcdgYAAAAJ&hl=en), [Dr. Chuhan Wu](https://scholar.google.com/citations?user=OG1cMswAAAAJ&hl=zh-CN) and [Dr. Xingjian Shi](https://sxjscience.github.io/).
 
 <span style="color:red;">So, Please feel free to contact me for communication and collaboration.</span>
 
