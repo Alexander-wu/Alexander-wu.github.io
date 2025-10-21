@@ -24,7 +24,6 @@ I am Hao Wu, graduated from the Department of Computer Science at the [USTC](htt
 
 * **World Models**: The ultimate goal of Vision-Language Models (VLMs) for Robotics is to enable robots to deeply understand and interact with the world by grounding language in visual perception for intelligent action. It aims to build more versatile, collaborative, and general-purpose robots capable of understanding nuanced human instructions and performing complex tasks in real-world environments.
 
-<span style="color:red;">I am seeking for 26 Fall or 27 Spring CS Phd.</span>
 
 **Email**: <u>wuhao2022@mail.ustc.edu.cn</u> or <u>wu-h25@mails.tsinghua.edu.cn</u> &nbsp; &nbsp;  **Wechat**: How_Alexander_Wu
 
