@@ -146,8 +146,7 @@ redirect_from:
 ## Selected Publications
 
 ---
-</div>
-</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='../images/fig_main.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
