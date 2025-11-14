@@ -18,7 +18,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-<font color="red">I am about to return to the Department of Computer Science to pursue a Ph.D. in computer science.</font>
+<font color="red">I am about (in year 2026) to return to the Department of Computer Science to pursue a Ph.D. in computer science.</font>
 
 ~~I am Hao Wu, graduated from the Department of Computer Science at the [USTC](https://www.ustc.edu.cn/), I was also a joint training student in the large model training group of the Machine Learning Platform Department at [Tencent](https://www.tencent.com/en-us/). My research interests are as follows:~~
 
