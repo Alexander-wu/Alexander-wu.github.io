@@ -20,12 +20,16 @@ redirect_from:
 
 <font color="red">I am about (in year 2026) to return to the Department of Computer Science to pursue a Ph.D. in computer science.</font>
 
-~~I am Hao Wu, graduated from the Department of Computer Science at the [USTC](https://www.ustc.edu.cn/), I was also a joint training student in the large model training group of the Machine Learning Platform Department at [Tencent](https://www.tencent.com/en-us/). My research interests are as follows:~~
 
-* **Scientific Machine Learning**: The ultimate goal of Scientific Machine Learning (SciML) is to accelerate scientific discovery and address complex scientific and engineering challenges by fusing domain knowledge with machine learning. It aims to develop more accurate, efficient, and interpretable predictive models, thereby deepening our understanding of the world and driving innovation.
+My research journey begins between 2019 and 2022, with a commitment to exploring the deep understanding of natural language. I delve into the evolution from LSTMs to the self-attention mechanism, focusing on the unique challenges of Chinese semantic parsing. During this period, I design and implement [SLFNet](https://arxiv.org/abs/2403.19936), an innovative framework aimed at accurately translating natural language into logical forms. However, the advent of ChatGPT in 2022 completely reshapes the technological paradigm of the NLP field. This disruptive change prompts me to reflect deeply and courageously decide to explore a new and more challenging field.
 
-* **World Models**: The ultimate goal of Vision-Language Models (VLMs) for Robotics is to enable robots to deeply understand and interact with the world by grounding language in visual perception for intelligent action. It aims to build more versatile, collaborative, and general-purpose robots capable of understanding nuanced human instructions and performing complex tasks in real-world environments.
+In 2023, I pivot to video prediction and begin a two-year internship (2023-2025) with the [Tencent Hunyuan Large Model team](https://github.com/easylearningscores/Alexander-wu.github.io/blob/main/images/shixi.pdf). This valuable experience not only allows me to systematically master core models such as ConvLSTM and SimVP but, more importantly, it teaches me how to deeply understand and generate dynamic data from both temporal and spatial dimensions. I am honored to work alongside top researchers in the industry (such as [Xingjian Shi](https://scholar.google.com/citations?user=P4G6H7oAAAAJ&hl=en), [Yuxuan Liang](https://yuxuanliang.com/), [Fan Xu](https://scholar.google.com/citations?hl=en&user=qfMSkBgAAAAJ&view_op=list_works&sortby=pubdate), etc.), and our close collaboration leads to a "blowout period" of academic achievements: as a core author, I publish nearly 20 papers in top conferences such as ICML, ICLR, and NeurIPS. This gives me the freedom and confidence to pursue higher academic goals.
 
+By the end of 2024, I transition the experience accumulated in the deep learning field toward a direction with more fundamental scientific value: using artificial intelligence to accelerate the solving of partial differential equations (PDEs). To overcome the bottleneck of computational efficiency, I propose the [NMO](https://dl.acm.org/doi/abs/10.1145/3637528.3671779) method, which skillfully utilizes manifold learning to optimize the performance of neural networks and explores distillation techniques to achieve faster inference. My ultimate goal is to apply this technology to solve real-world challenges.
+
+Entering 2025, I focus my research on the application of large-scale PDE solving in Earth sciences, particularly in weather and climate modeling. After accumulating experience and through unremitting efforts, including pre-training and fine-tuning on hundreds of cards, I, in collaboration with [Yuan Gao](https://yuangao-yg.github.io/), successfully develop [TritonCast](https://arxiv.org/abs/2505.19432), an advanced AI model for long-term Earth system prediction.
+
+Next, in 2026, I will return to the computer science department to continue my doctoral studies, with my research direction focusing on video generation, and the post-training and application of LLM/Agent/VLM.
 
 **Email**: <u>wuhao2022@mail.ustc.edu.cn</u>  &nbsp; &nbsp;  **Wechat**: How_Alexander_Wu
 
@@ -78,7 +82,7 @@ redirect_from:
   <ul style="list-style-type: disc; padding-left: 20px;">
     <li style="list-style-type: none;">Machine Learning Platform Department, Large model training group, Tencent</li>
     <li style="list-style-type: none;"><em>2023.08 - 2025.07</em>, <strong>Research intern</strong></li>
-    <li style="list-style-type: none;">Mentored by <a href="https://github.com/easylearningscores/easylearningscores.github.io/blob/main/images/shixi.pdf">Jinbao Xue</a></li>
+    <li style="list-style-type: none;">Mentored by <a href="https://github.com/easylearningscores/Alexander-wu.github.io/blob/main/images/shixi.pdf">Jinbao Xue</a></li>
   </ul>
 </div>
 
