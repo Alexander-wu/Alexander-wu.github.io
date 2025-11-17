@@ -1,4 +1,3 @@
-<div style="font-family: 'Times New Roman', Times, serif;">
 ---
 permalink: /
 title: ""
@@ -41,6 +40,7 @@ Next, in 2026, I will return to the department of computer science to continue m
   }
 </style>
 
+
 <div class="scrollable">
   <ul>
     <li><strong>2025.11.08</strong>: 2 papers were accepted to AAAI2026, Main Track, Congrats to All !</li>
@@ -64,6 +64,7 @@ Next, in 2026, I will return to the department of computer science to continue m
 </div>
 
 
+
 #  📖 Research Experience
 
 <div style="display: flex; align-items: center;">
@@ -74,6 +75,7 @@ Next, in 2026, I will return to the department of computer science to continue m
     <li style="list-style-type: none;">Mentored by <a href="https://scholar.google.com/citations?user=lslB5jkAAAAJ&hl=zh-CN">Xian Wu</a></li>
   </ul>
 </div>
+
 
 
 <div style="display: flex; align-items: center;">
@@ -87,6 +89,7 @@ Next, in 2026, I will return to the department of computer science to continue m
 
 
 
+
 <div style="display: flex; align-items: center;">
   <img src="../images/hkust.png" alt="" style="width: 90px; margin-right: 50px; margin-left: 20px;"/>
   <ul style="list-style-type: disc; padding-left: 20px;">
@@ -96,12 +99,14 @@ Next, in 2026, I will return to the department of computer science to continue m
   </ul>
 </div>
 
+
 # 📝 Publications 
+
 #### Scientific Machine Learning
 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``ICML2025``</span> [OneForecast: A Universal Framework for Global and Regional Weather Forecasting](https://arxiv.org/abs/2502.00338). Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qingsong Wen, Xuming Hu, Kun Wang, Jiahao Wu, Li Qing, Hui Xiong, Xiaomeng Huang#. ICML, 2025.
+- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``ICML2025``</span> [OneForecast: A Universal Framework for Global and Regional Weather Forecasting]([https://arxiv.org/abs/2502.00338](https://arxiv.org/abs/2502.00338)). Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qingsong Wen, Xuming Hu, Kun Wang, Jiahao Wu, Li Qing, Hui Xiong, Xiaomeng Huang#. ICML, 2025.
 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``NeurIPS2024``</span> [PURE: Prompt Evolution with Graph ODE for Out-of-distribution Fluid Dynamics Modeling](https://openreview.net/forum?id=z86knmjoUq&referrer=%5Bthe%20profile%20of%20Hao%20Wu%5D(%2Fprofile%3Fid%3D~Hao_Wu39)). **Hao Wu**, Changhu Wang, Fan Xu, Jinbao Xue, Chong Chen, Xian-Sheng Hua, Xiao Luo#. NeurIPS, 2024.
+- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``NeurIPS2024``</span> [PURE: Prompt Evolution with Graph ODE for Out-of-distribution Fluid Dynamics Modeling]([https://openreview.net/forum?id=JsPvL6ExK8&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICML.cc%2F2024%2FConference%2FAuthors%23your-submissions](https://openreview.net/forum?id=z86knmjoUq&referrer=%5Bthe%20profile%20of%20Hao%20Wu%5D(%2Fprofile%3Fid%3D~Hao_Wu39)))). **Hao Wu**, Changhu Wang, Fan Xu, Jinbao Xue, Chong Chen, Xian-Sheng Hua, Xiao Luo#. NeurIPS, 2024.
 
 - <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``ICML2024``</span> [Prometheus: Out-of-distribution Fluid Dynamics Modeling with Disentangled Graph ODE](https://openreview.net/forum?id=JsPvL6ExK8&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICML.cc%2F2024%2FConference%2FAuthors%23your-submissions)). **Hao Wu**, Huiyuan Wang, Kun Wang, Weiyan Wang, ChanganYe, Yangyu Tao, Chong Chen, Xian-Sheng Hua, Xiao Luo#. ICML, 2024.
 
@@ -110,8 +115,10 @@ Next, in 2026, I will return to the department of computer science to continue m
 
 
 #### Spatio-temporal Prediction
+
 - <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``ICCV2025``</span> [Frequency-Aligned Knowledge Distillation for Lightweight Spatiotemporal Forecasting
-](https://openreview.net/forum?id=sKEFrZ0wCj#discussion). Yuqi Li, Chuanguang Yang, Hansheng Zeng, Zeyu Dong, Zhulin An, Yongjun Xu, Yingli Tian, **Hao Wu#**. ICCV, 2025.
+  
+  ](https://openreview.net/forum?id=sKEFrZ0wCj#discussion). Yuqi Li, Chuanguang Yang, Hansheng Zeng, Zeyu Dong, Zhulin An, Yongjun Xu, Yingli Tian, **Hao Wu#**. ICCV, 2025.
 
 - <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``KDD2025``</span> [DynST: Dynamic Sparse Training for Resource-Constrained Spatio-Temporal Forecasting](https://openreview.net/forum?id=sKEFrZ0wCj#discussion). **Hao Wu**, Haomin Wen, Guibin Zhang, Yutong Xia, Yuxuan Liang, Yu Zheng, Qingsong Wen, Kun Wang#. KDD, 2025.
 
@@ -131,7 +138,6 @@ Next, in 2026, I will return to the department of computer science to continue m
 
 - <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``Arxiv``</span> [Turb-L1: Achieving Long-term Turbulence Tracing By Tackling Spectral Bias](https://arxiv.org/abs/2505.19038). Hao Wu, Yuan Gao, Ruiqi Shu, Zean Han, Fan Xu, Zhihong Zhu, Qingsong Wen, Xian Wu, Kun Wang*, Xiaomeng Huang*.
 
-  
 - <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``KDD2024``</span> [Neural Manifold Operators for Learning the Evolution of Physical Dynamics](https://openreview.net/pdf?id=r7n0Q4P66V). **Hao Wu**, Kangyu Weng, Shuyi Zhou, Xiaomeng Huang#, Wei Xiong#. KDD, 2024.
 
 
@@ -154,6 +160,7 @@ Next, in 2026, I will return to the department of computer science to continue m
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='../images/fig_main.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
+
 [NeuralOM: Neural Ocean Model for Subseasonal-to-Seasonal Simulation](https://arxiv.org/abs/2505.21020)
 
 Yuan Gao<sup>†</sup>, **Hao Wu**<sup>†</sup> <sup>‡ </sup>, Fan Xu, Yanfei Xiang, Ruijian Gou,  Ruiqi Shu, Qingsong Wen, Xian Wu, Kun Wang<sup>*</sup>, Xiaomeng Huang<sup>*</sup>
@@ -171,6 +178,7 @@ Yuan Gao<sup>†</sup>, **Hao Wu**<sup>†</sup> <sup>‡ </sup>, Fan Xu, Yanfei
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='../images/iccv2025.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
+
 [Frequency-Aligned Knowledge Distillation for Lightweight Spatiotemporal Forecasting](https://openreview.net/group?id=thecvf.com/ICCV/2025/Conference/Authors&referrer=%5BHomepage%5D(%2F))
 
 
@@ -187,6 +195,7 @@ Yuqi Li, Chuanguang Yang, Hansheng Zeng, Zeyu Dong, Zhulin An, Yongjun Xu, Yingl
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025</div><img src='../images/one.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
+
 
 [OneForecast: A Universal Framework for Global and Regional Weather Forecasting](https://openreview.net/forum?id=A23C57icJt&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2025%2FConference%2FAuthors%23your-submissions))
 
@@ -207,6 +216,7 @@ Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qing
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='../images/openck.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
+
 [Open-CK: A Large Multi-Physics Fields Coupling benchmarks in Combustion Kinetics](https://openreview.net/forum?id=A23C57icJt)
 
 
@@ -225,6 +235,7 @@ Zaige Fei, Fan Xu, Junyuan Mao, Yuxuan Liang, Qingsong Wen, Kun Wang, **Hao Wu#*
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD 2025</div><img src='../images/DnyST.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
+
 [DynST: Dynamic Sparse Training for Resource-Constrained Spatio-Temporal Forecasting](https://arxiv.org/abs/2403.02914)
 
 
@@ -241,6 +252,7 @@ Zaige Fei, Fan Xu, Junyuan Mao, Yuxuan Liang, Qingsong Wen, Kun Wang, **Hao Wu#*
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD 2024</div><img src='../images/NMO_main.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
+
 
 [Neural Manifold Operators for Learning the Evolution of Physical Dynamics](https://dl.acm.org/doi/abs/10.1145/3637528.3671779)
 
@@ -259,13 +271,14 @@ Zaige Fei, Fan Xu, Junyuan Mao, Yuxuan Liang, Qingsong Wen, Kun Wang, **Hao Wu#*
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2024</div><img src='../images/Prometheus.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
+
 [Prometheus: Out-of-distribution Fluid Dynamics Modeling with Disentangled Graph ODE](https://openreview.net/forum?id=JsPvL6ExK8&referrer=%5Bthe%20profile%20of%20Hao%20Wu%5D(%2Fprofile%3Fid%3D~Hao_Wu39))
 
 
 **Hao Wu**,  Huiyuan Wang, Kun Wang, Weiyan Wang, ChanganYe, Yangyu Tao, Chong Chen, Xian-Sheng Hua, Xiao Luo
 
 <span style="color:red;">*(ICML2024, CCF Rank A)*</span>  
- 
+
 <a href="https://proceedings.mlr.press/v235/wu24aa.html" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores/DGODE_ood" target="_blank">Code</a> | <a href="https://huggingface.co/datasets/easylearning/Prometheus/tree/main" target="_blank">Benchmark</a>
 
 
@@ -276,6 +289,7 @@ Zaige Fei, Fan Xu, Junyuan Mao, Yuxuan Liang, Qingsong Wen, Kun Wang, **Hao Wu#*
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACMMM  2024</div><img src='../images/pastnet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
+
 
 [PastNet: Introducing Physical Inductive Biases for Spatio-temporal Video Prediction](https://openreview.net/forum?id=mL0KvSwXzk&referrer=%5Bthe%20profile%20of%20Xian-Sheng%20Hua%5D(%2Fprofile%3Fid%3D~Xian-Sheng_Hua1))
 
@@ -295,6 +309,7 @@ Zaige Fei, Fan Xu, Junyuan Mao, Yuxuan Liang, Qingsong Wen, Kun Wang, **Hao Wu#*
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2024</div><img src='../images/Earthfarseer.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
+
 
 [Earthfarsser: Versatile Spatio-Temporal Dynamical Systems Modeling in One Model](https://ojs.aaai.org/index.php/AAAI/article/view/29521)
 
@@ -316,6 +331,7 @@ Zaige Fei, Fan Xu, Junyuan Mao, Yuxuan Liang, Qingsong Wen, Kun Wang, **Hao Wu#*
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='../images/pure.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
+
 [PURE: Prompt Evolution with Graph ODE for Out-of-distribution Fluid Dynamics Modeling](https://easylearningscores.github.io/)
 
 
@@ -334,6 +350,7 @@ Zaige Fei, Fan Xu, Junyuan Mao, Yuxuan Liang, Qingsong Wen, Kun Wang, **Hao Wu#*
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2024</div><img src='../images/nuwa.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
+
 [NuwaDynamics: Discovering and Updating in Causal Spatio-Temporal Modeling](https://easylearningscores.github.io/)
 
 **Kun Wang**, **Hao Wu**, Yifan Duan, Guibin Zhang, Kai Wang, Xiaojiang Peng, Yu Zheng, Yuxuan Liang, Yang Wang
@@ -345,6 +362,7 @@ Zaige Fei, Fan Xu, Junyuan Mao, Yuxuan Liang, Qingsong Wen, Kun Wang, **Hao Wu#*
 
 
 </div>
+
 </div>
 ---
 
@@ -375,9 +393,3 @@ Zaige Fei, Fan Xu, Junyuan Mao, Yuxuan Liang, Qingsong Wen, Kun Wang, **Hao Wu#*
 
 - 🏀 I am a big fan of basketball, i love Kobe Bryant and i like Fadeaway Shot. I also like Curry.
 - 👑 I am very interested in history.
-
-<div style="width: 200px; height: 200px;">
-    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=hivJ3nYFAlIUly-VIveCQXOLkcQRWlgrfu6llYfxHoU"></script>
-</div>
-
-</div>
