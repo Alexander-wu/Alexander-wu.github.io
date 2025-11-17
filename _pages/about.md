@@ -18,9 +18,6 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-<font color="red">I am about (in year 2026) to return to the Department of Computer Science to pursue a Ph.D. in computer science.</font>
-
-
 My research journey begins between 2019 and 2022, with a commitment to exploring the deep understanding of natural language. I delve into the evolution from LSTMs to the self-attention mechanism, focusing on the unique challenges of Chinese semantic parsing. During this period, I design and implement [SLFNet](https://arxiv.org/abs/2403.19936), an innovative framework aimed at accurately translating natural language into logical forms. However, the advent of ChatGPT in 2022 completely reshapes the technological paradigm of the NLP field. This disruptive change prompts me to reflect deeply and courageously decide to explore a new and more challenging field.
 
 In 2023, I pivot to video prediction and begin a two-year internship (2023-2025) with the [Tencent Hunyuan Large Model team](https://github.com/easylearningscores/Alexander-wu.github.io/blob/main/images/shixi.pdf). This valuable experience not only allows me to systematically master core models such as ConvLSTM and SimVP but, more importantly, it teaches me how to deeply understand and generate dynamic data from both temporal and spatial dimensions. I am honored to work alongside top researchers in the industry (such as [Xingjian Shi](https://scholar.google.com/citations?user=P4G6H7oAAAAJ&hl=en), [Yuxuan Liang](https://yuxuanliang.com/), [Fan Xu](https://scholar.google.com/citations?hl=en&user=qfMSkBgAAAAJ&view_op=list_works&sortby=pubdate), etc.), and our close collaboration leads to a "blowout period" of academic achievements: as a core author, I publish nearly 20 papers in top conferences such as ICML, ICLR, and NeurIPS. This gives me the freedom and confidence to pursue higher academic goals.
