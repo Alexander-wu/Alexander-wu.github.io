@@ -26,7 +26,7 @@ By the end of 2024, I transition the experience accumulated in the deep learning
 
 Entering 2025, I focus my research on the application of large-scale PDE solving in Earth sciences, particularly in weather and climate modeling. After accumulating experience and through unremitting efforts, including pre-training and fine-tuning on hundreds of cards, I, in collaboration with [Yuan Gao](https://yuangao-yg.github.io/), successfully develop [TritonCast](https://arxiv.org/abs/2505.19432), an advanced AI model for long-term Earth system prediction.
 
-Next, in 2026, I will return to the computer science department to continue my doctoral studies, with my research direction focusing on video generation, and the post-training and application of LLM/Agent/VLM.
+Next, in 2026, I will return to the department of computer science to continue my Phd studies, with my research direction focusing on video generation, and the post-training and application of LLM/Agent/VLM.
 
 **Email**: <u>wuhao2022@mail.ustc.edu.cn</u>  &nbsp; &nbsp;  **Wechat**: How_Alexander_Wu
 
