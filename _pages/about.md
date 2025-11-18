@@ -25,7 +25,7 @@ In 2023, I pivot to video prediction and begin a two-year internship (2023-2025)
 
 By the end of 2024, I transition the experience accumulated in the deep learning field toward a direction with more fundamental scientific value: using artificial intelligence to accelerate the solving of partial differential equations (PDEs). To overcome the bottleneck of computational efficiency, I propose the [NMO](https://dl.acm.org/doi/abs/10.1145/3637528.3671779) method, which skillfully utilizes manifold learning to optimize the performance of neural networks and explores distillation(@[ICCV2025](https://openaccess.thecvf.com/content/ICCV2025/html/Li_Frequency-Aligned_Knowledge_Distillation_for_Lightweight_Spatiotemporal_Forecasting_ICCV_2025_paper.html)) techniques to achieve faster inference. My ultimate goal is to apply this technology to solve real-world challenges.
 
-Entering 2025, I focus my research on the application of large-scale PDE solving in Earth sciences, particularly in weather and climate modeling. After accumulating experience and through unremitting efforts, including pre-training and fine-tuning on hundreds of Nvidia A100/A800 GPUs, I, in collaboration with [Yuan Gao](https://yuangao-yg.github.io/), successfully develop [TritonCast](https://arxiv.org/abs/2505.19432), an advanced AI model for long-term Earth system prediction.
+Entering 2025, I focus my research on the application of large-scale PDE solving in Earth sciences, particularly in weather and climate modeling. After accumulating experience and through unremitting efforts, including pre-training and fine-tuning on hundreds of Nvidia A100/A800 GPUs, I, in collaboration with [Yuan Gao](https://yuangao-yg.github.io/), successfully develop [TritonCast](https://arxiv.org/abs/2505.19432), an advanced AI model for long-term Earth system forecasting.
 
 Next, in 2026, I will return to the department of computer science to continue my Phd studies, with my research direction focusing on video generation, and the post-training and application of LLM/Agent/VLM.
 
@@ -116,9 +116,7 @@ Next, in 2026, I will return to the department of computer science to continue m
 
 #### Spatio-temporal Prediction
 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``ICCV2025``</span> [Frequency-Aligned Knowledge Distillation for Lightweight Spatiotemporal Forecasting
-  
-  ](https://openreview.net/forum?id=sKEFrZ0wCj#discussion). Yuqi Li, Chuanguang Yang, Hansheng Zeng, Zeyu Dong, Zhulin An, Yongjun Xu, Yingli Tian, **Hao Wu#**. ICCV, 2025.
+- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``ICCV2025``</span> [Frequency-Aligned Knowledge Distillation for Lightweight Spatiotemporal Forecasting](https://openreview.net/forum?id=sKEFrZ0wCj#discussion). Yuqi Li, Chuanguang Yang, Hansheng Zeng, Zeyu Dong, Zhulin An, Yongjun Xu, Yingli Tian, **Hao Wu#**. ICCV, 2025.
 
 - <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``KDD2025``</span> [DynST: Dynamic Sparse Training for Resource-Constrained Spatio-Temporal Forecasting](https://openreview.net/forum?id=sKEFrZ0wCj#discussion). **Hao Wu**, Haomin Wen, Guibin Zhang, Yutong Xia, Yuxuan Liang, Yu Zheng, Qingsong Wen, Kun Wang#. KDD, 2025.
 
