@@ -275,8 +275,8 @@ layout: single
   
   <!-- 左侧：文字介绍 -->
   <div class="bio-text-col">
-    <div style="font-size: 32px; font-weight: bold; margin-bottom: 10px; color: #000;">Hao Wu</div>
-    <div style="font-size: 20px; color: #555; margin-bottom: 25px;">Ph.D. Student</div>
+    <div style="font-size: 32px; font-weight: bold; margin-bottom: 10px; color: #000;">Hao Wu (吴昊)</div>
+    <div style="font-size: 20px; color: #555; margin-bottom: 25px;">Ph.D. Student at Department. Computer Science (Incoming year-2026)</div>
     
     <div style="font-size: 18px; line-height: 1.7; text-align: justify; color: #222;">
       <p>
