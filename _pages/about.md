@@ -300,7 +300,8 @@ layout: single
   </div>
 
   <!-- 右侧：头像 -->
-  <div class="bio-photo-col">
+  <!-- 在这个 div 上加 style="flex: 0 0 200px;" 或者直接限制 img 的宽度 -->
+  <div class="bio-photo-col" style="flex: 0 0 200px !important;"> 
     <!-- 请替换下面的图片路径 -->
     <img src="../images/wuhaodemo" class="bio-photo" alt="Hao Wu">
   </div>
