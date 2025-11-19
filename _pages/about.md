@@ -302,7 +302,7 @@ layout: single
   <!-- 右侧：头像 -->
   <div class="bio-photo-col">
     <!-- 请替换下面的图片路径 -->
-    <img src="../images/your_avatar.jpg" class="bio-photo" alt="Hao Wu">
+    <img src="../images/wuhaodemo" class="bio-photo" alt="Hao Wu">
   </div>
 
 </div>
