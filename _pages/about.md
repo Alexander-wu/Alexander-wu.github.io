@@ -32,10 +32,10 @@ layout: single
 
   .page__inner-wrap {
     /* --- 修改开始：调整宽度和留白 --- */
-    max-width: 1100px !important; /* 原为1280px，缩小一点让大屏左右有留白 */
+    max-width: 960px !important; /* 从1100px改为960px，增加两边留白，使视觉更聚焦 */
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 40px; /* 原为20px，增加左右内边距(40px) */
+    padding: 20px 40px; 
     /* --- 修改结束 --- */
     float: none !important;
   }
