@@ -412,7 +412,7 @@ layout: single
   </div>
   <div class="pub-content-col">
     <div class="pub-title">
-      <a href="#">Frequency-Aligned Knowledge Distillation for Lightweight Spatiotemporal Forecasting</a>
+      <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Li_Frequency-Aligned_Knowledge_Distillation_for_Lightweight_Spatiotemporal_Forecasting_ICCV_2025_paper.html">Frequency-Aligned Knowledge Distillation for Lightweight Spatiotemporal Forecasting</a>
     </div>
     <div class="pub-authors">
       Yuqi Li, Chuanguang Yang, Hansheng Zeng, Zeyu Dong, Zhulin An, Yongjun Xu, Yingli Tian, <strong>Hao Wu#</strong>
