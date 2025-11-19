@@ -310,18 +310,14 @@ layout: single
     </div>
   </div>
   
-<!-- 右侧：头像 + 邮箱 -->
-  <div class="bio-photo-col" style="flex: 0 0 200px !important; text-align: center;"> 
-    <!-- 图片 -->
+  <!-- 右侧：头像 -->
+  <!-- 在这个 div 上加 style="flex: 0 0 200px;" 或者直接限制 img 的宽度 -->
+  <div class="bio-photo-col" style="flex: 0 0 200px !important;"> 
+    <!-- 请替换下面的图片路径 -->
     <img src="../images/wuhaodemo" class="bio-photo" alt="Hao Wu">
-    
-    <!-- 邮箱 -->
-    <div style="margin-top: 10px; font-size: 14px; line-height: 1.4; word-break: break-all;">
-      <a href="mailto:wuhao2022@mail.ustc.edu.cn" style="color: #333; text-decoration: none;">
-        wuhao2022@mail.ustc.edu.cn
-      </a>
-    </div>
   </div>
+
+</div>
 
 <!-- ================= NEWS SECTION ================= -->
 <h1 class="section-title" id='news'>🔥 News</h1>
