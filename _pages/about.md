@@ -324,16 +324,23 @@ layout: single
 <h1 class="section-title" id='news'>🔥 News</h1>
 <div class="news-scroll">
   <ul>
-    <li><strong>2025.11.08</strong>: 2 papers accepted to AAAI2026 Main Track.</li>
-    <li><strong>2025.09.18</strong>: 2 papers accepted to NeurIPS2025.</li>
-    <li><strong>2025.08.01</strong>: Joined Tencent CSIG (Jarvis Lab) as a research intern.</li>
-    <li><strong>2025.06.26</strong>: 1 paper accepted to ICCV2025 (Corresponding Author).</li>
-    <li><strong>2025.06.18</strong>: Graduated from USTC CS with Outstanding Graduation Thesis Award.</li>
-    <li><strong>2025.05.01</strong>: 1 paper accepted to ICML2025 (Co-First Author).</li>
-    <li><strong>2025.01.22</strong>: 1 paper accepted to ICLR2025 (Corresponding Author).</li>
-    <li><strong>2024.11.16</strong>: 1 paper accepted to KDD2025 ADS (First Author).</li>
-    <li><strong>2024.01.16</strong>: 1 paper accepted to ICLR2024 (<span style="color:#c62828">Spotlight</span>).</li>
-    <li><strong>2022.10.09</strong>: Received National Scholarship (Top 0.1%).</li>
+    <li><strong>2025.11.08</strong>: 2 papers were accepted to AAAI2026, Main Track.</li>
+    <li><strong>2025.09.18</strong>: 2 papers were accepted to NeurIPS2025.</li>
+    <li><strong>2025.08.01</strong>: I have joined Tencent CSIG as a research intern @ Tencent Jarvis Research Center.</li>
+    <li><strong>2025.06.26</strong>: 1 paper was accepted to ICCV2025 (Corresponding Author).</li>
+    <li><strong>2025.06.18</strong>: I have graduated from USTC CS, and received the Outstanding Graduation Thesis award.</li>
+    <li><strong>2025.05.01</strong>: 1 paper was accepted to ICML2025 (Co-First Author).</li>
+    <li><strong>2025.01.22</strong>: 1 paper was accepted to ICLR2025 (Corresponding Author).</li>
+    <li><strong>2024.11.16</strong>: 1 paper was accepted to KDD2025 ADS (First Author).</li>
+    <li><strong>2024.09.26</strong>: 3 papers were accepted to NeurIPS2024 (First Author and Two co-author).</li>
+    <li><strong>2024.07.16</strong>: 1 paper was accepted to ACM MM2024 (First Author).</li>
+    <li><strong>2024.05.17</strong>: 1 paper was accepted to KDD2024 (First Author).</li>
+    <li><strong>2024.05.01</strong>: 1 paper was accepted to ICML2024 (First Author).</li>
+    <li><strong>2024.02.21</strong>: 1 paper was accepted to TKDE2024 (Co-First Author).</li>
+    <li><strong>2024.01.16</strong>: 1 paper was accepted to ICLR2024 (<span style="color:#c62828">Spotlight</span>) (Co-First Author).</li>
+    <li><strong>2023.12.09</strong>: 1 paper was accepted to AAAI2024 (First Author).</li>
+    <li><strong>2023.09.22</strong>: 1 paper was accepted to NeurIPS2023 (Co-First Author).</li>
+    <li><strong>2022.10.09</strong>: National Scholarship, China, 2022 (top 0.1% nation-wide, From USTC).</li>
   </ul>
 </div>
 
