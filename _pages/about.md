@@ -19,58 +19,92 @@ redirect_from:
 
 <!-- ================= GLOBAL STYLES ================= -->
 <style>
-  /* 1. 字体回归：新罗马字体 (Classic Academic Look) */
-  body, h1, h2, h3, h4, h5, h6, p, div, span, li, a, button {
+  /* 1. 页面宽度调整：强制变宽 */
+  /* 针对常见的 Jekyll 主题 (Minimal Mistakes) 进行宽度覆盖 */
+  .page__inner-wrap {
+    max-width: 1280px !important; /* 加宽主内容区域 */
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  .archive {
+    width: 100% !important;
+    max-width: 1280px !important;
+  }
+
+  /* 2. 全局字体：Times New Roman */
+  body, h1, h2, h3, h4, h5, h6, p, div, span, li, a, button, strong {
     font-family: 'Times New Roman', Times, serif !important;
     color: #222;
   }
 
-  /* 链接颜色：深学术蓝 */
+  /* 链接颜色 */
   a { color: #003366; text-decoration: none; transition: all 0.2s; }
   a:hover { color: #0056b3; text-decoration: underline; }
 
-  /* 容器通用样式 */
+  /* 容器卡片 */
   .container-box {
     background: #fff;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 6px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
     border: 1px solid #eee;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
   }
 
-  /* 头部按钮网格 */
+  /* --- 顶部 BIO 布局 (左文右图) --- */
+  .bio-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* 文字和图片之间的间距 */
+    margin-bottom: 40px;
+    align-items: flex-start;
+  }
+
+  .bio-text-col {
+    flex: 1; /* 占据剩余空间 */
+  }
+
+  .bio-photo-col {
+    flex: 0 0 280px; /* 固定图片容器宽度 */
+  }
+
+  .bio-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+
+  /* 头部按钮网格 (现在放在自我介绍下方) */
   .link-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 12px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
   }
   
   .link-btn {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    padding: 8px 15px;
-    background-color: #fcfcfc;
+    padding: 6px 12px;
+    background-color: #f4f4f4;
     border: 1px solid #ccc;
     border-radius: 4px;
     color: #333 !important;
-    font-size: 16px; /* Serif 字体通常需要稍微大一点 */
+    font-size: 15px;
     font-weight: bold;
-    transition: all 0.2s ease;
   }
-  
   .link-btn:hover {
-    background-color: #f0f0f0;
+    background-color: #e0e0e0;
     border-color: #003366;
     color: #003366 !important;
-    transform: translateY(-2px);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   }
 
-  /* Experience 列表项 */
+  /* Experience 列表 */
   .exp-item {
     display: flex;
     align-items: flex-start;
@@ -81,52 +115,52 @@ redirect_from:
   .exp-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
   
   .exp-logo {
-    width: 60px; 
-    height: 60px; 
-    margin-right: 20px;
+    width: 65px; 
+    height: 65px; 
+    margin-right: 25px;
     object-fit: contain;
     border-radius: 4px;
     border: 1px solid #ddd;
-    padding: 3px;
+    padding: 4px;
     background: #fff;
   }
   
   .exp-content { flex: 1; }
-  .exp-title { font-weight: bold; font-size: 18px; color: #000; margin-bottom: 5px; }
-  .exp-subtitle { font-size: 16px; color: #444; margin-bottom: 5px; font-style: italic; }
-  .exp-date { font-size: 15px; color: #666; }
+  .exp-title { font-weight: bold; font-size: 19px; color: #000; margin-bottom: 6px; }
+  .exp-subtitle { font-size: 17px; color: #444; margin-bottom: 6px; font-style: italic; }
+  .exp-date { font-size: 16px; color: #666; }
 
   /* News 滚动区域 */
   .news-scroll {
-    max-height: 260px;
+    max-height: 300px;
     overflow-y: auto;
-    background-color: #fcfcfc;
-    padding: 15px 20px;
-    border-radius: 6px;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
     border: 1px solid #ddd;
   }
   .news-scroll ul { padding-left: 20px; margin: 0; }
-  .news-scroll li { margin-bottom: 10px; font-size: 16px; line-height: 1.5; }
+  .news-scroll li { margin-bottom: 12px; font-size: 17px; line-height: 1.5; }
 
-  /* --- SELECTED PUBLICATIONS (核心卡片样式) --- */
+  /* --- SELECTED PUBLICATIONS (11篇全) --- */
   .pub-card {
     display: flex;
     flex-wrap: wrap;
     background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    margin-bottom: 30px; /* 增加间距 */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 25px;
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
   }
   .pub-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
-    border-color: #bbb;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    border-color: #aaa;
   }
 
   .pub-img-col {
-    flex: 0 0 300px; /* 图片宽度 */
+    flex: 0 0 320px; /* 图片宽度略微加大 */
     position: relative;
     background: #f9f9f9;
     display: flex;
@@ -141,58 +175,56 @@ redirect_from:
     height: auto;
     display: block;
     border-radius: 2px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 
-  /* Badge 样式 - 调整为更适合 Times New Roman 的风格 */
+  /* Badge */
   .pub-badge {
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 0;
-    background: #003366; /* 经典的深蓝 */
+    background: #003366;
     color: white;
-    padding: 3px 10px;
+    padding: 4px 12px;
     font-size: 14px;
     font-weight: bold;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     z-index: 2;
     font-family: 'Times New Roman', serif;
-    letter-spacing: 0.5px;
   }
 
   .pub-content-col {
     flex: 1;
-    padding: 20px 25px;
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 300px;
+    min-width: 350px;
   }
 
   .pub-title {
-    font-size: 20px; /* 标题加大 */
+    font-size: 22px;
     font-weight: bold;
     margin-bottom: 12px;
     line-height: 1.3;
     color: #111;
   }
   .pub-title a { color: #111; }
-  .pub-title a:hover { color: #003366; text-decoration: underline; }
+  .pub-title a:hover { color: #003366; }
 
   .pub-authors {
-    font-size: 16px;
+    font-size: 17px;
     color: #333;
     margin-bottom: 12px;
     line-height: 1.5;
   }
-  .pub-authors strong { color: #000; text-decoration: underline; } /* 高亮自己 */
+  .pub-authors strong { color: #000; text-decoration: underline; }
 
   .pub-venue {
-    font-size: 15px;
+    font-size: 16px;
     font-style: italic;
-    color: #c62828; /* 红色高亮期刊/会议 */
+    color: #c62828;
     margin-bottom: 15px;
     font-weight: bold;
   }
@@ -201,61 +233,69 @@ redirect_from:
     display: inline-block;
     font-size: 15px;
     font-weight: bold;
-    margin-right: 18px;
+    margin-right: 20px;
     color: #003366;
-    text-transform: uppercase; /* 大写增加正式感 */
+    text-transform: uppercase;
   }
-  .pub-links img { vertical-align: middle; margin-left: 5px; }
-
+  
   /* 标题样式 */
   h1.section-title {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
     border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
-    margin-top: 50px;
+    padding-bottom: 12px;
+    margin-top: 60px;
     margin-bottom: 30px;
     color: #111;
   }
-  
+
   /* 移动端适配 */
-  @media (max-width: 768px) {
-    .pub-img-col { flex: 0 0 100%; border-right: none; border-bottom: 1px solid #eee; padding: 0; }
-    .pub-img { width: 100%; border-radius: 0; box-shadow: none; }
+  @media (max-width: 850px) {
+    .bio-container { flex-direction: column-reverse; gap: 20px; }
+    .bio-photo-col { flex: 0 0 auto; width: 100%; max-width: 250px; margin: 0 auto; }
+    .pub-img-col { flex: 0 0 100%; border-right: none; border-bottom: 1px solid #eee; }
     .pub-card { flex-direction: column; }
-    .link-grid { grid-template-columns: repeat(2, 1fr); }
   }
 </style>
 
 
-<!-- ================= BIO SECTION ================= -->
-<div style="font-size: 17px; line-height: 1.6; text-align: justify; margin-bottom: 25px; color: #222;">
-  <p>
-    <strong>Hi, I am Hao Wu.</strong> My research journey begins between 2019 and 2022, focusing on Chinese semantic parsing. During this period, I designed <a href="https://arxiv.org/abs/2403.19936">SLFNet</a> for translating natural language into logical forms. The advent of ChatGPT in 2022 prompted me to explore more challenging fields.
-  </p>
-  <p>
-    In 2023, I pivoted to video prediction, interning at the <a href="#">Tencent Hunyuan Large Model team</a> (2023-2025). I mastered models like ConvLSTM/SimVP and published nearly 30 papers in <strong>ICML, ICLR, and NeurIPS</strong> with top researchers.
-  </p>
-  <p>
-    Currently, I focus on <strong>AI for Earth Sciences (AI4Science)</strong>. I proposed the <a href="#">NMO</a> method and explored distillation techniques (ICCV2025). Recently, I co-developed <a href="https://arxiv.org/abs/2505.19432">TritonCast</a>, an advanced AI model for Earth system forecasting. In 2026, I will continue my Ph.D. studies focusing on video generation and LLM/Agent applications.
-  </p>
+<!-- ================= BIO SECTION (LEFT TEXT, RIGHT IMAGE) ================= -->
+<div class="bio-container">
+  
+  <!-- 左侧：文字介绍 + 按钮链接 -->
+  <div class="bio-text-col">
+    <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">Hao Wu (吴浩)</div>
+    <div style="font-size: 18px; color: #555; margin-bottom: 20px;">Ph.D. Student at USTC (Incoming 2026)</div>
+    
+    <div style="font-size: 18px; line-height: 1.7; text-align: justify; color: #222;">
+      <p>
+        My research journey begins between 2019 and 2022, focusing on Chinese semantic parsing. During this period, I designed <a href="https://arxiv.org/abs/2403.19936">SLFNet</a> for translating natural language into logical forms. The advent of ChatGPT in 2022 prompted me to explore more challenging fields.
+      </p>
+      <p>
+        In 2023, I pivoted to video prediction, interning at the <a href="#">Tencent Hunyuan Large Model team</a> (2023-2025). I mastered models like ConvLSTM/SimVP and published nearly 30 papers in <strong>ICML, ICLR, and NeurIPS</strong> with top researchers.
+      </p>
+      <p>
+        Currently, I focus on <strong>AI for Earth Sciences (AI4Science)</strong>. I proposed the <a href="#">NMO</a> method and explored distillation techniques (ICCV2025). Recently, I co-developed <a href="https://arxiv.org/abs/2505.19432">TritonCast</a>, an advanced AI model for Earth system forecasting.
+      </p>
+    </div>
+
+    <!-- 链接按钮组 -->
+    <div class="link-grid">
+      <a href="mailto:wuhao2022@mail.ustc.edu.cn" class="link-btn">✉️ Email</a>
+      <a href="YOUR_GOOGLE_SCHOLAR_LINK" class="link-btn">🎓 Google Scholar</a>
+      <a href="YOUR_GITHUB_LINK" class="link-btn">🐙 GitHub</a>
+      <a href="YOUR_SEMANTIC_SCHOLAR_LINK" class="link-btn">📚 Semantic Scholar</a>
+    </div>
+  </div>
+
+  <!-- 右侧：头像 (请替换 src) -->
+  <div class="bio-photo-col">
+    <!-- 请务必将下方的 src 替换为您真实的图片路径 -->
+    <img src="../images/wuhaodemo" class="bio-photo" alt="Hao Wu">
+  </div>
+
 </div>
 
-<!-- ================= BUTTON GRID ================= -->
-<div class="link-grid">
-  <a href="mailto:wuhao2022@mail.ustc.edu.cn" class="link-btn">
-    ✉️ Email
-  </a>
-  <a href="YOUR_GOOGLE_SCHOLAR_LINK" class="link-btn">
-    🎓 Google Scholar
-  </a>
-  <a href="YOUR_GITHUB_LINK" class="link-btn">
-    🐙 GitHub
-  </a>
-  <a href="YOUR_SEMANTIC_SCHOLAR_LINK" class="link-btn">
-    📚 Semantic Scholar
-  </a>
-</div>
 
 <!-- ================= NEWS SECTION ================= -->
 <h1 class="section-title" id='news'>🔥 News</h1>
@@ -308,7 +348,7 @@ redirect_from:
 </div>
 
 
-<!-- ================= SELECTED PUBLICATIONS ================= -->
+<!-- ================= SELECTED PUBLICATIONS (11 Papers) ================= -->
 <h1 class="section-title">🌟 Selected Publications</h1>
 
 <!-- 1. NeuralOM -->
@@ -330,7 +370,7 @@ redirect_from:
     <div class="pub-links">
       <a href="https://arxiv.org/abs/2505.21020">Paper</a>
       <a href="https://github.com/YuanGao-YG/NeuralOM">Code</a>
-      <img src="https://img.shields.io/github/stars/YuanGao-YG/NeuralOM?label=Star&style=social">
+      <img src="https://img.shields.io/github/stars/YuanGao-YG/NeuralOM?label=Star&style=social" style="vertical-align:middle;">
     </div>
   </div>
 </div>
@@ -569,19 +609,19 @@ redirect_from:
 
 <!-- ================= MISC ================= -->
 <h1 class="section-title">💬 Invited Talks</h1>
-<ul style="line-height: 1.6; font-size: 16px;">
+<ul style="line-height: 1.6; font-size: 17px;">
   <li><em>2024.03</em>, Application and Research of GNN in Meteorological Prediction. @ Sun Yat-sen University</li>
   <li><em>2023.12</em>, Earthfarseer: versatile spatio-temporal dynamical systems modeling in one model. @ AI TIME </li>
 </ul>
 
 <h1 class="section-title">💻 Academic Service</h1>
-<div style="background: #fcfcfc; padding: 15px; border-radius: 6px; font-size: 16px; border: 1px solid #ddd; line-height: 1.6;">
+<div style="background: #fbfbfb; padding: 20px; border-radius: 6px; font-size: 17px; border: 1px solid #eee; line-height: 1.6;">
   <strong>Conference Reviewer / PC Member:</strong><br>
   NeurIPS (2023-2025), ICLR (2024-2025), ICML (2024-2025), CVPR (2025), ICCV (2025), AAAI (2025), ACM MM (2024-2025), AISTATS (2025).
 </div>
 
 <h1 class="section-title">👨🏻 Miscellaneous</h1>
-<ul style="line-height: 1.6; font-size: 16px;">
+<ul style="line-height: 1.6; font-size: 17px;">
   <li>🏀 Big fan of basketball. I love Kobe Bryant and his Fadeaway Shot. Also a fan of Stephen Curry.</li>
   <li>👑 Deeply interested in History.</li>
 </ul>
