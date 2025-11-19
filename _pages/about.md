@@ -31,10 +31,12 @@ layout: single
   }
 
   .page__inner-wrap {
-    max-width: 1280px !important;
+    /* --- 修改开始：调整宽度和留白 --- */
+    max-width: 1100px !important; /* 原为1280px，缩小一点让大屏左右有留白 */
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 20px 40px; /* 原为20px，增加左右内边距(40px) */
+    /* --- 修改结束 --- */
     float: none !important;
   }
 
