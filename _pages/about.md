@@ -19,148 +19,214 @@ redirect_from:
 
 <!-- ================= GLOBAL STYLES ================= -->
 <style>
-  /* 强制全局新罗马字体，提升学术感 */
+  /* 1. 字体升级：使用现代无衬线字体 (High-end Academic Look) */
   body, h1, h2, h3, h4, h5, h6, p, div, span, li, a, button {
-    font-family: 'Times New Roman', Times, serif !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    color: #24292e;
   }
 
-  /* 链接颜色：深学术蓝 */
-  a { color: #003366; text-decoration: none; }
-  a:hover { text-decoration: underline; }
+  /* 链接颜色：更深邃的科技蓝 */
+  a { color: #0366d6; text-decoration: none; transition: color 0.2s; }
+  a:hover { color: #0056b3; text-decoration: underline; }
 
-  /* 容器通用样式 */
+  /* 容器通用样式：卡片化 */
   .container-box {
     background: #fff;
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    /* 增加一点微弱的阴影增加立体感 */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
-    border: 1px solid #f0f0f0;
+    border: 1px solid #e1e4e8;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
   }
 
   /* 头部按钮网格 */
   .link-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 10px;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
   
   .link-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px 15px;
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
+    padding: 10px 16px;
+    background-color: #f6f8fa;
+    border: 1px solid #d1d5da;
     border-radius: 6px;
-    color: #333 !important;
-    font-size: 15px;
-    font-weight: bold;
+    color: #24292e !important;
+    font-size: 14px;
+    font-weight: 600;
     transition: all 0.2s ease;
-    text-decoration: none !important;
   }
   
   .link-btn:hover {
-    background-color: #f9f9f9;
-    border-color: #999;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    background-color: #fff;
+    border-color: #0366d6;
+    color: #0366d6 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   }
 
-  /* 双栏布局 (Education & Experience) */
-  .split-layout {
+  /* Experience 列表项 */
+  .exp-item {
     display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    margin-top: 20px;
-  }
-  
-  .split-col {
-    flex: 1;
-    min-width: 300px; /* 移动端自动换行 */
-  }
-
-  /* 列表项样式 */
-  .info-item {
-    display: flex;
-    margin-bottom: 15px;
     align-items: flex-start;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaecef;
   }
+  .exp-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
   
-  .info-logo {
-    width: 45px; 
-    height: 45px; 
-    margin-right: 15px;
+  .exp-logo {
+    width: 56px; 
+    height: 56px; 
+    margin-right: 18px;
     object-fit: contain;
-    border-radius: 4px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    padding: 2px;
+    background: #fff;
   }
   
-  .info-content {
-    flex: 1;
-  }
-  
-  .info-title {
-    font-weight: bold;
-    font-size: 16px;
-    color: #000;
-    margin-bottom: 2px;
-  }
-  
-  .info-subtitle {
-    font-size: 14px;
-    color: #444;
-    margin-bottom: 2px;
-  }
-  
-  .info-date {
-    font-size: 13px;
-    color: #888;
-    font-style: italic;
-    float: right; /* 日期右对齐 */
-  }
+  .exp-content { flex: 1; }
+  .exp-title { font-weight: 700; font-size: 16px; color: #000; margin-bottom: 4px; }
+  .exp-subtitle { font-size: 14px; color: #586069; margin-bottom: 4px; }
+  .exp-date { font-size: 13px; color: #6a737d; font-family: 'SF Mono', Consolas, monospace; }
 
   /* News 滚动区域 */
   .news-scroll {
-    max-height: 240px;
+    max-height: 260px;
     overflow-y: auto;
-    background-color: #fafafa;
-    padding: 15px;
-    border-radius: 6px;
-    border: 1px solid #eee;
+    background-color: #f6f8fa;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid #e1e4e8;
   }
   .news-scroll ul { padding-left: 20px; margin: 0; }
-  .news-scroll li { margin-bottom: 8px; font-size: 15px; color: #333; }
+  .news-scroll li { margin-bottom: 10px; font-size: 14px; line-height: 1.6; }
 
-  /* 论文列表样式优化 */
-  .paper-badge {
-    background-color: #003366; 
-    color: white; 
-    padding: 1px 6px; 
-    font-size: 12px; 
-    border-radius: 3px;
-    vertical-align: middle;
-    margin-right: 5px;
+  /* --- SELECTED PUBLICATIONS (修复显示问题的核心样式) --- */
+  .pub-card {
+    display: flex;
+    flex-wrap: wrap; /* 移动端自动换行 */
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .pub-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    border-color: #c8e1ff;
+  }
+
+  .pub-img-col {
+    flex: 0 0 320px; /* 左侧图片固定宽度 */
+    position: relative;
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #eaecef;
+    padding: 10px;
   }
   
+  .pub-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+
+  /* 悬浮在图片左上角的 Badge */
+  .pub-badge {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: #005cc5; /* 科技蓝 */
+    color: white;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    z-index: 2;
+  }
+
+  .pub-content-col {
+    flex: 1;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 300px;
+  }
+
+  .pub-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #24292e;
+  }
+  .pub-title a { color: #24292e; }
+  .pub-title a:hover { color: #0366d6; }
+
+  .pub-authors {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .pub-authors strong { color: #000; border-bottom: 2px solid #c8e1ff; } /* 高亮自己 */
+
+  .pub-venue {
+    font-size: 14px;
+    font-style: italic;
+    color: #d73a49; /* 红色高亮 CCF Rank */
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+
+  .pub-links a {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 15px;
+    color: #0366d6;
+  }
+  .pub-links img { vertical-align: middle; margin-left: 5px; }
+
   /* 标题样式 */
   h1.section-title {
-    font-size: 22px;
-    border-bottom: 2px solid #f2f2f2;
+    font-size: 24px;
+    font-weight: 800;
+    border-bottom: 2px solid #eaecef;
     padding-bottom: 10px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    color: #111;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: #24292e;
+    display: flex;
+    align-items: center;
   }
   
-  .icon-header { display: flex; align-items: center; gap: 10px; }
+  /* 移动端适配 */
+  @media (max-width: 768px) {
+    .pub-img-col { flex: 0 0 100%; border-right: none; border-bottom: 1px solid #eaecef; height: auto; }
+    .pub-card { flex-direction: column; }
+    .link-grid { grid-template-columns: repeat(2, 1fr); }
+  }
 </style>
 
 
 <!-- ================= BIO SECTION ================= -->
-<div style="font-size: 17px; line-height: 1.7; text-align: justify; margin-bottom: 20px;">
+<div style="font-size: 16px; line-height: 1.8; text-align: justify; margin-bottom: 25px; color: #333;">
   <p>
     <strong>Hi, I am Hao Wu.</strong> My research journey begins between 2019 and 2022, focusing on Chinese semantic parsing. During this period, I designed <a href="https://arxiv.org/abs/2403.19936">SLFNet</a> for translating natural language into logical forms. The advent of ChatGPT in 2022 prompted me to explore more challenging fields.
   </p>
@@ -172,8 +238,7 @@ redirect_from:
   </p>
 </div>
 
-<!-- ================= BUTTON GRID (Style Reference) ================= -->
-<!-- 请在此处替换为您真实的链接 -->
+<!-- ================= BUTTON GRID ================= -->
 <div class="link-grid">
   <a href="mailto:wuhao2022@mail.ustc.edu.cn" class="link-btn">
     ✉️ Email
@@ -189,90 +254,6 @@ redirect_from:
   </a>
 </div>
 
-<!-- ================= SPLIT LAYOUT: EDUCATION & EXPERIENCE ================= -->
-<!-- 这里复刻参考图的双栏布局 -->
-
-<div class="split-layout">
-  
-  <!-- LEFT COLUMN: EDUCATION -->
-  <div class="split-col">
-    <h3 class="icon-header">🎓 Education</h3>
-    <div class="container-box">
-      
-      <!-- Ph.D. (Future) -->
-      <div class="info-item">
-        <!-- 请替换为学校 Logo -->
-        <img src="../images/hkust.png" class="info-logo" alt="Logo"> 
-        <div class="info-content">
-          <div class="info-title">University of Science and Technology of China</div>
-          <div class="info-subtitle">Ph.D. Student in Computer Science (Incoming)</div>
-          <div class="info-date">Starting 2026</div>
-        </div>
-      </div>
-
-      <!-- Master -->
-      <div class="info-item">
-        <img src="../images/hkust.png" class="info-logo" alt="Logo">
-        <div class="info-content">
-          <div class="info-title">University of Science and Technology of China</div>
-          <div class="info-subtitle">M.Phil. in Computer Science</div>
-          <div class="info-date">2022 - 2025</div>
-        </div>
-      </div>
-
-      <!-- Bachelor -->
-      <div class="info-item">
-        <img src="../images/hkust.png" class="info-logo" alt="Logo">
-        <div class="info-content">
-          <div class="info-title">University of Science and Technology of China</div>
-          <div class="info-subtitle">B.Eng. in Computer Science</div>
-          <div class="info-date">2018 - 2022</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- RIGHT COLUMN: EXPERIENCE -->
-  <div class="split-col">
-    <h3 class="icon-header">💼 Experience</h3>
-    <div class="container-box">
-
-      <!-- Tencent Jarvis -->
-      <div class="info-item">
-        <img src="../images/tencent.png" class="info-logo" alt="Tencent">
-        <div class="info-content">
-          <div class="info-title">Jarvis Lab, Tencent</div>
-          <div class="info-subtitle">Research Intern (Mentor: Xian Wu)</div>
-          <div class="info-date">Aug. 2025 - Present</div>
-        </div>
-      </div>
-
-      <!-- Tencent Hunyuan -->
-      <div class="info-item">
-        <img src="../images/tencent.png" class="info-logo" alt="Tencent">
-        <div class="info-content">
-          <div class="info-title">Hunyuan Large Model Team, Tencent</div>
-          <div class="info-subtitle">Research Intern (Mentor: Jinbao Xue)</div>
-          <div class="info-date">Aug. 2023 - Jul. 2025</div>
-        </div>
-      </div>
-
-      <!-- HKUST(GZ) -->
-      <div class="info-item">
-        <img src="../images/hkust.png" class="info-logo" alt="HKUST">
-        <div class="info-content">
-          <div class="info-title">CityMind Lab, HKUST(GZ)</div>
-          <div class="info-subtitle">Research Intern (Advisor: Yuxuan Liang)</div>
-          <div class="info-date">May 2023 - Aug. 2023</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
 <!-- ================= NEWS SECTION ================= -->
 <h1 class="section-title" id='news'>🔥 News</h1>
 <div class="news-scroll">
@@ -285,62 +266,160 @@ redirect_from:
     <li><strong>2025.05.01</strong>: 1 paper accepted to <strong>ICML 2025</strong> (Co-First Author).</li>
     <li><strong>2025.01.22</strong>: 1 paper accepted to <strong>ICLR 2025</strong> (Corresponding Author).</li>
     <li><strong>2024.11.16</strong>: 1 paper accepted to <strong>KDD 2025 ADS</strong> (First Author).</li>
-    <li><strong>2024.01.16</strong>: 1 paper accepted to <strong>ICLR 2024</strong> (<span style="color:#c62828">Spotlight</span>).</li>
+    <li><strong>2024.01.16</strong>: 1 paper accepted to <strong>ICLR 2024</strong> (<span style="color:#d73a49; font-weight:bold;">Spotlight</span>).</li>
     <li><strong>2022.10.09</strong>: Received <strong>National Scholarship</strong> (Top 0.1%).</li>
   </ul>
 </div>
 
+<!-- ================= EXPERIENCE ================= -->
+<h1 class="section-title">💼 Research Experience</h1>
+<div class="container-box">
 
-<!-- ================= SELECTED PAPERS (Thumbnails) ================= -->
-<h1 class="section-title">🌟 Selected Publications</h1>
-
-<div class='paper-box' style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee;">
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">AAAI 2026</div>
-      <img src='../images/fig_main.jpg' alt="sym" width="100%">
+  <!-- Item 1 -->
+  <div class="exp-item">
+    <img src="../images/tencent.png" class="exp-logo" alt="Tencent">
+    <div class="exp-content">
+      <div class="exp-title">Jarvis Lab, Tencent</div>
+      <div class="exp-subtitle">Research Intern &nbsp; | &nbsp; Mentor: <a href="#">Xian Wu</a></div>
+      <div class="exp-date">Aug. 2025 - Present</div>
     </div>
   </div>
-  <div class='paper-box-text' markdown="1">
-    [NeuralOM: Neural Ocean Model for Subseasonal-to-Seasonal Simulation](https://arxiv.org/abs/2505.21020)
-    <br>
-    Yuan Gao<sup>†</sup>, **Hao Wu**<sup>†</sup> <sup>‡ </sup>, Fan Xu, et al.
-    <br>
-    <span style="color:#c62828; font-style: italic;">(AAAI 2026, CCF Rank A)</span>
-    <br>
-    <a href="https://arxiv.org/abs/2505.21020" target="_blank">Paper</a> | <a href="https://github.com/YuanGao-YG/NeuralOM" target="_blank">Code</a>
-    <img src="https://img.shields.io/github/stars/YuanGao-YG/NeuralOM?label=%F0%9F%8C%9F%20Star&color=blue" style="vertical-align: middle;">
+
+  <!-- Item 2 -->
+  <div class="exp-item">
+    <img src="../images/tencent.png" class="exp-logo" alt="Tencent">
+    <div class="exp-content">
+      <div class="exp-title">Machine Learning Platform Dept., Tencent</div>
+      <div class="exp-subtitle">Research Intern (Hunyuan Large Model) &nbsp; | &nbsp; Mentor: <a href="#">Jinbao Xue</a></div>
+      <div class="exp-date">Aug. 2023 - Jul. 2025</div>
+    </div>
+  </div>
+
+  <!-- Item 3 -->
+  <div class="exp-item">
+    <img src="../images/hkust.png" class="exp-logo" alt="HKUST">
+    <div class="exp-content">
+      <div class="exp-title">CityMind Lab, HKUST (Guangzhou)</div>
+      <div class="exp-subtitle">Research Intern &nbsp; | &nbsp; Advisor: <a href="#">Yuxuan Liang</a></div>
+      <div class="exp-date">May 2023 - Aug. 2023</div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ================= SELECTED PUBLICATIONS (Fixing the Layout) ================= -->
+<h1 class="section-title">🌟 Selected Publications</h1>
+
+<!-- Paper 1: NeuralOM -->
+<div class="pub-card">
+  <div class="pub-img-col">
+    <div class="pub-badge">AAAI 2026</div>
+    <img src="../images/fig_main.jpg" class="pub-img" alt="NeuralOM">
+  </div>
+  <div class="pub-content-col">
+    <div class="pub-title">
+      <a href="https://arxiv.org/abs/2505.21020">NeuralOM: Neural Ocean Model for Subseasonal-to-Seasonal Simulation</a>
+    </div>
+    <div class="pub-authors">
+      Yuan Gao<sup>†</sup>, <strong>Hao Wu</strong><sup>†‡</sup>, Fan Xu, Yanfei Xiang, Ruijian Gou, Ruiqi Shu, Qingsong Wen, Xian Wu, Kun Wang*, Xiaomeng Huang*
+    </div>
+    <div class="pub-venue">
+      AAAI 2026 (CCF Rank A)
+    </div>
+    <div class="pub-links">
+      <a href="https://arxiv.org/abs/2505.21020">📄 Paper</a>
+      <a href="https://github.com/YuanGao-YG/NeuralOM">💻 Code</a>
+      <img src="https://img.shields.io/github/stars/YuanGao-YG/NeuralOM?label=Star&style=social">
+    </div>
   </div>
 </div>
 
-<div class='paper-box' style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee;">
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">ICML 2025</div>
-      <img src='../images/one.png' alt="sym" width="100%">
+<!-- Paper 2: OneForecast -->
+<div class="pub-card">
+  <div class="pub-img-col">
+    <div class="pub-badge">ICML 2025</div>
+    <img src="../images/one.png" class="pub-img" alt="OneForecast">
+  </div>
+  <div class="pub-content-col">
+    <div class="pub-title">
+      <a href="https://arxiv.org/abs/2502.00338">OneForecast: A Universal Framework for Global and Regional Weather Forecasting</a>
+    </div>
+    <div class="pub-authors">
+      Yuan Gao, <strong>Hao Wu</strong>, Ruiqi Shu, Huanshuo Dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qingsong Wen, Xuming Hu, Kun Wang, Jiahao Wu, Li Qing, Hui Xiong, Xiaomeng Huang#
+    </div>
+    <div class="pub-venue">
+      ICML 2025 (CCF Rank A)
+    </div>
+    <div class="pub-links">
+      <a href="https://arxiv.org/abs/2502.00338">📄 Paper</a>
+      <a href="https://github.com/YuanGao-YG/OneForecast">💻 Code</a>
     </div>
   </div>
-  <div class='paper-box-text' markdown="1">
-    [OneForecast: A Universal Framework for Global and Regional Weather Forecasting](https://arxiv.org/abs/2502.00338)
-    <br>
-    Yuan Gao, Hao Wu, et al.
-    <br>
-    <span style="color:#c62828; font-style: italic;">(ICML 2025, CCF Rank A)</span>
-    <br>
-    <a href="https://arxiv.org/abs/2502.00338" target="_blank">Paper</a> | <a href="https://github.com/YuanGao-YG/OneForecast" target="_blank">Code</a>
+</div>
+
+<!-- Paper 3: ICCV 2025 -->
+<div class="pub-card">
+  <div class="pub-img-col">
+    <div class="pub-badge">ICCV 2025</div>
+    <img src="../images/iccv2025.png" class="pub-img" alt="ICCV Paper">
+  </div>
+  <div class="pub-content-col">
+    <div class="pub-title">
+      <a href="#">Frequency-Aligned Knowledge Distillation for Lightweight Spatiotemporal Forecasting</a>
+    </div>
+    <div class="pub-authors">
+      Yuqi Li, Chuanguang Yang, Hansheng Zeng, Zeyu Dong, Zhulin An, Yongjun Xu, Yingli Tian, <strong>Hao Wu#</strong>
+    </div>
+    <div class="pub-venue">
+      ICCV 2025 (CCF Rank A)
+    </div>
+    <div class="pub-links">
+      <a href="#">📄 Paper</a>
+      <a href="https://github.com/itsnotacie/SDKD">💻 Code</a>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 4: KDD 2025 -->
+<div class="pub-card">
+  <div class="pub-img-col">
+    <div class="pub-badge">KDD 2025</div>
+    <img src="../images/DnyST.png" class="pub-img" alt="DynST">
+  </div>
+  <div class="pub-content-col">
+    <div class="pub-title">
+      <a href="https://arxiv.org/abs/2403.02914">DynST: Dynamic Sparse Training for Resource-Constrained Spatio-Temporal Forecasting</a>
+    </div>
+    <div class="pub-authors">
+      <strong>Hao Wu</strong>, Haomin Wen, Guibin Zhang, Yutong Xia, Yuxuan Liang, Yu Zheng, Qingsong Wen, Kun Wang
+    </div>
+    <div class="pub-venue">
+      KDD 2025 (CCF Rank A)
+    </div>
+    <div class="pub-links">
+      <a href="https://arxiv.org/abs/2403.02914">📄 Paper</a>
+      <a href="https://github.com/easylearningscores">💻 Code</a>
+    </div>
   </div>
 </div>
 
 
 <!-- ================= MISC ================= -->
 <h1 class="section-title">💬 Invited Talks</h1>
-<ul>
+<ul style="line-height: 1.8; color: #444;">
   <li><em>2024.03</em>, Application and Research of GNN in Meteorological Prediction. @ Sun Yat-sen University</li>
   <li><em>2023.12</em>, Earthfarseer: versatile spatio-temporal dynamical systems modeling in one model. @ AI TIME </li>
 </ul>
 
+<h1 class="section-title">💻 Academic Service</h1>
+<div style="background: #f9f9f9; padding: 15px; border-radius: 6px; font-size: 15px; color: #444; line-height: 1.6;">
+  <strong>Conference Reviewer / PC Member:</strong><br>
+  NeurIPS (2023-2025), ICLR (2024-2025), ICML (2024-2025), CVPR (2025), ICCV (2025), AAAI (2025), ACM MM (2024-2025), AISTATS (2025).
+</div>
+
 <h1 class="section-title">👨🏻 Miscellaneous</h1>
-<ul>
-  <li>🏀 Big fan of basketball (Kobe & Curry).</li>
-  <li>👑 Interested in History.</li>
+<ul style="line-height: 1.8; color: #444;">
+  <li>🏀 Big fan of basketball. I love Kobe Bryant and his Fadeaway Shot. Also a fan of Stephen Curry.</li>
+  <li>👑 Deeply interested in History.</li>
 </ul>
