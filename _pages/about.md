@@ -1,11 +1,12 @@
 ---
 permalink: /
 title: ""
-excerpt: ""
-author_profile: true
+excerpt: "Hao Wu - Research Homepage"
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
+layout: single
 ---
 
 {% if site.google_scholar_stats_use_cdn %}
@@ -19,18 +20,24 @@ redirect_from:
 
 <!-- ================= GLOBAL STYLES ================= -->
 <style>
-  /* 1. 页面宽度调整：强制变宽 */
-  /* 针对常见的 Jekyll 主题 (Minimal Mistakes) 进行宽度覆盖 */
+  /* 1. 核心布局调整：去除侧边栏后的全宽设置 */
+  /* 隐藏可能残留的侧边栏容器 */
+  .sidebar { display: none !important; }
+  
+  /* 让内容区域居中且变宽 */
+  .page__content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
   .page__inner-wrap {
-    max-width: 1280px !important; /* 加宽主内容区域 */
+    max-width: 1280px !important; /* 核心宽度控制，可根据喜好改为 1100px 或 1400px */
     margin-left: auto;
     margin-right: auto;
-    padding-right: 1em;
-    padding-left: 1em;
-  }
-  .archive {
-    width: 100% !important;
-    max-width: 1280px !important;
+    padding: 20px;
+    float: none !important;
   }
 
   /* 2. 全局字体：Times New Roman */
@@ -43,7 +50,7 @@ redirect_from:
   a { color: #003366; text-decoration: none; transition: all 0.2s; }
   a:hover { color: #0056b3; text-decoration: underline; }
 
-  /* 容器卡片 */
+  /* 容器卡片通用样式 */
   .container-box {
     background: #fff;
     padding: 25px;
@@ -57,51 +64,55 @@ redirect_from:
   .bio-container {
     display: flex;
     justify-content: space-between;
-    gap: 40px; /* 文字和图片之间的间距 */
-    margin-bottom: 40px;
+    gap: 50px; /* 文字和图片之间的间距加大 */
+    margin-bottom: 50px;
     align-items: flex-start;
+    margin-top: 20px;
   }
 
   .bio-text-col {
-    flex: 1; /* 占据剩余空间 */
+    flex: 1;
   }
 
   .bio-photo-col {
-    flex: 0 0 280px; /* 固定图片容器宽度 */
+    flex: 0 0 300px; /* 右侧照片固定宽度 */
   }
 
   .bio-photo {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     object-fit: cover;
     border: 1px solid #ddd;
+    display: block;
   }
 
-  /* 头部按钮网格 (现在放在自我介绍下方) */
+  /* 头部按钮链接 */
   .link-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    margin-top: 25px;
+    margin-top: 30px;
   }
   
   .link-btn {
     display: inline-flex;
     align-items: center;
-    padding: 6px 12px;
-    background-color: #f4f4f4;
+    padding: 8px 16px;
+    background-color: #f8f9fa;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     color: #333 !important;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
+    transition: background-color 0.2s;
   }
   .link-btn:hover {
-    background-color: #e0e0e0;
+    background-color: #e2e6ea;
     border-color: #003366;
     color: #003366 !important;
+    text-decoration: none;
   }
 
   /* Experience 列表 */
@@ -115,26 +126,26 @@ redirect_from:
   .exp-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
   
   .exp-logo {
-    width: 65px; 
-    height: 65px; 
+    width: 70px; 
+    height: 70px; 
     margin-right: 25px;
     object-fit: contain;
     border-radius: 4px;
     border: 1px solid #ddd;
-    padding: 4px;
+    padding: 5px;
     background: #fff;
   }
   
   .exp-content { flex: 1; }
-  .exp-title { font-weight: bold; font-size: 19px; color: #000; margin-bottom: 6px; }
-  .exp-subtitle { font-size: 17px; color: #444; margin-bottom: 6px; font-style: italic; }
+  .exp-title { font-weight: bold; font-size: 20px; color: #000; margin-bottom: 6px; }
+  .exp-subtitle { font-size: 18px; color: #444; margin-bottom: 6px; font-style: italic; }
   .exp-date { font-size: 16px; color: #666; }
 
   /* News 滚动区域 */
   .news-scroll {
-    max-height: 300px;
+    max-height: 320px;
     overflow-y: auto;
-    background-color: #fafafa;
+    background-color: #fcfcfc;
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #ddd;
@@ -155,12 +166,12 @@ redirect_from:
   }
   .pub-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-    border-color: #aaa;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    border-color: #999;
   }
 
   .pub-img-col {
-    flex: 0 0 320px; /* 图片宽度略微加大 */
+    flex: 0 0 340px; /* 图片区域宽度 */
     position: relative;
     background: #f9f9f9;
     display: flex;
@@ -184,7 +195,7 @@ redirect_from:
     left: 0;
     background: #003366;
     color: white;
-    padding: 4px 12px;
+    padding: 4px 14px;
     font-size: 14px;
     font-weight: bold;
     border-top-right-radius: 4px;
@@ -196,7 +207,7 @@ redirect_from:
 
   .pub-content-col {
     flex: 1;
-    padding: 20px 30px;
+    padding: 20px 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -214,7 +225,7 @@ redirect_from:
   .pub-title a:hover { color: #003366; }
 
   .pub-authors {
-    font-size: 17px;
+    font-size: 18px;
     color: #333;
     margin-bottom: 12px;
     line-height: 1.5;
@@ -222,7 +233,7 @@ redirect_from:
   .pub-authors strong { color: #000; text-decoration: underline; }
 
   .pub-venue {
-    font-size: 16px;
+    font-size: 17px;
     font-style: italic;
     color: #c62828;
     margin-bottom: 15px;
@@ -231,7 +242,7 @@ redirect_from:
 
   .pub-links a {
     display: inline-block;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     margin-right: 20px;
     color: #003366;
@@ -240,7 +251,7 @@ redirect_from:
   
   /* 标题样式 */
   h1.section-title {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     border-bottom: 2px solid #eee;
     padding-bottom: 12px;
@@ -251,21 +262,21 @@ redirect_from:
 
   /* 移动端适配 */
   @media (max-width: 850px) {
-    .bio-container { flex-direction: column-reverse; gap: 20px; }
-    .bio-photo-col { flex: 0 0 auto; width: 100%; max-width: 250px; margin: 0 auto; }
+    .bio-container { flex-direction: column-reverse; gap: 30px; }
+    .bio-photo-col { flex: 0 0 auto; width: 100%; max-width: 300px; margin: 0 auto; }
     .pub-img-col { flex: 0 0 100%; border-right: none; border-bottom: 1px solid #eee; }
     .pub-card { flex-direction: column; }
   }
 </style>
 
 
-<!-- ================= BIO SECTION (LEFT TEXT, RIGHT IMAGE) ================= -->
+<!-- ================= BIO SECTION ================= -->
 <div class="bio-container">
   
-  <!-- 左侧：文字介绍 + 按钮链接 -->
+  <!-- 左侧：文字介绍 -->
   <div class="bio-text-col">
-    <div style="font-size: 24px; font-weight: bold; margin-bottom: 10px;">Hao Wu (吴浩)</div>
-    <div style="font-size: 18px; color: #555; margin-bottom: 20px;">Ph.D. Student at USTC (Incoming 2026)</div>
+    <div style="font-size: 32px; font-weight: bold; margin-bottom: 10px; color: #000;">Hao Wu (吴浩)</div>
+    <div style="font-size: 20px; color: #555; margin-bottom: 25px;">Ph.D. Student at USTC (Incoming 2026)</div>
     
     <div style="font-size: 18px; line-height: 1.7; text-align: justify; color: #222;">
       <p>
@@ -279,7 +290,7 @@ redirect_from:
       </p>
     </div>
 
-    <!-- 链接按钮组 -->
+    <!-- 链接按钮 -->
     <div class="link-grid">
       <a href="mailto:wuhao2022@mail.ustc.edu.cn" class="link-btn">✉️ Email</a>
       <a href="YOUR_GOOGLE_SCHOLAR_LINK" class="link-btn">🎓 Google Scholar</a>
@@ -288,10 +299,10 @@ redirect_from:
     </div>
   </div>
 
-  <!-- 右侧：头像 (请替换 src) -->
+  <!-- 右侧：头像 -->
   <div class="bio-photo-col">
-    <!-- 请务必将下方的 src 替换为您真实的图片路径 -->
-    <img src="../images/wuhaodemo" class="bio-photo" alt="Hao Wu">
+    <!-- 请替换下面的图片路径 -->
+    <img src="../images/your_avatar.jpg" class="bio-photo" alt="Hao Wu">
   </div>
 
 </div>
