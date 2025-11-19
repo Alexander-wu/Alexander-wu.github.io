@@ -19,15 +19,29 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-My research journey begins between 2019 and 2022, with a commitment to exploring the deep understanding of natural language. I delve into the evolution from LSTMs to the self-attention mechanism, focusing on the unique challenges of Chinese semantic parsing. During this period, I design and implement [SLFNet](https://arxiv.org/abs/2403.19936), an innovative framework aimed at accurately translating natural language into logical forms. However, the advent of ChatGPT in 2022 completely reshapes the technological paradigm of the NLP field. This disruptive change prompts me to reflect deeply and courageously decide to explore a new and more challenging field.
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 16px; line-height: 1.6;">
 
-In 2023, I pivot to video prediction and begin a two-year internship (2023-2025) with the [Tencent Hunyuan Large Model team](https://github.com/Alexander-wu/Alexander-wu.github.io/blob/main/images/shixi.pdf). This valuable experience not only allows me to systematically master core models such as ConvLSTM and SimVP but, more importantly, it teaches me how to deeply understand and generate dynamic data from both temporal and spatial dimensions. I am honored to work alongside top researchers in the industry (such as [Xingjian Shi](https://scholar.google.com/citations?user=P4G6H7oAAAAJ&hl=en), [Yuxuan Liang](https://yuxuanliang.com/), [Fan Xu](https://scholar.google.com/citations?hl=en&user=qfMSkBgAAAAJ&view_op=list_works&sortby=pubdate), etc.), and our close collaboration leads to a "blowout period" of academic achievements: as a core author, I publish nearly 30 papers in top conferences such as ICML, ICLR, and NeurIPS. This gives me the freedom and confidence to pursue higher academic goals.
+<p>
+My research journey begins between 2019 and 2022, with a commitment to exploring the deep understanding of natural language. I delve into the evolution from LSTMs to the self-attention mechanism, focusing on the unique challenges of Chinese semantic parsing. During this period, I design and implement <a href="https://arxiv.org/abs/2403.19936">SLFNet</a>, an innovative framework aimed at accurately translating natural language into logical forms. However, the advent of ChatGPT in 2022 completely reshapes the technological paradigm of the NLP field. This disruptive change prompts me to reflect deeply and courageously decide to explore a new and more challenging field.
+</p>
 
-By the end of 2024, I transition the experience accumulated in the deep learning field toward a direction with more fundamental scientific value: using artificial intelligence to accelerate the solving of partial differential equations (PDEs). To overcome the bottleneck of computational efficiency, I propose the [NMO](https://dl.acm.org/doi/abs/10.1145/3637528.3671779) method, which skillfully utilizes manifold learning to optimize the performance of neural networks and explores distillation(@[ICCV2025](https://openaccess.thecvf.com/content/ICCV2025/html/Li_Frequency-Aligned_Knowledge_Distillation_for_Lightweight_Spatiotemporal_Forecasting_ICCV_2025_paper.html)) techniques to achieve faster inference. My ultimate goal is to apply this technology to solve real-world challenges.
+<p>
+In 2023, I pivot to video prediction and begin a two-year internship (2023-2025) with the <a href="https://github.com/Alexander-wu/Alexander-wu.github.io/blob/main/images/shixi.pdf">Tencent Hunyuan Large Model team</a>. This valuable experience not only allows me to systematically master core models such as ConvLSTM and SimVP but, more importantly, it teaches me how to deeply understand and generate dynamic data from both temporal and spatial dimensions. I am honored to work alongside top researchers in the industry (such as <a href="https://scholar.google.com/citations?user=P4G6H7oAAAAJ&hl=en">Xingjian Shi</a>, <a href="https://yuxuanliang.com/">Yuxuan Liang</a>, <a href="https://scholar.google.com/citations?hl=en&user=qfMSkBgAAAAJ&view_op=list_works&sortby=pubdate">Fan Xu</a>, etc.), and our close collaboration leads to a "blowout period" of academic achievements: as a core author, I publish nearly 30 papers in top conferences such as ICML, ICLR, and NeurIPS. This gives me the freedom and confidence to pursue higher academic goals.
+</p>
 
-Entering 2025, I focus my research on the application of large-scale PDE solving in Earth sciences, particularly in weather and climate modeling. After accumulating experience and through unremitting efforts, including pre-training and fine-tuning on hundreds of Nvidia A100/A800 GPUs, I, in collaboration with [Yuan Gao](https://yuangao-yg.github.io/), successfully develop [TritonCast](https://arxiv.org/abs/2505.19432), an advanced AI model for long-term Earth system forecasting.
+<p>
+By the end of 2024, I transition the experience accumulated in the deep learning field toward a direction with more fundamental scientific value: using artificial intelligence to accelerate the solving of partial differential equations (PDEs). To overcome the bottleneck of computational efficiency, I propose the <a href="https://dl.acm.org/doi/abs/10.1145/3637528.3671779">NMO</a> method, which skillfully utilizes manifold learning to optimize the performance of neural networks and explores distillation (<a href="https://openaccess.thecvf.com/content/ICCV2025/html/Li_Frequency-Aligned_Knowledge_Distillation_for_Lightweight_Spatiotemporal_Forecasting_ICCV_2025_paper.html">ICCV2025</a>) techniques to achieve faster inference. My ultimate goal is to apply this technology to solve real-world challenges.
+</p>
 
+<p>
+Entering 2025, I focus my research on the application of large-scale PDE solving in Earth sciences, particularly in weather and climate modeling. After accumulating experience and through unremitting efforts, including pre-training and fine-tuning on hundreds of Nvidia A100/A800 GPUs, I, in collaboration with <a href="https://yuangao-yg.github.io/">Yuan Gao</a>, successfully develop <a href="https://arxiv.org/abs/2505.19432">TritonCast</a>, an advanced AI model for long-term Earth system forecasting.
+</p>
+
+<p>
 Next, in 2026, I will return to the department of computer science to continue my Phd studies, with my research direction focusing on video generation, and the post-training and application of LLM/Agent/VLM.
+</p>
+
+</div>
 
 **Email**: <u>wuhao2022@mail.ustc.edu.cn</u>  &nbsp; &nbsp;  **Wechat**: How_Alexander_Wu
 
