@@ -310,14 +310,23 @@ layout: single
     </div>
   </div>
 
-  <!-- 右侧：头像 -->
-  <!-- 在这个 div 上加 style="flex: 0 0 200px;" 或者直接限制 img 的宽度 -->
-  <div class="bio-photo-col" style="flex: 0 0 200px !important;"> 
-    <!-- 请替换下面的图片路径 -->
-    <img src="../images/wuhaodemo" class="bio-photo" alt="Hao Wu">
-  </div>
+<!-- 右侧：头像 + 邮箱 -->
+  <div class="bio-photo-col" style="flex: 0 0 220px !important; text-align: center;"> 
+    
+    <!-- 头像：增加了白色相框效果和阴影 -->
+    <img src="../images/wuhaodemo" class="bio-photo" alt="Hao Wu" 
+         style="width: 100%; height: auto; object-fit: cover; 
+                background: #fff; padding: 6px; border: 1px solid #d0d0d0; 
+                border-radius: 4px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+    
+    <!-- 邮箱：正下方显示 -->
+    <div style="margin-top: 12px; font-size: 15px; line-height: 1.4; word-break: break-all;">
+      <a href="mailto:wuhao2022@mail.ustc.edu.cn" style="color: #333; text-decoration: none; font-weight: bold;">
+        wuhao2022@mail.ustc.edu.cn
+      </a>
+    </div>
 
-</div>
+  </div>
 
 
 <!-- ================= NEWS SECTION ================= -->
