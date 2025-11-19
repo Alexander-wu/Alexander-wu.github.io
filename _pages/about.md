@@ -6,8 +6,6 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-
-
 ---
 
 {% if site.google_scholar_stats_use_cdn %}
@@ -19,8 +17,79 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-<div style="font-family: 'Times New Roman', Times, serif; font-size: 16px; line-height: 1.6;">
+<!-- 全局样式注入：强制新罗马字体与学术风格 -->
+<style>
+  /* 全局字体设置 */
+  body, h1, h2, h3, h4, h5, h6, p, div, span, li, a {
+    font-family: 'Times New Roman', Times, serif !important;
+  }
+  
+  /* 正文排版优化 */
+  p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify; /* 两端对齐，更具论文感 */
+    margin-bottom: 15px;
+  }
 
+  /* 链接样式：学术蓝 */
+  a {
+    color: #003366;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+
+  /* News 滚动框美化 */
+  .scrollable {
+    max-height: 280px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    background-color: #fcfcfc;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+  }
+  /* 自定义滚动条 */
+  .scrollable::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollable::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+  }
+  .scrollable ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .scrollable li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #444;
+  }
+  
+  /* 徽章微调 */
+  .badge {
+    font-family: 'Times New Roman', serif !important;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  
+  /* 标题样式增强 */
+  h1, h2 {
+    color: #111;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+</style>
+
+<!-- Bio Section -->
+<div>
 <p>
 My research journey begins between 2019 and 2022, with a commitment to exploring the deep understanding of natural language. I delve into the evolution from LSTMs to the self-attention mechanism, focusing on the unique challenges of Chinese semantic parsing. During this period, I design and implement <a href="https://arxiv.org/abs/2403.19936">SLFNet</a>, an innovative framework aimed at accurately translating natural language into logical forms. However, the advent of ChatGPT in 2022 completely reshapes the technological paradigm of the NLP field. This disruptive change prompts me to reflect deeply and courageously decide to explore a new and more challenging field.
 </p>
@@ -40,20 +109,15 @@ Entering 2025, I focus my research on the application of large-scale PDE solving
 <p>
 Next, in 2026, I will return to the department of computer science to continue my Phd studies, with my research direction focusing on video generation, and the post-training and application of LLM/Agent/VLM.
 </p>
-
 </div>
 
-**Email**: <u>wuhao2022@mail.ustc.edu.cn</u>  &nbsp; &nbsp;  **Wechat**: How_Alexander_Wu
+<div style="margin-top: 20px; font-size: 16px;">
+  <strong>Email</strong>: <u>wuhao2022@mail.ustc.edu.cn</u> &nbsp; &nbsp; 
+  <strong>Wechat</strong>: How_Alexander_Wu
+</div>
 
-
+<!-- News Section -->
 <h1 id='news'>🔥 News</h1>
-<style>
-  .scrollable {
-    max-height: 260px; /* 设置最大高度 */
-    overflow-y: scroll; /* 设置垂直滚动条 */
-  }
-</style>
-
 
 <div class="scrollable">
   <ul>
@@ -69,7 +133,7 @@ Next, in 2026, I will return to the department of computer science to continue m
     <li><strong>2024.07.16</strong>: 1 paper was accepted to ACM MM2024 (First Author).</li>
     <li><strong>2024.05.17</strong>: 1 papers was accepted to KDD2024 (First Author).</li>
     <li><strong>2024.05.01</strong>: 1 paper was accepted to ICML2024 (First Author).</li>
-    <li><strong>2024.01.16</strong>: 1 paper was accepted to ICLR2024 (<span style="color:red">Spotlight</span>) (Co-First Author).</li>
+    <li><strong>2024.01.16</strong>: 1 paper was accepted to ICLR2024 (<span style="color:#c62828">Spotlight</span>) (Co-First Author).</li>
     <li><strong>2024.02.21</strong>: 1 paper was accepted to TKDE2024 (Co-First Author).</li>
     <li><strong>2023.12.09</strong>: 1 paper was accepted to AAAI2024 (First Author).</li>
     <li><strong>2023.09.22</strong>: 1 paper was accepted to NeurIPS2023 (Co-First Author).</li>
@@ -77,331 +141,250 @@ Next, in 2026, I will return to the department of computer science to continue m
   </ul>
 </div>
 
+<!-- Experience Section -->
+<h1>📖 Research Experience</h1>
 
-
-#  📖 Research Experience
-
-<div style="display: flex; align-items: center;">
-  <img src="../images/tencent.png" alt="" style="width: 90px; margin-right: 50px; margin-left: 20px;"/>
-  <ul style="list-style-type: disc; padding-left: 20px;">
-    <li style="list-style-type: none;">Jarvis Lab, Tencent</li>
-    <li style="list-style-type: none;"><em>2025.08 - Present</em>, <strong>Research intern</strong></li>
-    <li style="list-style-type: none;">Mentored by <a href="https://scholar.google.com/citations?user=lslB5jkAAAAJ&hl=zh-CN">Xian Wu</a></li>
+<div style="display: flex; align-items: center; margin-bottom: 25px;">
+  <img src="../images/tencent.png" alt="Tencent" style="width: 80px; margin-right: 30px; margin-left: 10px;"/>
+  <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+    <li style="font-weight: bold; font-size: 18px;">Jarvis Lab, Tencent</li>
+    <li style="color: #555; font-style: italic;">2025.08 - Present, <strong>Research intern</strong></li>
+    <li>Mentored by <a href="https://scholar.google.com/citations?user=lslB5jkAAAAJ&hl=zh-CN">Xian Wu</a></li>
   </ul>
 </div>
 
-
-
-<div style="display: flex; align-items: center;">
-  <img src="../images/tencent.png" alt="" style="width: 90px; margin-right: 50px; margin-left: 20px;"/>
-  <ul style="list-style-type: disc; padding-left: 20px;">
-    <li style="list-style-type: none;">Machine Learning Platform Department, Large model training group, Tencent</li>
-    <li style="list-style-type: none;"><em>2023.08 - 2025.07</em>, <strong>Research intern</strong></li>
-    <li style="list-style-type: none;">Mentored by <a href="https://github.com/easylearningscores/Alexander-wu.github.io/blob/main/images/shixi.pdf">Jinbao Xue</a></li>
+<div style="display: flex; align-items: center; margin-bottom: 25px;">
+  <img src="../images/tencent.png" alt="Tencent" style="width: 80px; margin-right: 30px; margin-left: 10px;"/>
+  <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+    <li style="font-weight: bold; font-size: 18px;">Machine Learning Platform Department, Large Model Training Group, Tencent</li>
+    <li style="color: #555; font-style: italic;">2023.08 - 2025.07, <strong>Research intern</strong></li>
+    <li>Mentored by <a href="https://github.com/easylearningscores/Alexander-wu.github.io/blob/main/images/shixi.pdf">Jinbao Xue</a></li>
   </ul>
 </div>
 
-
-
-
-<div style="display: flex; align-items: center;">
-  <img src="../images/hkust.png" alt="" style="width: 90px; margin-right: 50px; margin-left: 20px;"/>
-  <ul style="list-style-type: disc; padding-left: 20px;">
-    <li style="list-style-type: none;">CityMind Lab, Hong Kong University of Science and Technology (Guangzhou)</li>
-    <li style="list-style-type: none;"><em>2023.05 - 2023.08</em>, <strong>Research intern</strong></li>
-    <li style="list-style-type: none;">Advisor <a href="http://buaahsh.github.io/">Yuxuan Liang</a></li>
+<div style="display: flex; align-items: center; margin-bottom: 25px;">
+  <img src="../images/hkust.png" alt="HKUST" style="width: 80px; margin-right: 30px; margin-left: 10px;"/>
+  <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+    <li style="font-weight: bold; font-size: 18px;">CityMind Lab, HKUST (Guangzhou)</li>
+    <li style="color: #555; font-style: italic;">2023.05 - 2023.08, <strong>Research intern</strong></li>
+    <li>Advisor <a href="http://buaahsh.github.io/">Yuxuan Liang</a></li>
   </ul>
 </div>
 
+<!-- Publications List -->
+<h1>📝 Publications</h1>
 
-# 📝 Publications 
+<h4>Scientific Machine Learning</h4>
 
-#### Scientific Machine Learning
+<ul>
+  <li><span style="background-color: #003366; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">ICML 2025</span> <strong>OneForecast: A Universal Framework for Global and Regional Weather Forecasting</strong>. <br>Yuan Gao, Hao Wu, et al. <a href="https://arxiv.org/abs/2502.00338">[Paper]</a></li>
 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``ICML2025``</span> [OneForecast: A Universal Framework for Global and Regional Weather Forecasting]([https://arxiv.org/abs/2502.00338](https://arxiv.org/abs/2502.00338)). Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qingsong Wen, Xuming Hu, Kun Wang, Jiahao Wu, Li Qing, Hui Xiong, Xiaomeng Huang#. ICML, 2025.
+  <li><span style="background-color: #003366; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">NeurIPS 2024</span> <strong>PURE: Prompt Evolution with Graph ODE for Out-of-distribution Fluid Dynamics Modeling</strong>. <br><strong>Hao Wu</strong>, Changhu Wang, Fan Xu, Jinbao Xue, Chong Chen, Xian-Sheng Hua, Xiao Luo#. <a href="https://openreview.net/forum?id=z86knmjoUq">[Paper]</a></li>
 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``NeurIPS2024``</span> [PURE: Prompt Evolution with Graph ODE for Out-of-distribution Fluid Dynamics Modeling]([https://openreview.net/forum?id=JsPvL6ExK8&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICML.cc%2F2024%2FConference%2FAuthors%23your-submissions](https://openreview.net/forum?id=z86knmjoUq&referrer=%5Bthe%20profile%20of%20Hao%20Wu%5D(%2Fprofile%3Fid%3D~Hao_Wu39)))). **Hao Wu**, Changhu Wang, Fan Xu, Jinbao Xue, Chong Chen, Xian-Sheng Hua, Xiao Luo#. NeurIPS, 2024.
+  <li><span style="background-color: #003366; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">ICML 2024</span> <strong>Prometheus: Out-of-distribution Fluid Dynamics Modeling with Disentangled Graph ODE</strong>. <br><strong>Hao Wu</strong>, Huiyuan Wang, et al. <a href="https://openreview.net/forum?id=JsPvL6ExK8">[Paper]</a></li>
 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``ICML2024``</span> [Prometheus: Out-of-distribution Fluid Dynamics Modeling with Disentangled Graph ODE](https://openreview.net/forum?id=JsPvL6ExK8&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICML.cc%2F2024%2FConference%2FAuthors%23your-submissions)). **Hao Wu**, Huiyuan Wang, Kun Wang, Weiyan Wang, ChanganYe, Yangyu Tao, Chong Chen, Xian-Sheng Hua, Xiao Luo#. ICML, 2024.
+  <li><span style="background-color: #666; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">Arxiv</span> <strong>Spatio-temporal fluid dynamics modeling via physical-awareness and parameter diffusion guidance</strong>. <br><strong>Hao Wu</strong>, Fan Xu, et al. <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HdXMhfcAAAAJ&citation_for_view=HdXMhfcAAAAJ:IWHjjKOFINEC">[Paper]</a></li>
+</ul>
 
+<h4>Spatio-temporal Prediction</h4>
 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``Arxiv``</span> [Spatio-temporal fluid dynamics modeling via physical-awareness and parameter diffusion guidance](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HdXMhfcAAAAJ&citation_for_view=HdXMhfcAAAAJ:IWHjjKOFINEC). **Hao Wu**, Fan Xu, Yifan Duan, Ziwei Niu, Weiyan Wang, Gaofeng Lu, Kun Wang, Yuxuan Liang#, Yang Wang#. Arxiv, 2024.
+<ul>
+  <li><span style="background-color: #003366; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">ICCV 2025</span> <strong>Frequency-Aligned Knowledge Distillation for Lightweight Spatiotemporal Forecasting</strong>. <br>Yuqi Li... <strong>Hao Wu#</strong>. <a href="https://openreview.net/forum?id=sKEFrZ0wCj#discussion">[Paper]</a></li>
 
+  <li><span style="background-color: #003366; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">KDD 2025</span> <strong>DynST: Dynamic Sparse Training for Resource-Constrained Spatio-Temporal Forecasting</strong>. <br><strong>Hao Wu</strong>, Haomin Wen, et al. <a href="https://openreview.net/forum?id=sKEFrZ0wCj#discussion">[Paper]</a></li>
 
-#### Spatio-temporal Prediction
+  <li><span style="background-color: #003366; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">AAAI 2024</span> <strong>Earthfarseer: versatile spatio-temporal dynamical systems modeling in one model</strong>. <br><strong>Hao Wu</strong>, Yuxuan Liang, et al. <a href="https://ojs.aaai.org/index.php/AAAI/article/view/29521/30866">[Paper]</a></li>
 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``ICCV2025``</span> [Frequency-Aligned Knowledge Distillation for Lightweight Spatiotemporal Forecasting](https://openreview.net/forum?id=sKEFrZ0wCj#discussion). Yuqi Li, Chuanguang Yang, Hansheng Zeng, Zeyu Dong, Zhulin An, Yongjun Xu, Yingli Tian, **Hao Wu#**. ICCV, 2025.
+  <li><span style="background-color: #003366; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">ICLR 2024</span> <strong>NuwaDynamics: Discovering and Updating in Causal Spatio-Temporal Modeling</strong>. <br><strong>Kun Wang^</strong>, <strong>Hao Wu^</strong>, et al. <a href="https://ojs.aaai.org/index.php/AAAI/article/view/29521/30866">[Paper]</a></li>
 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``KDD2025``</span> [DynST: Dynamic Sparse Training for Resource-Constrained Spatio-Temporal Forecasting](https://openreview.net/forum?id=sKEFrZ0wCj#discussion). **Hao Wu**, Haomin Wen, Guibin Zhang, Yutong Xia, Yuxuan Liang, Yu Zheng, Qingsong Wen, Kun Wang#. KDD, 2025.
+  <li><span style="background-color: #003366; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">TKDE 2024</span> <strong>Modeling spatio-temporal dynamical systems with neural discrete learning and levels-of-experts</strong>. <br><strong>Kun Wang^</strong>, <strong>Hao Wu^</strong>, et al. <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HdXMhfcAAAAJ&citation_for_view=HdXMhfcAAAAJ:Wp0gIr-vW9MC">[Paper]</a></li>
 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``AAAI2024``</span> [Earthfarseer: versatile spatio-temporal dynamical systems modeling in one model](https://ojs.aaai.org/index.php/AAAI/article/view/29521/30866). **Hao Wu**, Yuxuan Liang, Wei Xiong#, Zhengyang Zhou, Wei Huang, Shilong Wang, Kun Wang#. AAAI, 2024.
+  <li><span style="background-color: #003366; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">ACM MM 2024</span> <strong>PastNet: introducing physical inductive biases for spatio-temporal video prediction</strong>. <br><strong>Hao Wu</strong>, et al. <a href="https://arxiv.org/abs/2305.11421">[Paper]</a></li>
 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``ICLR2024``</span> [NuwaDynamics: Discovering and Updating in Causal Spatio-Temporal Modeling](https://ojs.aaai.org/index.php/AAAI/article/view/29521/30866). **Kun Wang^**, **Hao Wu^**, Yifan Duan, Guibin Zhang, Kai Wang, Xiaojiang Peng, Yu Zheng, Yuxuan Liang#, Yang Wang#. ICLR, 2024.
+  <li><span style="background-color: #666; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">Arxiv</span> <strong>BeamVQ: Aligning Space-Time Forecasting Model via Self-training on Physics-aware Metrics</strong>. <br><strong>Hao Wu</strong>, et al. <a href="https://openreview.net/forum?id=iL6FrLIc8K">[Paper]</a></li>
+</ul>
 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``TKDE2024``</span> [Modeling spatio-temporal dynamical systems with neural discrete learning and levels-of-experts](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HdXMhfcAAAAJ&citation_for_view=HdXMhfcAAAAJ:Wp0gIr-vW9MC). **Kun Wang^**, **Hao Wu^**, Guibin Zhang, Junfeng Fang, Yuxuan Liang, Yuankai Wu, Roger Zimmermann, Yang Wang#. TKDE, 2024.
+<h4>Neural Operator Learning</h4>
 
+<ul>
+  <li><span style="background-color: #666; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">Arxiv</span> <strong>Turb-L1: Achieving Long-term Turbulence Tracing By Tackling Spectral Bias</strong>. <br>Hao Wu, et al. <a href="https://arxiv.org/abs/2505.19038">[Paper]</a></li>
 
+  <li><span style="background-color: #003366; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">KDD 2024</span> <strong>Neural Manifold Operators for Learning the Evolution of Physical Dynamics</strong>. <br><strong>Hao Wu</strong>, Kangyu Weng, et al. <a href="https://openreview.net/pdf?id=r7n0Q4P66V">[Paper]</a></li>
 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``ACM MM2024``</span> [PastNet: introducing physical inductive biases for spatio-temporal video prediction](https://arxiv.org/abs/2305.11421).**Hao Wu**, Wei Xiong, Fan Xu, Xiao Luo#, Chong Chen, Xian-Sheng Hua, Haixin Wang#. ACM MM, 2024.
+  <li><span style="background-color: #003366; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">AI4TS(Oral)</span> <strong>Neural Manifold Operator for Geophysical Fluid Dynamics Prediction</strong>. <br>Wei Xiong... <strong>Hao Wu#</strong>. <a href="https://openreview.net/pdf?id=r7n0Q4P66V">[Paper]</a></li>
+</ul>
 
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``Arxiv``</span> [BeamVQ: Aligning Space-Time Forecasting Model via Self-training on Physics-aware Metrics](https://openreview.net/forum?id=iL6FrLIc8K&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2024%2FConference%2FAuthors%23your-submissions)).**Hao Wu**, Xingjian Shi, Ziyue Huang, Penghao Zhao, Wei Xiong, Jinbao Xue, Yangyu Tao, Xiaomeng Huang, Weiyan Wang #. Arxiv.
+<h4>Information Retrieval</h4>
 
-#### Neural Operator Learning 
-
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``Arxiv``</span> [Turb-L1: Achieving Long-term Turbulence Tracing By Tackling Spectral Bias](https://arxiv.org/abs/2505.19038). Hao Wu, Yuan Gao, Ruiqi Shu, Zean Han, Fan Xu, Zhihong Zhu, Qingsong Wen, Xian Wu, Kun Wang*, Xiaomeng Huang*.
-
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``KDD2024``</span> [Neural Manifold Operators for Learning the Evolution of Physical Dynamics](https://openreview.net/pdf?id=r7n0Q4P66V). **Hao Wu**, Kangyu Weng, Shuyi Zhou, Xiaomeng Huang#, Wei Xiong#. KDD, 2024.
-
-
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``AI4TS(Oral)``</span> [Neural Manifold Operator for Geophysical Fluid Dynamics Prediction](https://openreview.net/pdf?id=r7n0Q4P66V). Wei Xiong, Kun Wang, Yuxuan Liang, Hao Wu#, Xiaomeng Huang#.  AI for Time Series (AI4TS) Workshop @ AAAI, 2024.
-
-
-
-
-### Information Retrieval
-
-
-- <span style="background-color: #003366; color: white; padding: 1px 4px; font-size: 12px;">``NeurIPS2023``</span> [IDEA: An Invariant Perspective for Efficient Domain Adaptive Image Retrieval](https://openreview.net/forum?id=77i6itptQW&referrer=%5Bthe%20profile%20of%20Haixin%20Wang%5D(%2Fprofile%3Fid%3D~Haixin_Wang3)). **Haixin Wang^**, **Hao Wu^**, Jinan Sun, Shikun Zhang, Chong Chen, Xian-Sheng Hua, Xiao Luo#. NeurIPS, 2023.
+<ul>
+  <li><span style="background-color: #003366; color: white; padding: 2px 6px; font-size: 12px; border-radius: 3px;">NeurIPS 2023</span> <strong>IDEA: An Invariant Perspective for Efficient Domain Adaptive Image Retrieval</strong>. <br><strong>Haixin Wang^</strong>, <strong>Hao Wu^</strong>, et al. <a href="https://openreview.net/forum?id=77i6itptQW">[Paper]</a></li>
+</ul>
 
 
-## Selected Publications
-
----
-
+<!-- Selected Publications with Thumbnails -->
+<h2>Selected Publications</h2>
+<hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 30px;">
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='../images/fig_main.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
-
 [NeuralOM: Neural Ocean Model for Subseasonal-to-Seasonal Simulation](https://arxiv.org/abs/2505.21020)
 
 Yuan Gao<sup>†</sup>, **Hao Wu**<sup>†</sup> <sup>‡ </sup>, Fan Xu, Yanfei Xiang, Ruijian Gou,  Ruiqi Shu, Qingsong Wen, Xian Wu, Kun Wang<sup>*</sup>, Xiaomeng Huang<sup>*</sup>
 
-<span style="color:red;">*(AAAI2026, CCF Rank A)*</span>  
-
+<span style="color:#c62828; font-style: italic;">(AAAI2026, CCF Rank A)</span>  
 
 <a href="https://arxiv.org/abs/2505.21020" target="_blank">Paper</a> | <a href="https://github.com/YuanGao-YG/NeuralOM" target="_blank">Code</a>
 <img src="https://img.shields.io/github/stars/YuanGao-YG/NeuralOM?label=%F0%9F%8C%9F%20Star&color=blue"> <img src="https://img.shields.io/github/forks/YuanGao-YG/NeuralOM?label=%F0%9F%94%A7%20Fork&color=green">
-
-
 </div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='../images/iccv2025.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
-
 [Frequency-Aligned Knowledge Distillation for Lightweight Spatiotemporal Forecasting](https://openreview.net/group?id=thecvf.com/ICCV/2025/Conference/Authors&referrer=%5BHomepage%5D(%2F))
-
 
 Yuqi Li, Chuanguang Yang, Hansheng Zeng, Zeyu Dong, Zhulin An, Yongjun Xu, Yingli Tian, **Hao Wu#**
 
-
-<span style="color:red;">*(ICCV2025, CCF Rank A)*</span>  
+<span style="color:#c62828; font-style: italic;">(ICCV2025, CCF Rank A)</span>  
 
 <a href="https://arxiv.org/abs/2502.00338" target="_blank">Paper</a> | <a href="https://github.com/itsnotacie/SDKD" target="_blank">Code</a>
-
 </div>
 </div>
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025</div><img src='../images/one.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
-
 [OneForecast: A Universal Framework for Global and Regional Weather Forecasting](https://openreview.net/forum?id=A23C57icJt&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2025%2FConference%2FAuthors%23your-submissions))
-
 
 Yuan Gao, Hao Wu, Ruiqi Shu, huanshuo dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qingsong Wen, Xuming Hu, Kun Wang, Jiahao Wu, Li Qing, Hui Xiong, Xiaomeng Huang#
 
-
-
-<span style="color:red;">*(ICML2025, CCF Rank A)*</span>  
+<span style="color:#c62828; font-style: italic;">(ICML2025, CCF Rank A)</span>  
 
 <a href="https://arxiv.org/abs/2502.00338" target="_blank">Paper</a> | <a href="https://github.com/YuanGao-YG/OneForecast" target="_blank">Code</a>
-
 </div>
 </div>
-
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='../images/openck.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
-
 [Open-CK: A Large Multi-Physics Fields Coupling benchmarks in Combustion Kinetics](https://openreview.net/forum?id=A23C57icJt)
-
 
 Zaige Fei, Fan Xu, Junyuan Mao, Yuxuan Liang, Qingsong Wen, Kun Wang, **Hao Wu#**, Yang Wang
 
-<span style="color:red;">*(ICLR2025, THU Rank A)*</span>  
+<span style="color:#c62828; font-style: italic;">(ICLR2025, THU Rank A)</span>  
 
 <a href="https://openreview.net/forum?id=A23C57icJt" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores" target="_blank">Code</a>
-
-
 </div>
 </div>
-
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD 2025</div><img src='../images/DnyST.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
-
 [DynST: Dynamic Sparse Training for Resource-Constrained Spatio-Temporal Forecasting](https://arxiv.org/abs/2403.02914)
-
 
 **Hao Wu**, Haomin Wen, Guibin Zhang, Yutong Xia, Yuxuan Liang, Yu Zheng, Qingsong Wen, Kun Wang
 
-<span style="color:red;">*(KDD2025, CCF Rank A)*</span>  
+<span style="color:#c62828; font-style: italic;">(KDD2025, CCF Rank A)</span>  
 
 <a href="https://arxiv.org/abs/2505.19432" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores" target="_blank">Code</a>
-
-
 </div>
 </div>
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD 2024</div><img src='../images/NMO_main.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
-
 [Neural Manifold Operators for Learning the Evolution of Physical Dynamics](https://dl.acm.org/doi/abs/10.1145/3637528.3671779)
-
 
 **Hao Wu**, Kangyu Weng, Shuyi Zhou, Xiaomeng Huang, Wei Xiong
 
-<span style="color:red;">*(KDD2024, CCF Rank A)*</span>  
+<span style="color:#c62828; font-style: italic;">(KDD2024, CCF Rank A)</span>  
 
 <a href="https://dl.acm.org/doi/10.1145/3637528.3671779" target="_blank">Paper</a> | <a href="https://github.com/AI4EarthLab/Neural-Manifold-Operators" target="_blank">Code</a>
-
 </div>
 </div>
-
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2024</div><img src='../images/Prometheus.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
-
 [Prometheus: Out-of-distribution Fluid Dynamics Modeling with Disentangled Graph ODE](https://openreview.net/forum?id=JsPvL6ExK8&referrer=%5Bthe%20profile%20of%20Hao%20Wu%5D(%2Fprofile%3Fid%3D~Hao_Wu39))
-
 
 **Hao Wu**,  Huiyuan Wang, Kun Wang, Weiyan Wang, ChanganYe, Yangyu Tao, Chong Chen, Xian-Sheng Hua, Xiao Luo
 
-<span style="color:red;">*(ICML2024, CCF Rank A)*</span>  
+<span style="color:#c62828; font-style: italic;">(ICML2024, CCF Rank A)</span>  
 
 <a href="https://proceedings.mlr.press/v235/wu24aa.html" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores/DGODE_ood" target="_blank">Code</a> | <a href="https://huggingface.co/datasets/easylearning/Prometheus/tree/main" target="_blank">Benchmark</a>
-
-
 </div>
 </div>
 
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACMMM  2024</div><img src='../images/pastnet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACMMM 2024</div><img src='../images/pastnet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
-
 [PastNet: Introducing Physical Inductive Biases for Spatio-temporal Video Prediction](https://openreview.net/forum?id=mL0KvSwXzk&referrer=%5Bthe%20profile%20of%20Xian-Sheng%20Hua%5D(%2Fprofile%3Fid%3D~Xian-Sheng_Hua1))
-
 
 **Hao Wu**, Fan Xu, Chong Chen, Xian-Sheng Hua, Xiao Luo, Haixin Wang
 
-<span style="color:red;">*(ACM MM, CCF Rank A)*</span>  
+<span style="color:#c62828; font-style: italic;">(ACM MM, CCF Rank A)</span>  
 
 <a href="https://dl.acm.org/doi/10.1145/3664647.3681489" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores/PastNet" target="_blank">Code</a>
-
-
-
-
 </div>
 </div>
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2024</div><img src='../images/Earthfarseer.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
-
 [Earthfarsser: Versatile Spatio-Temporal Dynamical Systems Modeling in One Model](https://ojs.aaai.org/index.php/AAAI/article/view/29521)
-
 
 **Hao Wu**, Yuxuan Liang, Wei Xiong, Zhengyang Zhou, Wei Huang, Shilong Wang, Kun Wang
 
-
-
-<span style="color:red;">*(AAAI2024, CCF Rank A)*</span>  
+<span style="color:#c62828; font-style: italic;">(AAAI2024, CCF Rank A)</span>  
 
 <a href="https://ojs.aaai.org/index.php/AAAI/article/view/29521" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores/EarthFarseer" target="_blank">Code</a>
-
-
 </div>
 </div>
-
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='../images/pure.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
-
 [PURE: Prompt Evolution with Graph ODE for Out-of-distribution Fluid Dynamics Modeling](https://easylearningscores.github.io/)
-
 
 **Hao Wu**, Changhu Wang, Fan Xu, Jinbao Xue, Chong Chen, Xian-Sheng Hua, Xiao Luo 
 
-
-<span style="color:red;">*(NeurIPS2024, CCF Rank A)*</span>  
+<span style="color:#c62828; font-style: italic;">(NeurIPS2024, CCF Rank A)</span>  
 
 <a href="https://neurips.cc/virtual/2024/poster/92971" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores" target="_blank">Code</a>
-
-
 </div>
 </div>
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2024</div><img src='../images/nuwa.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
-
 [NuwaDynamics: Discovering and Updating in Causal Spatio-Temporal Modeling](https://easylearningscores.github.io/)
 
 **Kun Wang**, **Hao Wu**, Yifan Duan, Guibin Zhang, Kai Wang, Xiaojiang Peng, Yu Zheng, Yuxuan Liang, Yang Wang
 
-
-<span style="color:red;">*(ICLR2024, THU Rank A spotlight)*</span>  
+<span style="color:#c62828; font-style: italic;">(ICLR2024, THU Rank A spotlight)</span>  
 
 <a href="https://openreview.net/forum?id=sLdVl0q68X" target="_blank">Paper</a> | <a href="https://github.com/easylearningscores/NuwaDynamics" target="_blank">Code</a>
-
-
 </div>
-
 </div>
----
+<hr style="border: 0; border-top: 1px solid #eee;">
 
+<!-- Awards -->
+<h1>🎖 Honors and Awards</h1>
+<ul>
+  <li><em>2024.09</em> First-class Academic Scholarship of the University of Science and Technology of China.</li>
+  <li><em>2022.10</em> National Scholarship, China (top 0.1% nation-wide).</li>
+  <li><em>2022.09</em> First-class Academic Scholarship of the University of Science and Technology of China.</li>
+</ul>
 
+<!-- Invited Talks -->
+<h1>💬 Invited Talks</h1>
+<ul>
+  <li><em>2024.03</em>, Application and Research of GNN in Meteorological Prediction. @ Sun Yat-sen University</li>
+  <li><em>2023.12</em>, Earthfarseer: versatile spatio-temporal dynamical systems modeling in one model. @ AI TIME </li>
+  <li><em>2023.06</em>, A Review of Spatio-Temporal Forecasting Models. @ Tsinghua University</li>
+</ul>
 
+<!-- Service -->
+<h1>💻 Academic Service</h1>
+<p style="font-size: 15px;">
+  <strong>PC Member / Conference Reviewer:</strong><br>
+  NeurIPS (2023, 2024, 2025), ICLR (2024, 2025), ICML (2024, 2025), AAAI (2025), CVPR/ICCV (2025), ACM MM (2024, 2025), AISTATS (2025).
+</p>
 
-
-# 🎖 Honors and Awards
-
-- *2024.09* First-class Academic Scholarship of the University of Science and Technology of China.
-- *2022.10* National Scholarship, China (top 0.1% nation-wide).
-- *2022.09* First-class Academic Scholarship of the University of Science and Technology of China.
-
-
-# 💬 Invited Talks
-
-- *2024.03*, Application and Research of GNN in Meteorological Prediction. @ Sun Yat-sen University
-- *2023.12*, Earthfarseer: versatile spatio-temporal dynamical systems modeling in one model. @ AI TIME 
-- *2023.06*, A Review of Spatio-Temporal Forecasting Models. @ Tsinghua University
-
-# 💻 Academic service
-
-- PC Member/Conference Reviewer:
-  NeurIPS2023 Conference Reviewers,  NeurIPS2024 Conference Reviewers,  NeurIPS 2024 Datasets and Benchmarks Track Reviewers, ICLR 2024 Conference Reviewers, ICML 2024 Conference Reviewers, ACMMM 2024 Conference Reviewers,  ICLR2025 Conference Reviewers, NeurIPS 2024 Datasets and Benchmarks Track Reviewers, AISTATS 2025 Conference Reviewers, AAAI 2025 Conference Program Committee,  NeurIPS2025 Conference Reviewers, ACMMM 2025 Conference Reviewers, ICCV 2025 Conference Reviewers, ICML 2025 Conference Reviewers.
-
-
-# 👨🏻 Miscellaneous
-
-- 🏀 I am a big fan of basketball, i love Kobe Bryant and i like Fadeaway Shot. I also like Curry.
-- 👑 I am very interested in history.
+<!-- Misc -->
+<h1>👨🏻 Miscellaneous</h1>
+<ul>
+  <li>🏀 I am a big fan of basketball. I love Kobe Bryant and his Fadeaway Shot. I also like Stephen Curry.</li>
+  <li>👑 I am very interested in history.</li>
+</ul>
