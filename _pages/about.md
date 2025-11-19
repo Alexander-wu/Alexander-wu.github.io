@@ -19,30 +19,30 @@ redirect_from:
 
 <!-- ================= GLOBAL STYLES ================= -->
 <style>
-  /* 1. 字体升级：使用现代无衬线字体 (High-end Academic Look) */
+  /* 1. 字体回归：新罗马字体 (Classic Academic Look) */
   body, h1, h2, h3, h4, h5, h6, p, div, span, li, a, button {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-    color: #24292e;
+    font-family: 'Times New Roman', Times, serif !important;
+    color: #222;
   }
 
-  /* 链接颜色：更深邃的科技蓝 */
-  a { color: #0366d6; text-decoration: none; transition: color 0.2s; }
+  /* 链接颜色：深学术蓝 */
+  a { color: #003366; text-decoration: none; transition: all 0.2s; }
   a:hover { color: #0056b3; text-decoration: underline; }
 
-  /* 容器通用样式：卡片化 */
+  /* 容器通用样式 */
   .container-box {
     background: #fff;
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #e1e4e8;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    margin-bottom: 25px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
   }
 
   /* 头部按钮网格 */
   .link-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 12px;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -52,87 +52,87 @@ redirect_from:
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 16px;
-    background-color: #f6f8fa;
-    border: 1px solid #d1d5da;
-    border-radius: 6px;
-    color: #24292e !important;
-    font-size: 14px;
-    font-weight: 600;
+    padding: 8px 15px;
+    background-color: #fcfcfc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333 !important;
+    font-size: 16px; /* Serif 字体通常需要稍微大一点 */
+    font-weight: bold;
     transition: all 0.2s ease;
   }
   
   .link-btn:hover {
-    background-color: #fff;
-    border-color: #0366d6;
-    color: #0366d6 !important;
+    background-color: #f0f0f0;
+    border-color: #003366;
+    color: #003366 !important;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   }
 
   /* Experience 列表项 */
   .exp-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eaecef;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
   }
   .exp-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
   
   .exp-logo {
-    width: 56px; 
-    height: 56px; 
-    margin-right: 18px;
+    width: 60px; 
+    height: 60px; 
+    margin-right: 20px;
     object-fit: contain;
-    border-radius: 8px;
-    border: 1px solid #eee;
-    padding: 2px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 3px;
     background: #fff;
   }
   
   .exp-content { flex: 1; }
-  .exp-title { font-weight: 700; font-size: 16px; color: #000; margin-bottom: 4px; }
-  .exp-subtitle { font-size: 14px; color: #586069; margin-bottom: 4px; }
-  .exp-date { font-size: 13px; color: #6a737d; font-family: 'SF Mono', Consolas, monospace; }
+  .exp-title { font-weight: bold; font-size: 18px; color: #000; margin-bottom: 5px; }
+  .exp-subtitle { font-size: 16px; color: #444; margin-bottom: 5px; font-style: italic; }
+  .exp-date { font-size: 15px; color: #666; }
 
   /* News 滚动区域 */
   .news-scroll {
     max-height: 260px;
     overflow-y: auto;
-    background-color: #f6f8fa;
+    background-color: #fcfcfc;
     padding: 15px 20px;
-    border-radius: 8px;
-    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    border: 1px solid #ddd;
   }
   .news-scroll ul { padding-left: 20px; margin: 0; }
-  .news-scroll li { margin-bottom: 10px; font-size: 14px; line-height: 1.6; }
+  .news-scroll li { margin-bottom: 10px; font-size: 16px; line-height: 1.5; }
 
-  /* --- SELECTED PUBLICATIONS (修复显示问题的核心样式) --- */
+  /* --- SELECTED PUBLICATIONS (核心卡片样式) --- */
   .pub-card {
     display: flex;
-    flex-wrap: wrap; /* 移动端自动换行 */
+    flex-wrap: wrap;
     background: #fff;
-    border: 1px solid #e1e4e8;
-    border-radius: 10px;
-    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 30px; /* 增加间距 */
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
   }
   .pub-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-    border-color: #c8e1ff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+    border-color: #bbb;
   }
 
   .pub-img-col {
-    flex: 0 0 320px; /* 左侧图片固定宽度 */
+    flex: 0 0 300px; /* 图片宽度 */
     position: relative;
     background: #f9f9f9;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid #eaecef;
+    border-right: 1px solid #eee;
     padding: 10px;
   }
   
@@ -140,23 +140,26 @@ redirect_from:
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 4px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
 
-  /* 悬浮在图片左上角的 Badge */
+  /* Badge 样式 - 调整为更适合 Times New Roman 的风格 */
   .pub-badge {
     position: absolute;
-    top: 12px;
+    top: 10px;
     left: 0;
-    background: #005cc5; /* 科技蓝 */
+    background: #003366; /* 经典的深蓝 */
     color: white;
-    padding: 4px 12px;
-    font-size: 12px;
+    padding: 3px 10px;
+    font-size: 14px;
     font-weight: bold;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     z-index: 2;
+    font-family: 'Times New Roman', serif;
+    letter-spacing: 0.5px;
   }
 
   .pub-content-col {
@@ -169,56 +172,56 @@ redirect_from:
   }
 
   .pub-title {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    line-height: 1.4;
-    color: #24292e;
+    font-size: 20px; /* 标题加大 */
+    font-weight: bold;
+    margin-bottom: 12px;
+    line-height: 1.3;
+    color: #111;
   }
-  .pub-title a { color: #24292e; }
-  .pub-title a:hover { color: #0366d6; }
+  .pub-title a { color: #111; }
+  .pub-title a:hover { color: #003366; text-decoration: underline; }
 
   .pub-authors {
-    font-size: 15px;
-    color: #444;
-    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 12px;
     line-height: 1.5;
   }
-  .pub-authors strong { color: #000; border-bottom: 2px solid #c8e1ff; } /* 高亮自己 */
+  .pub-authors strong { color: #000; text-decoration: underline; } /* 高亮自己 */
 
   .pub-venue {
-    font-size: 14px;
+    font-size: 15px;
     font-style: italic;
-    color: #d73a49; /* 红色高亮 CCF Rank */
-    margin-bottom: 12px;
-    font-weight: 500;
+    color: #c62828; /* 红色高亮期刊/会议 */
+    margin-bottom: 15px;
+    font-weight: bold;
   }
 
   .pub-links a {
     display: inline-block;
-    font-size: 13px;
-    font-weight: 600;
-    margin-right: 15px;
-    color: #0366d6;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 18px;
+    color: #003366;
+    text-transform: uppercase; /* 大写增加正式感 */
   }
   .pub-links img { vertical-align: middle; margin-left: 5px; }
 
   /* 标题样式 */
   h1.section-title {
-    font-size: 24px;
-    font-weight: 800;
-    border-bottom: 2px solid #eaecef;
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 2px solid #eee;
     padding-bottom: 10px;
     margin-top: 50px;
-    margin-bottom: 25px;
-    color: #24292e;
-    display: flex;
-    align-items: center;
+    margin-bottom: 30px;
+    color: #111;
   }
   
   /* 移动端适配 */
   @media (max-width: 768px) {
-    .pub-img-col { flex: 0 0 100%; border-right: none; border-bottom: 1px solid #eaecef; height: auto; }
+    .pub-img-col { flex: 0 0 100%; border-right: none; border-bottom: 1px solid #eee; padding: 0; }
+    .pub-img { width: 100%; border-radius: 0; box-shadow: none; }
     .pub-card { flex-direction: column; }
     .link-grid { grid-template-columns: repeat(2, 1fr); }
   }
@@ -226,7 +229,7 @@ redirect_from:
 
 
 <!-- ================= BIO SECTION ================= -->
-<div style="font-size: 16px; line-height: 1.8; text-align: justify; margin-bottom: 25px; color: #333;">
+<div style="font-size: 17px; line-height: 1.6; text-align: justify; margin-bottom: 25px; color: #222;">
   <p>
     <strong>Hi, I am Hao Wu.</strong> My research journey begins between 2019 and 2022, focusing on Chinese semantic parsing. During this period, I designed <a href="https://arxiv.org/abs/2403.19936">SLFNet</a> for translating natural language into logical forms. The advent of ChatGPT in 2022 prompted me to explore more challenging fields.
   </p>
@@ -258,16 +261,16 @@ redirect_from:
 <h1 class="section-title" id='news'>🔥 News</h1>
 <div class="news-scroll">
   <ul>
-    <li><strong>2025.11.08</strong>: 2 papers accepted to <strong>AAAI 2026 Main Track</strong>.</li>
-    <li><strong>2025.09.18</strong>: 2 papers accepted to <strong>NeurIPS 2025</strong>.</li>
+    <li><strong>2025.11.08</strong>: 2 papers accepted to AAAI2026 Main Track.</li>
+    <li><strong>2025.09.18</strong>: 2 papers accepted to NeurIPS2025.</li>
     <li><strong>2025.08.01</strong>: Joined Tencent CSIG (Jarvis Lab) as a research intern.</li>
-    <li><strong>2025.06.26</strong>: 1 paper accepted to <strong>ICCV 2025</strong> (Corresponding Author).</li>
-    <li><strong>2025.06.18</strong>: Graduated from USTC CS with <strong>Outstanding Graduation Thesis Award</strong> (Top 3).</li>
-    <li><strong>2025.05.01</strong>: 1 paper accepted to <strong>ICML 2025</strong> (Co-First Author).</li>
-    <li><strong>2025.01.22</strong>: 1 paper accepted to <strong>ICLR 2025</strong> (Corresponding Author).</li>
-    <li><strong>2024.11.16</strong>: 1 paper accepted to <strong>KDD 2025 ADS</strong> (First Author).</li>
-    <li><strong>2024.01.16</strong>: 1 paper accepted to <strong>ICLR 2024</strong> (<span style="color:#d73a49; font-weight:bold;">Spotlight</span>).</li>
-    <li><strong>2022.10.09</strong>: Received <strong>National Scholarship</strong> (Top 0.1%).</li>
+    <li><strong>2025.06.26</strong>: 1 paper accepted to ICCV2025 (Corresponding Author).</li>
+    <li><strong>2025.06.18</strong>: Graduated from USTC CS with Outstanding Graduation Thesis Award.</li>
+    <li><strong>2025.05.01</strong>: 1 paper accepted to ICML2025 (Co-First Author).</li>
+    <li><strong>2025.01.22</strong>: 1 paper accepted to ICLR2025 (Corresponding Author).</li>
+    <li><strong>2024.11.16</strong>: 1 paper accepted to KDD2025 ADS (First Author).</li>
+    <li><strong>2024.01.16</strong>: 1 paper accepted to ICLR2024 (<span style="color:#c62828">Spotlight</span>).</li>
+    <li><strong>2022.10.09</strong>: Received National Scholarship (Top 0.1%).</li>
   </ul>
 </div>
 
@@ -275,7 +278,6 @@ redirect_from:
 <h1 class="section-title">💼 Research Experience</h1>
 <div class="container-box">
 
-  <!-- Item 1 -->
   <div class="exp-item">
     <img src="../images/tencent.png" class="exp-logo" alt="Tencent">
     <div class="exp-content">
@@ -285,7 +287,6 @@ redirect_from:
     </div>
   </div>
 
-  <!-- Item 2 -->
   <div class="exp-item">
     <img src="../images/tencent.png" class="exp-logo" alt="Tencent">
     <div class="exp-content">
@@ -295,7 +296,6 @@ redirect_from:
     </div>
   </div>
 
-  <!-- Item 3 -->
   <div class="exp-item">
     <img src="../images/hkust.png" class="exp-logo" alt="HKUST">
     <div class="exp-content">
@@ -308,14 +308,14 @@ redirect_from:
 </div>
 
 
-<!-- ================= SELECTED PUBLICATIONS (Fixing the Layout) ================= -->
+<!-- ================= SELECTED PUBLICATIONS ================= -->
 <h1 class="section-title">🌟 Selected Publications</h1>
 
-<!-- Paper 1: NeuralOM -->
+<!-- 1. NeuralOM -->
 <div class="pub-card">
   <div class="pub-img-col">
     <div class="pub-badge">AAAI 2026</div>
-    <img src="../images/fig_main.jpg" class="pub-img" alt="NeuralOM">
+    <img src="../images/fig_main.jpg" class="pub-img" alt="Paper Image">
   </div>
   <div class="pub-content-col">
     <div class="pub-title">
@@ -325,44 +325,21 @@ redirect_from:
       Yuan Gao<sup>†</sup>, <strong>Hao Wu</strong><sup>†‡</sup>, Fan Xu, Yanfei Xiang, Ruijian Gou, Ruiqi Shu, Qingsong Wen, Xian Wu, Kun Wang*, Xiaomeng Huang*
     </div>
     <div class="pub-venue">
-      AAAI 2026 (CCF Rank A)
+      (AAAI 2026, CCF Rank A)
     </div>
     <div class="pub-links">
-      <a href="https://arxiv.org/abs/2505.21020">📄 Paper</a>
-      <a href="https://github.com/YuanGao-YG/NeuralOM">💻 Code</a>
+      <a href="https://arxiv.org/abs/2505.21020">Paper</a>
+      <a href="https://github.com/YuanGao-YG/NeuralOM">Code</a>
       <img src="https://img.shields.io/github/stars/YuanGao-YG/NeuralOM?label=Star&style=social">
     </div>
   </div>
 </div>
 
-<!-- Paper 2: OneForecast -->
-<div class="pub-card">
-  <div class="pub-img-col">
-    <div class="pub-badge">ICML 2025</div>
-    <img src="../images/one.png" class="pub-img" alt="OneForecast">
-  </div>
-  <div class="pub-content-col">
-    <div class="pub-title">
-      <a href="https://arxiv.org/abs/2502.00338">OneForecast: A Universal Framework for Global and Regional Weather Forecasting</a>
-    </div>
-    <div class="pub-authors">
-      Yuan Gao, <strong>Hao Wu</strong>, Ruiqi Shu, Huanshuo Dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qingsong Wen, Xuming Hu, Kun Wang, Jiahao Wu, Li Qing, Hui Xiong, Xiaomeng Huang#
-    </div>
-    <div class="pub-venue">
-      ICML 2025 (CCF Rank A)
-    </div>
-    <div class="pub-links">
-      <a href="https://arxiv.org/abs/2502.00338">📄 Paper</a>
-      <a href="https://github.com/YuanGao-YG/OneForecast">💻 Code</a>
-    </div>
-  </div>
-</div>
-
-<!-- Paper 3: ICCV 2025 -->
+<!-- 2. ICCV 2025 -->
 <div class="pub-card">
   <div class="pub-img-col">
     <div class="pub-badge">ICCV 2025</div>
-    <img src="../images/iccv2025.png" class="pub-img" alt="ICCV Paper">
+    <img src="../images/iccv2025.png" class="pub-img" alt="Paper Image">
   </div>
   <div class="pub-content-col">
     <div class="pub-title">
@@ -372,20 +349,66 @@ redirect_from:
       Yuqi Li, Chuanguang Yang, Hansheng Zeng, Zeyu Dong, Zhulin An, Yongjun Xu, Yingli Tian, <strong>Hao Wu#</strong>
     </div>
     <div class="pub-venue">
-      ICCV 2025 (CCF Rank A)
+      (ICCV 2025, CCF Rank A)
     </div>
     <div class="pub-links">
-      <a href="#">📄 Paper</a>
-      <a href="https://github.com/itsnotacie/SDKD">💻 Code</a>
+      <a href="#">Paper</a>
+      <a href="https://github.com/itsnotacie/SDKD">Code</a>
     </div>
   </div>
 </div>
 
-<!-- Paper 4: KDD 2025 -->
+<!-- 3. OneForecast -->
+<div class="pub-card">
+  <div class="pub-img-col">
+    <div class="pub-badge">ICML 2025</div>
+    <img src="../images/one.png" class="pub-img" alt="Paper Image">
+  </div>
+  <div class="pub-content-col">
+    <div class="pub-title">
+      <a href="https://arxiv.org/abs/2502.00338">OneForecast: A Universal Framework for Global and Regional Weather Forecasting</a>
+    </div>
+    <div class="pub-authors">
+      Yuan Gao, <strong>Hao Wu</strong>, Ruiqi Shu, Huanshuo Dong, Fan Xu, Rui Ray Chen, Yibo Yan, Qingsong Wen, Xuming Hu, Kun Wang, Jiahao Wu, Li Qing, Hui Xiong, Xiaomeng Huang#
+    </div>
+    <div class="pub-venue">
+      (ICML 2025, CCF Rank A)
+    </div>
+    <div class="pub-links">
+      <a href="https://arxiv.org/abs/2502.00338">Paper</a>
+      <a href="https://github.com/YuanGao-YG/OneForecast">Code</a>
+    </div>
+  </div>
+</div>
+
+<!-- 4. Open-CK -->
+<div class="pub-card">
+  <div class="pub-img-col">
+    <div class="pub-badge">ICLR 2025</div>
+    <img src="../images/openck.png" class="pub-img" alt="Paper Image">
+  </div>
+  <div class="pub-content-col">
+    <div class="pub-title">
+      <a href="https://openreview.net/forum?id=A23C57icJt">Open-CK: A Large Multi-Physics Fields Coupling benchmarks in Combustion Kinetics</a>
+    </div>
+    <div class="pub-authors">
+      Zaige Fei, Fan Xu, Junyuan Mao, Yuxuan Liang, Qingsong Wen, Kun Wang, <strong>Hao Wu#</strong>, Yang Wang
+    </div>
+    <div class="pub-venue">
+      (ICLR 2025, THU Rank A)
+    </div>
+    <div class="pub-links">
+      <a href="https://openreview.net/forum?id=A23C57icJt">Paper</a>
+      <a href="https://github.com/easylearningscores">Code</a>
+    </div>
+  </div>
+</div>
+
+<!-- 5. DynST -->
 <div class="pub-card">
   <div class="pub-img-col">
     <div class="pub-badge">KDD 2025</div>
-    <img src="../images/DnyST.png" class="pub-img" alt="DynST">
+    <img src="../images/DnyST.png" class="pub-img" alt="Paper Image">
   </div>
   <div class="pub-content-col">
     <div class="pub-title">
@@ -395,11 +418,150 @@ redirect_from:
       <strong>Hao Wu</strong>, Haomin Wen, Guibin Zhang, Yutong Xia, Yuxuan Liang, Yu Zheng, Qingsong Wen, Kun Wang
     </div>
     <div class="pub-venue">
-      KDD 2025 (CCF Rank A)
+      (KDD 2025, CCF Rank A)
     </div>
     <div class="pub-links">
-      <a href="https://arxiv.org/abs/2403.02914">📄 Paper</a>
-      <a href="https://github.com/easylearningscores">💻 Code</a>
+      <a href="https://arxiv.org/abs/2505.19432">Paper</a>
+      <a href="https://github.com/easylearningscores">Code</a>
+    </div>
+  </div>
+</div>
+
+<!-- 6. NMO -->
+<div class="pub-card">
+  <div class="pub-img-col">
+    <div class="pub-badge">KDD 2024</div>
+    <img src="../images/NMO_main.png" class="pub-img" alt="Paper Image">
+  </div>
+  <div class="pub-content-col">
+    <div class="pub-title">
+      <a href="https://dl.acm.org/doi/abs/10.1145/3637528.3671779">Neural Manifold Operators for Learning the Evolution of Physical Dynamics</a>
+    </div>
+    <div class="pub-authors">
+      <strong>Hao Wu</strong>, Kangyu Weng, Shuyi Zhou, Xiaomeng Huang, Wei Xiong
+    </div>
+    <div class="pub-venue">
+      (KDD 2024, CCF Rank A)
+    </div>
+    <div class="pub-links">
+      <a href="https://dl.acm.org/doi/10.1145/3637528.3671779">Paper</a>
+      <a href="https://github.com/AI4EarthLab/Neural-Manifold-Operators">Code</a>
+    </div>
+  </div>
+</div>
+
+<!-- 7. Prometheus -->
+<div class="pub-card">
+  <div class="pub-img-col">
+    <div class="pub-badge">ICML 2024</div>
+    <img src="../images/Prometheus.png" class="pub-img" alt="Paper Image">
+  </div>
+  <div class="pub-content-col">
+    <div class="pub-title">
+      <a href="https://openreview.net/forum?id=JsPvL6ExK8">Prometheus: Out-of-distribution Fluid Dynamics Modeling with Disentangled Graph ODE</a>
+    </div>
+    <div class="pub-authors">
+      <strong>Hao Wu</strong>, Huiyuan Wang, Kun Wang, Weiyan Wang, ChanganYe, Yangyu Tao, Chong Chen, Xian-Sheng Hua, Xiao Luo
+    </div>
+    <div class="pub-venue">
+      (ICML 2024, CCF Rank A)
+    </div>
+    <div class="pub-links">
+      <a href="https://proceedings.mlr.press/v235/wu24aa.html">Paper</a>
+      <a href="https://github.com/easylearningscores/DGODE_ood">Code</a>
+      <a href="https://huggingface.co/datasets/easylearning/Prometheus/tree/main">Benchmark</a>
+    </div>
+  </div>
+</div>
+
+<!-- 8. PastNet -->
+<div class="pub-card">
+  <div class="pub-img-col">
+    <div class="pub-badge">ACM MM 2024</div>
+    <img src="../images/pastnet.png" class="pub-img" alt="Paper Image">
+  </div>
+  <div class="pub-content-col">
+    <div class="pub-title">
+      <a href="https://openreview.net/forum?id=mL0KvSwXzk">PastNet: Introducing Physical Inductive Biases for Spatio-temporal Video Prediction</a>
+    </div>
+    <div class="pub-authors">
+      <strong>Hao Wu</strong>, Fan Xu, Chong Chen, Xian-Sheng Hua, Xiao Luo, Haixin Wang
+    </div>
+    <div class="pub-venue">
+      (ACM MM 2024, CCF Rank A)
+    </div>
+    <div class="pub-links">
+      <a href="https://dl.acm.org/doi/10.1145/3664647.3681489">Paper</a>
+      <a href="https://github.com/easylearningscores/PastNet">Code</a>
+    </div>
+  </div>
+</div>
+
+<!-- 9. Earthfarseer -->
+<div class="pub-card">
+  <div class="pub-img-col">
+    <div class="pub-badge">AAAI 2024</div>
+    <img src="../images/Earthfarseer.png" class="pub-img" alt="Paper Image">
+  </div>
+  <div class="pub-content-col">
+    <div class="pub-title">
+      <a href="https://ojs.aaai.org/index.php/AAAI/article/view/29521">Earthfarseer: Versatile Spatio-Temporal Dynamical Systems Modeling in One Model</a>
+    </div>
+    <div class="pub-authors">
+      <strong>Hao Wu</strong>, Yuxuan Liang, Wei Xiong, Zhengyang Zhou, Wei Huang, Shilong Wang, Kun Wang
+    </div>
+    <div class="pub-venue">
+      (AAAI 2024, CCF Rank A)
+    </div>
+    <div class="pub-links">
+      <a href="https://ojs.aaai.org/index.php/AAAI/article/view/29521">Paper</a>
+      <a href="https://github.com/easylearningscores/EarthFarseer">Code</a>
+    </div>
+  </div>
+</div>
+
+<!-- 10. PURE -->
+<div class="pub-card">
+  <div class="pub-img-col">
+    <div class="pub-badge">NeurIPS 2024</div>
+    <img src="../images/pure.png" class="pub-img" alt="Paper Image">
+  </div>
+  <div class="pub-content-col">
+    <div class="pub-title">
+      <a href="https://neurips.cc/virtual/2024/poster/92971">PURE: Prompt Evolution with Graph ODE for Out-of-distribution Fluid Dynamics Modeling</a>
+    </div>
+    <div class="pub-authors">
+      <strong>Hao Wu</strong>, Changhu Wang, Fan Xu, Jinbao Xue, Chong Chen, Xian-Sheng Hua, Xiao Luo
+    </div>
+    <div class="pub-venue">
+      (NeurIPS 2024, CCF Rank A)
+    </div>
+    <div class="pub-links">
+      <a href="https://neurips.cc/virtual/2024/poster/92971">Paper</a>
+      <a href="https://github.com/easylearningscores">Code</a>
+    </div>
+  </div>
+</div>
+
+<!-- 11. NuwaDynamics -->
+<div class="pub-card">
+  <div class="pub-img-col">
+    <div class="pub-badge">ICLR 2024</div>
+    <img src="../images/nuwa.png" class="pub-img" alt="Paper Image">
+  </div>
+  <div class="pub-content-col">
+    <div class="pub-title">
+      <a href="https://openreview.net/forum?id=sLdVl0q68X">NuwaDynamics: Discovering and Updating in Causal Spatio-Temporal Modeling</a>
+    </div>
+    <div class="pub-authors">
+      <strong>Kun Wang</strong>, <strong>Hao Wu</strong>, Yifan Duan, Guibin Zhang, Kai Wang, Xiaojiang Peng, Yu Zheng, Yuxuan Liang, Yang Wang
+    </div>
+    <div class="pub-venue">
+      (ICLR 2024, THU Rank A Spotlight)
+    </div>
+    <div class="pub-links">
+      <a href="https://openreview.net/forum?id=sLdVl0q68X">Paper</a>
+      <a href="https://github.com/easylearningscores/NuwaDynamics">Code</a>
     </div>
   </div>
 </div>
@@ -407,19 +569,19 @@ redirect_from:
 
 <!-- ================= MISC ================= -->
 <h1 class="section-title">💬 Invited Talks</h1>
-<ul style="line-height: 1.8; color: #444;">
+<ul style="line-height: 1.6; font-size: 16px;">
   <li><em>2024.03</em>, Application and Research of GNN in Meteorological Prediction. @ Sun Yat-sen University</li>
   <li><em>2023.12</em>, Earthfarseer: versatile spatio-temporal dynamical systems modeling in one model. @ AI TIME </li>
 </ul>
 
 <h1 class="section-title">💻 Academic Service</h1>
-<div style="background: #f9f9f9; padding: 15px; border-radius: 6px; font-size: 15px; color: #444; line-height: 1.6;">
+<div style="background: #fcfcfc; padding: 15px; border-radius: 6px; font-size: 16px; border: 1px solid #ddd; line-height: 1.6;">
   <strong>Conference Reviewer / PC Member:</strong><br>
   NeurIPS (2023-2025), ICLR (2024-2025), ICML (2024-2025), CVPR (2025), ICCV (2025), AAAI (2025), ACM MM (2024-2025), AISTATS (2025).
 </div>
 
 <h1 class="section-title">👨🏻 Miscellaneous</h1>
-<ul style="line-height: 1.8; color: #444;">
+<ul style="line-height: 1.6; font-size: 16px;">
   <li>🏀 Big fan of basketball. I love Kobe Bryant and his Fadeaway Shot. Also a fan of Stephen Curry.</li>
   <li>👑 Deeply interested in History.</li>
 </ul>
