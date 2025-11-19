@@ -20,11 +20,9 @@ layout: single
 
 <!-- ================= GLOBAL STYLES ================= -->
 <style>
-  /* 1. 核心布局调整：去除侧边栏后的全宽设置 */
-  /* 隐藏可能残留的侧边栏容器 */
+  /* 1. 核心布局调整 */
   .sidebar { display: none !important; }
   
-  /* 让内容区域居中且变宽 */
   .page__content {
     width: 100% !important;
     max-width: 100% !important;
@@ -33,20 +31,19 @@ layout: single
   }
 
   .page__inner-wrap {
-    max-width: 1280px !important; /* 核心宽度控制，可根据喜好改为 1100px 或 1400px */
+    max-width: 1280px !important;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
     float: none !important;
   }
 
-  /* 2. 全局字体：Times New Roman */
+  /* 2. 全局字体 */
   body, h1, h2, h3, h4, h5, h6, p, div, span, li, a, button, strong {
     font-family: 'Times New Roman', Times, serif !important;
     color: #222;
   }
 
-  /* 链接颜色 */
   a { color: #003366; text-decoration: none; transition: all 0.2s; }
   a:hover { color: #0056b3; text-decoration: underline; }
 
@@ -60,11 +57,11 @@ layout: single
     box-shadow: 0 4px 10px rgba(0,0,0,0.03);
   }
 
-  /* --- 顶部 BIO 布局 (左文右图) --- */
+  /* --- BIO 布局 --- */
   .bio-container {
     display: flex;
     justify-content: space-between;
-    gap: 50px; /* 文字和图片之间的间距加大 */
+    gap: 50px;
     margin-bottom: 50px;
     align-items: flex-start;
     margin-top: 20px;
@@ -74,12 +71,18 @@ layout: single
     flex: 1;
   }
 
+  /* 限制头像列的宽度，防止挤压 */
   .bio-photo-col {
-    flex: 0 0 300px; /* 右侧照片固定宽度 */
+    flex: 0 0 250px !important; /* 给头像列稍微宽一点的空间 */
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .bio-photo {
     width: 100%;
+    max-width: 200px; /* 图片本身限制宽度 */
     height: auto;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
@@ -153,7 +156,7 @@ layout: single
   .news-scroll ul { padding-left: 20px; margin: 0; }
   .news-scroll li { margin-bottom: 12px; font-size: 17px; line-height: 1.5; }
 
-  /* --- SELECTED PUBLICATIONS (11篇全) --- */
+  /* --- PUBLICATIONS --- */
   .pub-card {
     display: flex;
     flex-wrap: wrap;
@@ -171,7 +174,7 @@ layout: single
   }
 
   .pub-img-col {
-    flex: 0 0 340px; /* 图片区域宽度 */
+    flex: 0 0 340px;
     position: relative;
     background: #f9f9f9;
     display: flex;
@@ -188,7 +191,6 @@ layout: single
     border-radius: 2px;
   }
 
-  /* Badge */
   .pub-badge {
     position: absolute;
     top: 12px;
@@ -249,7 +251,6 @@ layout: single
     text-transform: uppercase;
   }
   
-  /* 标题样式 */
   h1.section-title {
     font-size: 30px;
     font-weight: bold;
@@ -260,7 +261,6 @@ layout: single
     color: #111;
   }
 
-  /* 移动端适配 */
   @media (max-width: 850px) {
     .bio-container { flex-direction: column-reverse; gap: 30px; }
     .bio-photo-col { flex: 0 0 auto; width: 100%; max-width: 300px; margin: 0 auto; }
@@ -298,7 +298,6 @@ layout: single
       <a href="mailto:wuhao2022@mail.ustc.edu.cn" class="link-btn">✉️ Email</a>
       <a href="https://scholar.google.com/citations?user=HdXMhfcAAAAJ&hl=en" class="link-btn">🎓 Google Scholar</a>
       
-      <!-- GitHub 按钮升级：使用 SVG 图标 -->
       <a href="https://github.com/Alexander-wu" class="link-btn">
         <svg height="18" viewBox="0 0 16 16" width="18" style="margin-right: 5px; fill: #333; vertical-align: sub;">
            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
@@ -310,18 +309,18 @@ layout: single
     </div>
   </div>
   
-<!-- 右侧：头像 -->
-  <div class="bio-photo-col" style="flex: 0 0 200px !important;"> 
-    <!-- 图片 -->
+  <!-- 右侧：头像和邮箱 (这是之前导致出错的部分，已修复) -->
+  <div class="bio-photo-col"> 
     <img src="../images/wuhaodemo" class="bio-photo" alt="Hao Wu">
-    
-    <!-- 新增：图片下方的邮箱 -->
-    <div style="text-align: center; margin-top: 10px; font-size: 14px; line-height: 1.2; word-break: break-all;">
-      <a href="mailto:wuhao2022@mail.ustc.edu.cn" style="color: #555; text-decoration: none;">
+    <!-- 邮箱地址 -->
+    <div style="text-align: center; margin-top: 12px; font-size: 15px; line-height: 1.2; word-break: break-all;">
+      <a href="mailto:wuhao2022@mail.ustc.edu.cn" style="color: #444; text-decoration: none; font-weight: 500;">
         wuhao2022@mail.ustc.edu.cn
       </a>
     </div>
   </div>
+
+</div>
 
 <!-- ================= NEWS SECTION ================= -->
 <h1 class="section-title" id='news'>🔥 News</h1>
@@ -381,7 +380,7 @@ layout: single
 </div>
 
 
-<!-- ================= SELECTED PUBLICATIONS (11 Papers) ================= -->
+<!-- ================= SELECTED PUBLICATIONS ================= -->
 <h1 class="section-title">🌟 Selected Publications</h1>
 
 <!-- 1. NeuralOM -->
