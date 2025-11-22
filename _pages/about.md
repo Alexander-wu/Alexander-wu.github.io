@@ -27,7 +27,6 @@ layout: single
     --text-secondary: #56565c;
     --bg-card: #ffffff;
     --bg-page: #fafafa;
-    --transition-speed: 0.3s;
   }
 
   /* 隐藏默认侧边栏，聚焦内容 */
@@ -42,21 +41,23 @@ layout: single
   }
 
   .page__inner-wrap {
-    max-width: 1024px !important; /* 稍微加宽，更显大气 */
+    max-width: 1024px !important;
     margin: 0 auto;
     padding: 60px 40px;
     float: none !important;
   }
 
-  /* 1. 字体系统：学术与现代的平衡 */
-  body, p, div, span, li {
-    font-family: Georgia, 'Times New Roman', Times, serif !important; /* Georgia 在屏幕上比 Times 更易读且保留学术感 */
+  /* 1. 字体系统：英文Georgia，中文楷体 */
+  body, p, div, span, li, a, strong, b {
+    /* 核心修改：英文优先 Georgia，中文回退到楷体 */
+    font-family: Georgia, 'Times New Roman', Times, 'KaiTi', 'STKaiti', '华文楷体', serif !important;
     color: var(--text-primary);
-    line-height: 1.8; /* 增加行高，提升呼吸感 */
+    line-height: 1.6; 
   }
 
+  /* 标题保持现代无衬线体，显得更清晰 */
   h1, h2, h3, h4, h5, h6 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important; /* 标题使用无衬线体，制造现代反差 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !important;
     color: #111;
     letter-spacing: -0.02em;
   }
@@ -65,34 +66,22 @@ layout: single
     color: var(--accent-color); 
     text-decoration: none; 
     transition: all 0.2s ease; 
-    font-weight: 500;
   }
   a:hover { 
     color: #00274d; 
-    text-decoration: none; 
-    border-bottom: 1px solid currentColor; /* 优雅的下划线交互 */
+    text-decoration: underline; 
   }
 
   /* 2. 容器与卡片通用样式 */
   .section-title {
     font-size: 28px;
     font-weight: 700;
-    margin-top: 70px;
-    margin-bottom: 35px;
+    margin-top: 60px;
+    margin-bottom: 30px;
     color: #000;
     position: relative;
     padding-bottom: 10px;
-    border-bottom: 1px solid #eaeaea;
-  }
-  
-  .section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background: var(--accent-color); /* 标题下方的装饰线 */
+    border-bottom: 2px solid #eaeaea;
   }
 
   /* --- BIO 布局 --- */
@@ -102,30 +91,30 @@ layout: single
     gap: 60px;
     margin-bottom: 60px;
     align-items: flex-start;
-    animation: fadeIn 0.8s ease-out;
   }
 
   .bio-text-col { flex: 1; }
   
   .bio-name {
-    font-size: 38px;
-    font-weight: 800;
-    margin-bottom: 8px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
     color: #000;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    /* 名字依然保持无衬线体显得更有力，如果想用楷体去掉下一行即可 */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
   }
   
   .bio-sub {
-    font-size: 19px;
+    font-size: 18px;
     color: var(--text-secondary);
-    margin-bottom: 30px;
-    font-weight: 400;
+    margin-bottom: 25px;
   }
 
   .bio-desc {
     font-size: 17px;
     color: #333;
     text-align: justify;
+    line-height: 1.8;
   }
 
   .bio-photo-col {
@@ -133,199 +122,162 @@ layout: single
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
   }
 
   .bio-photo {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%; /* 圆形头像更具亲和力，如需方形可改为 12px */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 200px;
+    height: 200px; /* 如果原图不是正方形，建议去掉 height 限制或设为 auto */
+    border-radius: 50%; /* 圆形头像 */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     object-fit: cover;
     border: 4px solid #fff;
-    transition: transform 0.3s ease;
   }
-  
-  .bio-photo:hover { transform: scale(1.02); }
 
   /* 按钮链接组 */
   .link-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-top: 35px;
+    margin-top: 30px;
   }
   
   .link-btn {
     display: inline-flex;
     align-items: center;
-    padding: 8px 18px;
+    padding: 6px 16px;
     background-color: #fff;
-    border: 1px solid #e1e4e8;
-    border-radius: 50px; /* 胶囊圆角 */
-    color: #444 !important;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    color: #24292e !important;
     font-size: 15px;
     font-weight: 600;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+    /* 按钮文字用无衬线体更清晰 */
+    font-family: -apple-system, sans-serif !important;
     transition: all 0.2s;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
   }
   
-  .link-btn svg { margin-right: 6px; fill: #555; transition: fill 0.2s; }
+  .link-btn svg { margin-right: 6px; fill: #555; }
 
   .link-btn:hover {
-    background-color: var(--accent-color);
+    background-color: #f6f8fa;
     border-color: var(--accent-color);
-    color: #fff !important;
+    color: var(--accent-color) !important;
     text-decoration: none;
-    border-bottom: none;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,64,128,0.25);
   }
-  .link-btn:hover svg { fill: #fff; }
 
   /* --- NEWS SECTION --- */
   .news-wrapper {
     background: #fff;
-    border-radius: 12px;
-    border: 1px solid #f0f0f0;
-    padding: 10px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    border-radius: 8px;
+    border: 1px solid #eee;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
   }
   
   .news-scroll {
     max-height: 280px;
     overflow-y: auto;
-    padding: 15px 20px;
+    padding-right: 10px;
   }
   
-  /* 美化滚动条 */
-  .news-scroll::-webkit-scrollbar { width: 6px; }
-  .news-scroll::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 4px; }
-  .news-scroll::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
-  .news-scroll::-webkit-scrollbar-thumb:hover { background: #bbb; }
-
   .news-scroll ul { padding-left: 20px; margin: 0; }
   .news-scroll li { 
-    margin-bottom: 14px; 
+    margin-bottom: 10px; 
     font-size: 16px; 
     color: #444; 
-    position: relative;
   }
-  .news-scroll li strong { color: var(--accent-color); margin-right: 6px; font-family: -apple-system, sans-serif; font-size: 15px;}
+  /* News里的日期保持无衬线体 */
+  .news-scroll li strong { color: var(--accent-color); font-family: -apple-system, sans-serif !important; }
 
-  /* --- EXPERIENCE (Timeline Style) --- */
+  /* --- EXPERIENCE --- */
   .exp-container {
     background: #fff;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.03);
-    border: 1px solid rgba(0,0,0,0.03);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #eee;
   }
 
   .exp-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 0;
-    padding-bottom: 35px;
-    position: relative;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f0f0f0;
   }
+  .exp-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
   
-  .exp-item:last-child { padding-bottom: 0; }
-  
-  /* 时间轴连接线 */
-  .exp-item:not(:last-child)::before {
-    content: '';
-    position: absolute;
-    left: 32px; /* logo width/2 - border/2 + padding */
-    top: 75px;
-    bottom: 0;
-    width: 2px;
-    background: #f0f0f0;
-    z-index: 0;
-  }
-
-  .exp-logo-wrapper {
-    z-index: 1;
-    background: #fff;
-    padding-bottom: 10px;
-  }
-
   .exp-logo {
-    width: 64px; 
-    height: 64px; 
-    margin-right: 30px;
+    width: 60px; 
+    height: 60px; 
+    margin-right: 25px;
     object-fit: contain;
-    border-radius: 12px;
-    border: 1px solid #f2f2f2;
-    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    padding: 4px;
     background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   }
   
-  .exp-content { flex: 1; padding-top: 5px; }
-  .exp-title { font-weight: 700; font-size: 19px; color: #111; margin-bottom: 4px; font-family: -apple-system, sans-serif; }
-  .exp-subtitle { font-size: 16px; color: #555; margin-bottom: 4px; font-style: normal; }
-  .exp-date { font-size: 14px; color: #888; font-family: -apple-system, sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;}
+  .exp-content { flex: 1; }
+  .exp-title { font-weight: bold; font-size: 19px; color: #111; margin-bottom: 4px; font-family: -apple-system, sans-serif !important;}
+  .exp-subtitle { font-size: 17px; color: #555; margin-bottom: 4px; font-style: italic; }
+  .exp-date { font-size: 15px; color: #888; font-family: -apple-system, sans-serif !important; }
 
-  /* --- PUBLICATIONS --- */
+  /* --- PUBLICATIONS (核心修改部分) --- */
   .pub-card {
     display: flex;
     background: #fff;
-    border: 1px solid #f0f0f0;
-    border-radius: 12px;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
     margin-bottom: 30px;
     overflow: hidden;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    transition: box-shadow 0.3s;
   }
   
   .pub-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
-    border-color: transparent;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-color: #ccc;
   }
 
   .pub-img-col {
-    flex: 0 0 300px;
-    background: #fcfcfc;
+    /* 增加宽度以适应宽图，确保图片不拥挤 */
+    flex: 0 0 320px; 
+    background: #fff; /* 背景改为白色，适应论文图表 */
     position: relative;
-    overflow: hidden;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid #f5f5f5;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    border-right: 1px solid #eee;
+    padding: 15px; /* 增加内边距，让图片不贴边 */
   }
   
   .pub-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* 让图片填满容器 */
-    transition: transform 0.5s ease;
+    width: 100%;       /* 宽度占满容器 */
+    height: auto;      /* 高度自适应，保持比例 */
+    object-fit: contain; /* 确保完整显示，不裁剪 */
+    display: block;
+    max-height: 250px; /* 防止过高 */
   }
-  
-  .pub-card:hover .pub-img { transform: scale(1.05); }
 
   .pub-badge {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    background: rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(4px);
+    top: 10px;
+    left: 10px;
+    background: #003366;
     color: white;
-    padding: 4px 10px;
-    font-size: 12px;
-    font-weight: 700;
-    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
     z-index: 2;
-    font-family: -apple-system, sans-serif;
-    letter-spacing: 0.5px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    opacity: 0.9;
+    font-family: -apple-system, sans-serif !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   }
 
   .pub-content-col {
     flex: 1;
-    padding: 25px 30px;
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -333,67 +285,46 @@ layout: single
 
   .pub-title {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 10px;
-    line-height: 1.4;
-    color: #111;
-    font-family: -apple-system, sans-serif;
+    line-height: 1.3;
+    color: #000;
   }
-  .pub-title a { color: #111; border-bottom: none; }
-  .pub-title a:hover { color: var(--accent-color); }
+  .pub-title a { color: #000; }
+  .pub-title a:hover { color: var(--accent-color); text-decoration: underline; }
 
   .pub-authors {
     font-size: 16px;
     color: #444;
-    margin-bottom: 12px;
-    line-height: 1.6;
+    margin-bottom: 10px;
   }
-  .pub-authors strong { color: #000; font-weight: 600; text-decoration: underline; text-decoration-color: #ccc; }
+  .pub-authors strong { color: #000; text-decoration: underline; }
 
   .pub-venue {
     font-size: 15px;
     color: #c62828;
-    margin-bottom: 18px;
-    font-weight: 600;
-    font-family: -apple-system, sans-serif;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-style: italic;
   }
 
-  .pub-links { display: flex; gap: 15px; }
-  
   .pub-links a {
-    font-size: 13px;
-    font-weight: 700;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 15px;
     color: var(--accent-color);
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 4px 0;
-    font-family: -apple-system, sans-serif;
+    font-family: -apple-system, sans-serif !important;
   }
   
-  /* --- MISC & ACADEMIC SERVICE --- */
+  /* --- MISC & SERVICE --- */
   .misc-box {
-    background: #fff;
-    padding: 25px;
-    border-radius: 10px;
+    background: #fcfcfc;
+    padding: 20px;
+    border-radius: 6px;
     border: 1px solid #eee;
     font-size: 16px;
-    line-height: 1.7;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
-  }
-
-  .misc-list li { margin-bottom: 10px; list-style-type: none; position: relative; padding-left: 20px; }
-  .misc-list li::before {
-    content: '•';
-    color: var(--accent-color);
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-  }
-
-  /* 动画 */
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
   }
 
   /* 移动端适配 */
@@ -405,9 +336,9 @@ layout: single
     .link-grid { justify-content: center; }
     
     .pub-card { flex-direction: column; }
-    .pub-img-col { flex: 0 0 200px; border-right: none; border-bottom: 1px solid #eee; }
+    .pub-img-col { flex: 0 0 auto; width: 100%; border-right: none; border-bottom: 1px solid #eee; padding: 0; }
+    .pub-img { width: 100%; max-height: none; border-radius: 8px 8px 0 0; }
     .pub-content-col { padding: 20px; }
-    .exp-item::before { display: none; } /* 移动端去掉时间轴线 */
   }
 </style>
 
@@ -504,9 +435,7 @@ layout: single
 <div class="exp-container">
 
   <div class="exp-item">
-    <div class="exp-logo-wrapper">
-      <img src="../images/tencent.png" class="exp-logo" alt="Tencent">
-    </div>
+    <img src="../images/tencent.png" class="exp-logo" alt="Tencent">
     <div class="exp-content">
       <div class="exp-title">Jarvis Lab, Tencent</div>
       <div class="exp-subtitle">Research Intern &nbsp; | &nbsp; Mentor: <a href="#">Xian Wu</a></div>
@@ -515,9 +444,7 @@ layout: single
   </div>
 
   <div class="exp-item">
-    <div class="exp-logo-wrapper">
-      <img src="../images/tencent.png" class="exp-logo" alt="Tencent">
-    </div>
+    <img src="../images/tencent.png" class="exp-logo" alt="Tencent">
     <div class="exp-content">
       <div class="exp-title">Machine Learning Platform Dept., Tencent</div>
       <div class="exp-subtitle">Research Intern (Hunyuan Large Model) &nbsp; | &nbsp; Mentor: <a href="#">Jinbao Xue</a></div>
@@ -526,9 +453,7 @@ layout: single
   </div>
 
   <div class="exp-item">
-    <div class="exp-logo-wrapper">
-      <img src="../images/hkust.png" class="exp-logo" alt="HKUST">
-    </div>
+    <img src="../images/hkust.png" class="exp-logo" alt="HKUST">
     <div class="exp-content">
       <div class="exp-title">CityMind Lab, HKUST (Guangzhou)</div>
       <div class="exp-subtitle">Research Intern &nbsp; | &nbsp; Advisor: <a href="#">Yuxuan Liang</a></div>
@@ -801,21 +726,21 @@ layout: single
 <!-- ================= MISC ================= -->
 <h1 class="section-title">💬 Invited Talks</h1>
 <div class="misc-box">
-  <ul class="misc-list">
+  <ul style="line-height: 1.6; padding-left: 20px;">
     <li><em>2024.03</em>, Application and Research of GNN in Meteorological Prediction. @ Sun Yat-sen University</li>
     <li><em>2023.12</em>, Earthfarseer: versatile spatio-temporal dynamical systems modeling in one model. @ AI TIME </li>
   </ul>
 </div>
 
 <h1 class="section-title">💻 Academic Service</h1>
-<div class="misc-box" style="background: #f8f9fa;">
+<div class="misc-box" style="background: #fcfcfc;">
   <strong>Conference Reviewer / PC Member:</strong><br>
   NeurIPS (2023-2025), ICLR (2024-2025), ICML (2024-2025), CVPR (2025), ICCV (2025), AAAI (2025), ACM MM (2024-2025), AISTATS (2025).
 </div>
 
 <h1 class="section-title">👨🏻 Miscellaneous</h1>
 <div class="misc-box">
-  <ul class="misc-list">
+  <ul style="line-height: 1.6; padding-left: 20px;">
     <li>🏀 Big fan of basketball. I love Kobe Bryant and his Fadeaway Shot. Also a fan of Stephen Curry.</li>
     <li>👑 Deeply interested in History.</li>
   </ul>
