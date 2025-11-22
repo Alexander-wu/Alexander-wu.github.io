@@ -22,14 +22,13 @@ layout: single
 <style>
   /* 0. 基础重置与高定质感 */
   :root {
-    --accent-color: #004080; /* 深邃学术蓝 */
-    --text-primary: #1d1d1f;
-    --text-secondary: #56565c;
-    --bg-card: #ffffff;
+    --accent-color: #003366; /* 经典的学术深蓝 */
+    --text-primary: #111;
+    --text-secondary: #444;
     --bg-page: #fafafa;
   }
 
-  /* 隐藏默认侧边栏，聚焦内容 */
+  /* 隐藏默认侧边栏 */
   .sidebar { display: none !important; }
   
   .page__content {
@@ -41,25 +40,17 @@ layout: single
   }
 
   .page__inner-wrap {
-    max-width: 1024px !important;
+    max-width: 1060px !important; /* 稍微加宽，适应变大的图片 */
     margin: 0 auto;
     padding: 60px 40px;
     float: none !important;
   }
 
-  /* 1. 字体系统：英文Georgia，中文楷体 */
-  body, p, div, span, li, a, strong, b {
-    /* 核心修改：英文优先 Georgia，中文回退到楷体 */
-    font-family: Georgia, 'Times New Roman', Times, 'KaiTi', 'STKaiti', '华文楷体', serif !important;
+  /* 1. 全局统一字体：Georgia / Times New Roman */
+  body, h1, h2, h3, h4, h5, h6, p, div, span, li, a, strong, b, button {
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
     color: var(--text-primary);
-    line-height: 1.6; 
-  }
-
-  /* 标题保持现代无衬线体，显得更清晰 */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !important;
-    color: #111;
-    letter-spacing: -0.02em;
+    line-height: 1.6;
   }
 
   a { 
@@ -68,20 +59,21 @@ layout: single
     transition: all 0.2s ease; 
   }
   a:hover { 
-    color: #00274d; 
+    color: #0056b3; 
     text-decoration: underline; 
   }
 
-  /* 2. 容器与卡片通用样式 */
+  /* 2. 标题样式优化 (Serif风格) */
   .section-title {
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 30px; /* 稍微加大 */
+    font-weight: bold;
     margin-top: 60px;
     margin-bottom: 30px;
     color: #000;
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     border-bottom: 2px solid #eaeaea;
+    letter-spacing: 0.5px;
   }
 
   /* --- BIO 布局 --- */
@@ -96,25 +88,24 @@ layout: single
   .bio-text-col { flex: 1; }
   
   .bio-name {
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 38px;
+    font-weight: bold;
     margin-bottom: 10px;
     color: #000;
-    /* 名字依然保持无衬线体显得更有力，如果想用楷体去掉下一行即可 */
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
   }
   
   .bio-sub {
-    font-size: 18px;
+    font-size: 19px;
     color: var(--text-secondary);
     margin-bottom: 25px;
+    font-style: italic; /* 职位信息用斜体更有质感 */
   }
 
   .bio-desc {
-    font-size: 17px;
-    color: #333;
+    font-size: 18px;
+    color: #222;
     text-align: justify;
-    line-height: 1.8;
+    line-height: 1.7;
   }
 
   .bio-photo-col {
@@ -126,9 +117,9 @@ layout: single
 
   .bio-photo {
     width: 200px;
-    height: 200px; /* 如果原图不是正方形，建议去掉 height 限制或设为 auto */
-    border-radius: 50%; /* 圆形头像 */
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    height: 200px; 
+    border-radius: 50%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     object-fit: cover;
     border: 4px solid #fff;
   }
@@ -137,30 +128,28 @@ layout: single
   .link-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 15px;
     margin-top: 30px;
   }
   
   .link-btn {
     display: inline-flex;
     align-items: center;
-    padding: 6px 16px;
+    padding: 6px 18px;
     background-color: #fff;
-    border: 1px solid #d1d5da;
-    border-radius: 6px;
-    color: #24292e !important;
-    font-size: 15px;
-    font-weight: 600;
-    /* 按钮文字用无衬线体更清晰 */
-    font-family: -apple-system, sans-serif !important;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* 稍微方一点的圆角，符合Serif气质 */
+    color: #333 !important;
+    font-size: 16px;
+    font-weight: bold;
     transition: all 0.2s;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   }
   
-  .link-btn svg { margin-right: 6px; fill: #555; }
+  .link-btn svg { margin-right: 8px; fill: #333; }
 
   .link-btn:hover {
-    background-color: #f6f8fa;
+    background-color: #f4f4f4;
     border-color: var(--accent-color);
     color: var(--accent-color) !important;
     text-decoration: none;
@@ -169,166 +158,170 @@ layout: single
   /* --- NEWS SECTION --- */
   .news-wrapper {
     background: #fff;
-    border-radius: 8px;
-    border: 1px solid #eee;
-    padding: 15px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.03);
   }
   
   .news-scroll {
-    max-height: 280px;
+    max-height: 300px;
     overflow-y: auto;
-    padding-right: 10px;
+    padding-right: 15px;
   }
   
   .news-scroll ul { padding-left: 20px; margin: 0; }
   .news-scroll li { 
-    margin-bottom: 10px; 
-    font-size: 16px; 
-    color: #444; 
+    margin-bottom: 12px; 
+    font-size: 17px; 
+    color: #333; 
   }
-  /* News里的日期保持无衬线体 */
-  .news-scroll li strong { color: var(--accent-color); font-family: -apple-system, sans-serif !important; }
+  .news-scroll li strong { color: var(--accent-color); }
 
   /* --- EXPERIENCE --- */
   .exp-container {
     background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    border: 1px solid #eee;
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.03);
   }
 
   .exp-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
   }
   .exp-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
   
   .exp-logo {
-    width: 60px; 
-    height: 60px; 
+    width: 65px; 
+    height: 65px; 
     margin-right: 25px;
     object-fit: contain;
-    border-radius: 8px;
+    border-radius: 6px;
     border: 1px solid #eee;
-    padding: 4px;
+    padding: 5px;
     background: #fff;
   }
   
   .exp-content { flex: 1; }
-  .exp-title { font-weight: bold; font-size: 19px; color: #111; margin-bottom: 4px; font-family: -apple-system, sans-serif !important;}
-  .exp-subtitle { font-size: 17px; color: #555; margin-bottom: 4px; font-style: italic; }
-  .exp-date { font-size: 15px; color: #888; font-family: -apple-system, sans-serif !important; }
+  .exp-title { font-weight: bold; font-size: 20px; color: #111; margin-bottom: 5px; }
+  .exp-subtitle { font-size: 18px; color: #555; margin-bottom: 5px; font-style: italic; }
+  .exp-date { font-size: 16px; color: #777; font-family: Georgia, serif !important; }
 
-  /* --- PUBLICATIONS (核心修改部分) --- */
+  /* --- PUBLICATIONS (图片已放大) --- */
   .pub-card {
     display: flex;
     background: #fff;
-    border: 1px solid #e1e4e8;
-    border-radius: 8px;
-    margin-bottom: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin-bottom: 35px;
     overflow: hidden;
-    transition: box-shadow 0.3s;
+    transition: transform 0.2s, box-shadow 0.2s;
   }
   
   .pub-card:hover {
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    border-color: #ccc;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    border-color: #bbb;
   }
 
   .pub-img-col {
-    /* 增加宽度以适应宽图，确保图片不拥挤 */
-    flex: 0 0 320px; 
-    background: #fff; /* 背景改为白色，适应论文图表 */
+    /* 修改点：宽度从 320px 增加到 380px */
+    flex: 0 0 380px; 
+    background: #fff; 
     position: relative;
     display: flex;
-    align-items: center; /* 垂直居中 */
-    justify-content: center; /* 水平居中 */
+    align-items: center;
+    justify-content: center;
     border-right: 1px solid #eee;
-    padding: 15px; /* 增加内边距，让图片不贴边 */
+    padding: 10px; /* 减少内边距，给图片更多空间 */
   }
   
   .pub-img {
-    width: 100%;       /* 宽度占满容器 */
-    height: auto;      /* 高度自适应，保持比例 */
-    object-fit: contain; /* 确保完整显示，不裁剪 */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     display: block;
-    max-height: 250px; /* 防止过高 */
+    /* 修改点：稍微放宽高度限制，让大图展示更完整 */
+    max-height: 280px; 
   }
 
   .pub-badge {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 12px;
+    left: 12px;
     background: #003366;
     color: white;
-    padding: 3px 10px;
-    font-size: 13px;
+    padding: 4px 12px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 4px;
     z-index: 2;
-    opacity: 0.9;
-    font-family: -apple-system, sans-serif !important;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    opacity: 0.95;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+    font-family: Georgia, serif !important;
   }
 
   .pub-content-col {
     flex: 1;
-    padding: 20px 30px;
+    padding: 25px 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   .pub-title {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     line-height: 1.3;
-    color: #000;
+    color: #111;
   }
-  .pub-title a { color: #000; }
+  .pub-title a { color: #111; }
   .pub-title a:hover { color: var(--accent-color); text-decoration: underline; }
 
   .pub-authors {
-    font-size: 16px;
+    font-size: 17px;
     color: #444;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    line-height: 1.5;
   }
   .pub-authors strong { color: #000; text-decoration: underline; }
 
   .pub-venue {
-    font-size: 15px;
+    font-size: 16px;
     color: #c62828;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     font-weight: bold;
     font-style: italic;
   }
 
   .pub-links a {
     display: inline-block;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
-    margin-right: 15px;
+    margin-right: 20px;
     color: var(--accent-color);
     text-transform: uppercase;
-    font-family: -apple-system, sans-serif !important;
+    text-decoration: none;
   }
+  .pub-links a:hover { text-decoration: underline; }
   
-  /* --- MISC & SERVICE --- */
+  /* --- MISC --- */
   .misc-box {
-    background: #fcfcfc;
-    padding: 20px;
+    background: #fbfbfb;
+    padding: 25px;
     border-radius: 6px;
-    border: 1px solid #eee;
-    font-size: 16px;
+    border: 1px solid #ddd;
+    font-size: 17px;
   }
 
   /* 移动端适配 */
-  @media (max-width: 850px) {
+  @media (max-width: 900px) {
     .page__inner-wrap { padding: 30px 20px; }
     .bio-container { flex-direction: column-reverse; gap: 30px; text-align: center; }
     .bio-photo-col { width: 100%; margin: 0 auto; }
@@ -336,9 +329,10 @@ layout: single
     .link-grid { justify-content: center; }
     
     .pub-card { flex-direction: column; }
+    /* 移动端图片宽度铺满 */
     .pub-img-col { flex: 0 0 auto; width: 100%; border-right: none; border-bottom: 1px solid #eee; padding: 0; }
-    .pub-img { width: 100%; max-height: none; border-radius: 8px 8px 0 0; }
-    .pub-content-col { padding: 20px; }
+    .pub-img { width: 100%; max-height: none; }
+    .pub-content-col { padding: 25px 20px; }
   }
 </style>
 
@@ -348,7 +342,8 @@ layout: single
   
   <!-- 左侧：文字介绍 -->
   <div class="bio-text-col">
-    <div class="bio-name">Hao Wu (吴昊)</div>
+    <!-- 修改点：移除了 (吴昊) -->
+    <div class="bio-name">Hao Wu</div>
     <div class="bio-sub">Ph.D. Student at Department. Computer Science (Incoming year-2026)</div>
     
     <div class="bio-desc">
@@ -395,7 +390,7 @@ layout: single
   <div class="bio-photo-col"> 
     <img src="../images/wuhaodemo" class="bio-photo" alt="Hao Wu">
     <!-- 邮箱地址 -->
-    <div style="text-align: center; margin-top: 15px; font-size: 14px; color: #666; font-family: -apple-system, sans-serif;">
+    <div style="text-align: center; margin-top: 15px; font-size: 14px; color: #666;">
       <a href="mailto:wuhao2022@mail.ustc.edu.cn" style="color: #666; text-decoration: none;">
         wuhao2022@mail.ustc.edu.cn
       </a>
@@ -733,7 +728,7 @@ layout: single
 </div>
 
 <h1 class="section-title">💻 Academic Service</h1>
-<div class="misc-box" style="background: #fcfcfc;">
+<div class="misc-box" style="background: #fbfbfb;">
   <strong>Conference Reviewer / PC Member:</strong><br>
   NeurIPS (2023-2025), ICLR (2024-2025), ICML (2024-2025), CVPR (2025), ICCV (2025), AAAI (2025), ACM MM (2024-2025), AISTATS (2025).
 </div>
