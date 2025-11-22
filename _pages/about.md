@@ -20,7 +20,17 @@ layout: single
 
 <!-- ================= GLOBAL STYLES ================= -->
 <style>
-  /* 1. 核心布局调整 */
+  /* 0. 基础重置与高定质感 */
+  :root {
+    --accent-color: #004080; /* 深邃学术蓝 */
+    --text-primary: #1d1d1f;
+    --text-secondary: #56565c;
+    --bg-card: #ffffff;
+    --bg-page: #fafafa;
+    --transition-speed: 0.3s;
+  }
+
+  /* 隐藏默认侧边栏，聚焦内容 */
   .sidebar { display: none !important; }
   
   .page__content {
@@ -28,246 +38,376 @@ layout: single
     max-width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
+    background-color: var(--bg-page);
   }
 
   .page__inner-wrap {
-    /* --- 修改开始：调整宽度和留白 --- */
-    max-width: 960px !important; /* 从1100px改为960px，增加两边留白，使视觉更聚焦 */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 40px; 
-    /* --- 修改结束 --- */
+    max-width: 1024px !important; /* 稍微加宽，更显大气 */
+    margin: 0 auto;
+    padding: 60px 40px;
     float: none !important;
   }
 
-  /* 2. 全局字体 */
-  body, h1, h2, h3, h4, h5, h6, p, div, span, li, a, button, strong {
-    font-family: 'Times New Roman', Times, serif !important;
-    color: #222;
+  /* 1. 字体系统：学术与现代的平衡 */
+  body, p, div, span, li {
+    font-family: Georgia, 'Times New Roman', Times, serif !important; /* Georgia 在屏幕上比 Times 更易读且保留学术感 */
+    color: var(--text-primary);
+    line-height: 1.8; /* 增加行高，提升呼吸感 */
   }
 
-  a { color: #003366; text-decoration: none; transition: all 0.2s; }
-  a:hover { color: #0056b3; text-decoration: underline; }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important; /* 标题使用无衬线体，制造现代反差 */
+    color: #111;
+    letter-spacing: -0.02em;
+  }
 
-  /* 容器卡片通用样式 */
-  .container-box {
-    background: #fff;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    border: 1px solid #eee;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  a { 
+    color: var(--accent-color); 
+    text-decoration: none; 
+    transition: all 0.2s ease; 
+    font-weight: 500;
+  }
+  a:hover { 
+    color: #00274d; 
+    text-decoration: none; 
+    border-bottom: 1px solid currentColor; /* 优雅的下划线交互 */
+  }
+
+  /* 2. 容器与卡片通用样式 */
+  .section-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 35px;
+    color: #000;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color); /* 标题下方的装饰线 */
   }
 
   /* --- BIO 布局 --- */
   .bio-container {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
-    margin-bottom: 50px;
+    gap: 60px;
+    margin-bottom: 60px;
     align-items: flex-start;
-    margin-top: 20px;
+    animation: fadeIn 0.8s ease-out;
   }
 
-  .bio-text-col {
-    flex: 1;
+  .bio-text-col { flex: 1; }
+  
+  .bio-name {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  }
+  
+  .bio-sub {
+    font-size: 19px;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    font-weight: 400;
   }
 
-  /* 限制头像列的宽度，防止挤压 */
+  .bio-desc {
+    font-size: 17px;
+    color: #333;
+    text-align: justify;
+  }
+
   .bio-photo-col {
-    flex: 0 0 250px !important; /* 给头像列稍微宽一点的空间 */
-    max-width: 250px;
+    flex: 0 0 240px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
 
   .bio-photo {
-    width: 100%;
-    max-width: 200px; /* 图片本身限制宽度 */
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    width: 220px;
+    height: 220px;
+    border-radius: 50%; /* 圆形头像更具亲和力，如需方形可改为 12px */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     object-fit: cover;
-    border: 1px solid #ddd;
-    display: block;
+    border: 4px solid #fff;
+    transition: transform 0.3s ease;
   }
+  
+  .bio-photo:hover { transform: scale(1.02); }
 
-  /* 头部按钮链接 */
+  /* 按钮链接组 */
   .link-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 30px;
+    gap: 12px;
+    margin-top: 35px;
   }
   
   .link-btn {
     display: inline-flex;
     align-items: center;
-    padding: 8px 16px;
-    background-color: #f8f9fa;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: #333 !important;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.2s;
+    padding: 8px 18px;
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 50px; /* 胶囊圆角 */
+    color: #444 !important;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+    transition: all 0.2s;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
   }
+  
+  .link-btn svg { margin-right: 6px; fill: #555; transition: fill 0.2s; }
+
   .link-btn:hover {
-    background-color: #e2e6ea;
-    border-color: #003366;
-    color: #003366 !important;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff !important;
     text-decoration: none;
+    border-bottom: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,64,128,0.25);
+  }
+  .link-btn:hover svg { fill: #fff; }
+
+  /* --- NEWS SECTION --- */
+  .news-wrapper {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+  }
+  
+  .news-scroll {
+    max-height: 280px;
+    overflow-y: auto;
+    padding: 15px 20px;
+  }
+  
+  /* 美化滚动条 */
+  .news-scroll::-webkit-scrollbar { width: 6px; }
+  .news-scroll::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 4px; }
+  .news-scroll::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+  .news-scroll::-webkit-scrollbar-thumb:hover { background: #bbb; }
+
+  .news-scroll ul { padding-left: 20px; margin: 0; }
+  .news-scroll li { 
+    margin-bottom: 14px; 
+    font-size: 16px; 
+    color: #444; 
+    position: relative;
+  }
+  .news-scroll li strong { color: var(--accent-color); margin-right: 6px; font-family: -apple-system, sans-serif; font-size: 15px;}
+
+  /* --- EXPERIENCE (Timeline Style) --- */
+  .exp-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.03);
   }
 
-  /* Experience 列表 */
   .exp-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #eee;
-  }
-  .exp-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-  
-  .exp-logo {
-    width: 70px; 
-    height: 70px; 
-    margin-right: 25px;
-    object-fit: contain;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    padding: 5px;
-    background: #fff;
+    margin-bottom: 0;
+    padding-bottom: 35px;
+    position: relative;
   }
   
-  .exp-content { flex: 1; }
-  .exp-title { font-weight: bold; font-size: 20px; color: #000; margin-bottom: 6px; }
-  .exp-subtitle { font-size: 18px; color: #444; margin-bottom: 6px; font-style: italic; }
-  .exp-date { font-size: 16px; color: #666; }
+  .exp-item:last-child { padding-bottom: 0; }
+  
+  /* 时间轴连接线 */
+  .exp-item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 32px; /* logo width/2 - border/2 + padding */
+    top: 75px;
+    bottom: 0;
+    width: 2px;
+    background: #f0f0f0;
+    z-index: 0;
+  }
 
-  /* News 滚动区域 */
-  .news-scroll {
-    max-height: 320px;
-    overflow-y: auto;
-    background-color: #fcfcfc;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
+  .exp-logo-wrapper {
+    z-index: 1;
+    background: #fff;
+    padding-bottom: 10px;
   }
-  .news-scroll ul { padding-left: 20px; margin: 0; }
-  .news-scroll li { margin-bottom: 12px; font-size: 17px; line-height: 1.5; }
+
+  .exp-logo {
+    width: 64px; 
+    height: 64px; 
+    margin-right: 30px;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 1px solid #f2f2f2;
+    padding: 6px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .exp-content { flex: 1; padding-top: 5px; }
+  .exp-title { font-weight: 700; font-size: 19px; color: #111; margin-bottom: 4px; font-family: -apple-system, sans-serif; }
+  .exp-subtitle { font-size: 16px; color: #555; margin-bottom: 4px; font-style: normal; }
+  .exp-date { font-size: 14px; color: #888; font-family: -apple-system, sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;}
 
   /* --- PUBLICATIONS --- */
   .pub-card {
     display: flex;
-    flex-wrap: wrap;
     background: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    margin-bottom: 25px;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    margin-bottom: 30px;
     overflow: hidden;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
   }
+  
   .pub-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
-    border-color: #999;
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    border-color: transparent;
   }
 
   .pub-img-col {
-    flex: 0 0 340px;
+    flex: 0 0 300px;
+    background: #fcfcfc;
     position: relative;
-    background: #f9f9f9;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid #eee;
-    padding: 10px;
+    border-right: 1px solid #f5f5f5;
   }
   
   .pub-img {
     width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 2px;
+    height: 100%;
+    object-fit: cover; /* 让图片填满容器 */
+    transition: transform 0.5s ease;
   }
+  
+  .pub-card:hover .pub-img { transform: scale(1.05); }
 
   .pub-badge {
     position: absolute;
-    top: 12px;
-    left: 0;
-    background: #003366;
+    top: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
     color: white;
-    padding: 4px 14px;
-    font-size: 14px;
-    font-weight: bold;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 6px;
     z-index: 2;
-    font-family: 'Times New Roman', serif;
+    font-family: -apple-system, sans-serif;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
   }
 
   .pub-content-col {
     flex: 1;
-    padding: 20px 35px;
+    padding: 25px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 350px;
   }
 
   .pub-title {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 12px;
-    line-height: 1.3;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.4;
     color: #111;
+    font-family: -apple-system, sans-serif;
   }
-  .pub-title a { color: #111; }
-  .pub-title a:hover { color: #003366; }
+  .pub-title a { color: #111; border-bottom: none; }
+  .pub-title a:hover { color: var(--accent-color); }
 
   .pub-authors {
-    font-size: 18px;
-    color: #333;
+    font-size: 16px;
+    color: #444;
     margin-bottom: 12px;
-    line-height: 1.5;
+    line-height: 1.6;
   }
-  .pub-authors strong { color: #000; text-decoration: underline; }
+  .pub-authors strong { color: #000; font-weight: 600; text-decoration: underline; text-decoration-color: #ccc; }
 
   .pub-venue {
-    font-size: 17px;
-    font-style: italic;
+    font-size: 15px;
     color: #c62828;
-    margin-bottom: 15px;
-    font-weight: bold;
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-family: -apple-system, sans-serif;
   }
 
+  .pub-links { display: flex; gap: 15px; }
+  
   .pub-links a {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bold;
-    margin-right: 20px;
-    color: #003366;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent-color);
     text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+    font-family: -apple-system, sans-serif;
   }
   
-  h1.section-title {
-    font-size: 30px;
-    font-weight: bold;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 12px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    color: #111;
+  /* --- MISC & ACADEMIC SERVICE --- */
+  .misc-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    font-size: 16px;
+    line-height: 1.7;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
   }
 
+  .misc-list li { margin-bottom: 10px; list-style-type: none; position: relative; padding-left: 20px; }
+  .misc-list li::before {
+    content: '•';
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+
+  /* 动画 */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* 移动端适配 */
   @media (max-width: 850px) {
-    .bio-container { flex-direction: column-reverse; gap: 30px; }
-    .bio-photo-col { flex: 0 0 auto; width: 100%; max-width: 300px; margin: 0 auto; }
-    .pub-img-col { flex: 0 0 100%; border-right: none; border-bottom: 1px solid #eee; }
+    .page__inner-wrap { padding: 30px 20px; }
+    .bio-container { flex-direction: column-reverse; gap: 30px; text-align: center; }
+    .bio-photo-col { width: 100%; margin: 0 auto; }
+    .bio-text-col { width: 100%; }
+    .link-grid { justify-content: center; }
+    
     .pub-card { flex-direction: column; }
+    .pub-img-col { flex: 0 0 200px; border-right: none; border-bottom: 1px solid #eee; }
+    .pub-content-col { padding: 20px; }
+    .exp-item::before { display: none; } /* 移动端去掉时间轴线 */
   }
 </style>
 
@@ -277,10 +417,10 @@ layout: single
   
   <!-- 左侧：文字介绍 -->
   <div class="bio-text-col">
-    <div style="font-size: 32px; font-weight: bold; margin-bottom: 10px; color: #000;">Hao Wu (吴昊)</div>
-    <div style="font-size: 20px; color: #555; margin-bottom: 25px;">Ph.D. Student at Department. Computer Science (Incoming year-2026)</div>
+    <div class="bio-name">Hao Wu (吴昊)</div>
+    <div class="bio-sub">Ph.D. Student at Department. Computer Science (Incoming year-2026)</div>
     
-    <div style="font-size: 18px; line-height: 1.7; text-align: justify; color: #222;">
+    <div class="bio-desc">
       <p>
         My research journey began between 2019 and 2022, focusing on natural language understanding and Chinese semantic parsing. During this time, I designed <a href="https://arxiv.org/abs/2403.19936">SLFNet</a> to translate natural language into logical forms. However, the paradigm shift caused by ChatGPT in 2022 inspired me to pivot toward a new and challenging direction.
       </p>
@@ -297,26 +437,35 @@ layout: single
 
     <!-- 链接按钮 -->
     <div class="link-grid">
-      <a href="mailto:wuhao2022@mail.ustc.edu.cn" class="link-btn">✉️ Email</a>
-      <a href="https://scholar.google.com/citations?user=HdXMhfcAAAAJ&hl=en" class="link-btn">🎓 Google Scholar</a>
+      <a href="mailto:wuhao2022@mail.ustc.edu.cn" class="link-btn">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        Email
+      </a>
+      <a href="https://scholar.google.com/citations?user=HdXMhfcAAAAJ&hl=en" class="link-btn">
+         <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+         Google Scholar
+      </a>
       
       <a href="https://github.com/Alexander-wu" class="link-btn">
-        <svg height="18" viewBox="0 0 16 16" width="18" style="margin-right: 5px; fill: #333; vertical-align: sub;">
+        <svg height="18" viewBox="0 0 16 16" width="18" style="vertical-align: sub;">
            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
         </svg>
         GitHub
       </a>
       
-      <a href="YOUR_SEMANTIC_SCHOLAR_LINK" class="link-btn">📚 Semantic Scholar</a>
+      <a href="YOUR_SEMANTIC_SCHOLAR_LINK" class="link-btn">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2l-5.5 9h11z"/><path d="M12 22l5.5-9h-11z"/></svg>
+        Semantic Scholar
+      </a>
     </div>
   </div>
   
-  <!-- 右侧：头像和邮箱 (这是之前导致出错的部分，已修复) -->
+  <!-- 右侧：头像和邮箱 -->
   <div class="bio-photo-col"> 
     <img src="../images/wuhaodemo" class="bio-photo" alt="Hao Wu">
     <!-- 邮箱地址 -->
-    <div style="text-align: center; margin-top: 12px; font-size: 15px; line-height: 1.2; word-break: break-all;">
-      <a href="mailto:wuhao2022@mail.ustc.edu.cn" style="color: #444; text-decoration: none; font-weight: 500;">
+    <div style="text-align: center; margin-top: 15px; font-size: 14px; color: #666; font-family: -apple-system, sans-serif;">
+      <a href="mailto:wuhao2022@mail.ustc.edu.cn" style="color: #666; text-decoration: none;">
         wuhao2022@mail.ustc.edu.cn
       </a>
     </div>
@@ -326,34 +475,38 @@ layout: single
 
 <!-- ================= NEWS SECTION ================= -->
 <h1 class="section-title" id='news'>🔥 News</h1>
-<div class="news-scroll">
-  <ul>
-    <li><strong>2025.11.08</strong>: 2 papers were accepted to AAAI2026, Main Track.</li>
-    <li><strong>2025.09.18</strong>: 2 papers were accepted to NeurIPS2025.</li>
-    <li><strong>2025.08.01</strong>: I have joined Tencent CSIG as a research intern @ Tencent Jarvis Research Center.</li>
-    <li><strong>2025.06.26</strong>: 1 paper was accepted to ICCV2025 (Corresponding Author).</li>
-    <li><strong>2025.06.18</strong>: I have graduated from USTC CS, and received the Outstanding Graduation Thesis award.</li>
-    <li><strong>2025.05.01</strong>: 1 paper was accepted to ICML2025 (Co-First Author).</li>
-    <li><strong>2025.01.22</strong>: 1 paper was accepted to ICLR2025 (Corresponding Author).</li>
-    <li><strong>2024.11.16</strong>: 1 paper was accepted to KDD2025 ADS (First Author).</li>
-    <li><strong>2024.09.26</strong>: 3 papers were accepted to NeurIPS2024 (First Author and Two co-author).</li>
-    <li><strong>2024.07.16</strong>: 1 paper was accepted to ACM MM2024 (First Author).</li>
-    <li><strong>2024.05.17</strong>: 1 paper was accepted to KDD2024 (First Author).</li>
-    <li><strong>2024.05.01</strong>: 1 paper was accepted to ICML2024 (First Author).</li>
-    <li><strong>2024.02.21</strong>: 1 paper was accepted to TKDE2024 (Co-First Author).</li>
-    <li><strong>2024.01.16</strong>: 1 paper was accepted to ICLR2024 (<span style="color:#c62828">Spotlight</span>) (Co-First Author).</li>
-    <li><strong>2023.12.09</strong>: 1 paper was accepted to AAAI2024 (First Author).</li>
-    <li><strong>2023.09.22</strong>: 1 paper was accepted to NeurIPS2023 (Co-First Author).</li>
-    <li><strong>2022.10.09</strong>: National Scholarship, China, 2022 (top 0.1% nation-wide, From USTC).</li>
-  </ul>
+<div class="news-wrapper">
+  <div class="news-scroll">
+    <ul>
+      <li><strong>2025.11.08</strong>: 2 papers were accepted to AAAI2026, Main Track.</li>
+      <li><strong>2025.09.18</strong>: 2 papers were accepted to NeurIPS2025.</li>
+      <li><strong>2025.08.01</strong>: I have joined Tencent CSIG as a research intern @ Tencent Jarvis Research Center.</li>
+      <li><strong>2025.06.26</strong>: 1 paper was accepted to ICCV2025 (Corresponding Author).</li>
+      <li><strong>2025.06.18</strong>: I have graduated from USTC CS, and received the Outstanding Graduation Thesis award.</li>
+      <li><strong>2025.05.01</strong>: 1 paper was accepted to ICML2025 (Co-First Author).</li>
+      <li><strong>2025.01.22</strong>: 1 paper was accepted to ICLR2025 (Corresponding Author).</li>
+      <li><strong>2024.11.16</strong>: 1 paper was accepted to KDD2025 ADS (First Author).</li>
+      <li><strong>2024.09.26</strong>: 3 papers were accepted to NeurIPS2024 (First Author and Two co-author).</li>
+      <li><strong>2024.07.16</strong>: 1 paper was accepted to ACM MM2024 (First Author).</li>
+      <li><strong>2024.05.17</strong>: 1 paper was accepted to KDD2024 (First Author).</li>
+      <li><strong>2024.05.01</strong>: 1 paper was accepted to ICML2024 (First Author).</li>
+      <li><strong>2024.02.21</strong>: 1 paper was accepted to TKDE2024 (Co-First Author).</li>
+      <li><strong>2024.01.16</strong>: 1 paper was accepted to ICLR2024 (<span style="color:#c62828">Spotlight</span>) (Co-First Author).</li>
+      <li><strong>2023.12.09</strong>: 1 paper was accepted to AAAI2024 (First Author).</li>
+      <li><strong>2023.09.22</strong>: 1 paper was accepted to NeurIPS2023 (Co-First Author).</li>
+      <li><strong>2022.10.09</strong>: National Scholarship, China, 2022 (top 0.1% nation-wide, From USTC).</li>
+    </ul>
+  </div>
 </div>
 
 <!-- ================= EXPERIENCE ================= -->
 <h1 class="section-title">💼 Research Experience</h1>
-<div class="container-box">
+<div class="exp-container">
 
   <div class="exp-item">
-    <img src="../images/tencent.png" class="exp-logo" alt="Tencent">
+    <div class="exp-logo-wrapper">
+      <img src="../images/tencent.png" class="exp-logo" alt="Tencent">
+    </div>
     <div class="exp-content">
       <div class="exp-title">Jarvis Lab, Tencent</div>
       <div class="exp-subtitle">Research Intern &nbsp; | &nbsp; Mentor: <a href="#">Xian Wu</a></div>
@@ -362,7 +515,9 @@ layout: single
   </div>
 
   <div class="exp-item">
-    <img src="../images/tencent.png" class="exp-logo" alt="Tencent">
+    <div class="exp-logo-wrapper">
+      <img src="../images/tencent.png" class="exp-logo" alt="Tencent">
+    </div>
     <div class="exp-content">
       <div class="exp-title">Machine Learning Platform Dept., Tencent</div>
       <div class="exp-subtitle">Research Intern (Hunyuan Large Model) &nbsp; | &nbsp; Mentor: <a href="#">Jinbao Xue</a></div>
@@ -371,7 +526,9 @@ layout: single
   </div>
 
   <div class="exp-item">
-    <img src="../images/hkust.png" class="exp-logo" alt="HKUST">
+    <div class="exp-logo-wrapper">
+      <img src="../images/hkust.png" class="exp-logo" alt="HKUST">
+    </div>
     <div class="exp-content">
       <div class="exp-title">CityMind Lab, HKUST (Guangzhou)</div>
       <div class="exp-subtitle">Research Intern &nbsp; | &nbsp; Advisor: <a href="#">Yuxuan Liang</a></div>
@@ -404,7 +561,7 @@ layout: single
     <div class="pub-links">
       <a href="https://arxiv.org/abs/2505.21020">Paper</a>
       <a href="https://github.com/YuanGao-YG/NeuralOM">Code</a>
-      <img src="https://img.shields.io/github/stars/YuanGao-YG/NeuralOM?label=Star&style=social" style="vertical-align:middle;">
+      <img src="https://img.shields.io/github/stars/YuanGao-YG/NeuralOM?label=Star&style=social" style="vertical-align:middle; height: 16px;">
     </div>
   </div>
 </div>
@@ -643,19 +800,23 @@ layout: single
 
 <!-- ================= MISC ================= -->
 <h1 class="section-title">💬 Invited Talks</h1>
-<ul style="line-height: 1.6; font-size: 17px;">
-  <li><em>2024.03</em>, Application and Research of GNN in Meteorological Prediction. @ Sun Yat-sen University</li>
-  <li><em>2023.12</em>, Earthfarseer: versatile spatio-temporal dynamical systems modeling in one model. @ AI TIME </li>
-</ul>
+<div class="misc-box">
+  <ul class="misc-list">
+    <li><em>2024.03</em>, Application and Research of GNN in Meteorological Prediction. @ Sun Yat-sen University</li>
+    <li><em>2023.12</em>, Earthfarseer: versatile spatio-temporal dynamical systems modeling in one model. @ AI TIME </li>
+  </ul>
+</div>
 
 <h1 class="section-title">💻 Academic Service</h1>
-<div style="background: #fbfbfb; padding: 20px; border-radius: 6px; font-size: 17px; border: 1px solid #eee; line-height: 1.6;">
+<div class="misc-box" style="background: #f8f9fa;">
   <strong>Conference Reviewer / PC Member:</strong><br>
   NeurIPS (2023-2025), ICLR (2024-2025), ICML (2024-2025), CVPR (2025), ICCV (2025), AAAI (2025), ACM MM (2024-2025), AISTATS (2025).
 </div>
 
 <h1 class="section-title">👨🏻 Miscellaneous</h1>
-<ul style="line-height: 1.6; font-size: 17px;">
-  <li>🏀 Big fan of basketball. I love Kobe Bryant and his Fadeaway Shot. Also a fan of Stephen Curry.</li>
-  <li>👑 Deeply interested in History.</li>
-</ul>
+<div class="misc-box">
+  <ul class="misc-list">
+    <li>🏀 Big fan of basketball. I love Kobe Bryant and his Fadeaway Shot. Also a fan of Stephen Curry.</li>
+    <li>👑 Deeply interested in History.</li>
+  </ul>
+</div>
