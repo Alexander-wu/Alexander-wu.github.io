@@ -463,6 +463,30 @@ layout: single
 <!-- ================= SELECTED PUBLICATIONS ================= -->
 <h1 class="section-title">🌟 Selected Publications</h1>
 
+<!-- 1. HiGO -->
+<div class="pub-card">
+  <div class="pub-img-col">
+    <div class="pub-badge">KDD 2026</div>
+    <img src="../images/HiGO.png" class="pub-img" alt="Paper Image">
+  </div>
+  <div class="pub-content-col">
+    <div class="pub-title">
+      <a href="https://arxiv.org/abs/2505.21020">Advanced Global Wildfire Activity Modeling with Hierarchical Graph ODE</a>
+    </div>
+    <div class="pub-authors">
+      Fan Xu, Wei Gong, Hao Wu, Lilan Peng, Nan Wang, Qingsong Wen, Xian Wu, Kun Wang, Xibin Zhao
+    </div>
+    <div class="pub-venue">
+      (KDD 2026, CCF Rank A)
+    </div>
+    <div class="pub-links">
+      <a href="https://arxiv.org/abs/">Paper</a>
+      <a href="https://github.com/">Code</a>
+    </div>
+  </div>
+</div>
+
+
 <!-- 1. NeuralOM -->
 <div class="pub-card">
   <div class="pub-img-col">
