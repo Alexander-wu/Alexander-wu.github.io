@@ -515,6 +515,27 @@ layout: single
   </div>
 </div>
 
+<div class="pub-card">
+  <div class="pub-img-col">
+    <div class="pub-badge">NeurIPS 2025</div>
+    <img src="../images/CoPS.png" class="pub-img" alt="Paper Image">
+  </div>
+  <div class="pub-content-col">
+    <div class="pub-title">
+      <a href="https://arxiv.org/abs/2509.17955">Breaking the Discretization Barrier of Continuous Physics Simulation Learning</a>
+    </div>
+    <div class="pub-authors">
+      Fan Xu, Hao Wu, Nan Wang, Lilan Peng, Kun Wang, Wei Gong, Xibin Zhao
+    </div>
+    <div class="pub-venue">
+      (NeurIPS 2025, CCF Rank A)
+    </div>
+    <div class="pub-links">
+      <a href="https://arxiv.org/abs/2509.17955">Paper</a>
+      <a href="#">Code</a>
+    </div>
+  </div>
+</div>
 
 <!-- 1. NeuralOM -->
 <div class="pub-card">
