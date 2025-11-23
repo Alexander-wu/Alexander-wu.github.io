@@ -404,7 +404,8 @@ layout: single
 <div class="news-wrapper">
   <div class="news-scroll">
     <ul>
-      <li><strong>2025.11.08</strong>: 2 papers were accepted to AAAI2026, Main Track.</li>
+      <li><strong>2025.11.23</strong>: 1 paper was accepted to KDD2026, Main Track (Research), Congratulations to Fan!</li>
+      <li><strong>2025.11.08</strong>: 2 papers were accepted to AAAI2026, Main Track, Congratulations to Yuan!</li>
       <li><strong>2025.09.18</strong>: 2 papers were accepted to NeurIPS2025.</li>
       <li><strong>2025.08.01</strong>: I have joined Tencent CSIG as a research intern @ Tencent Jarvis Research Center.</li>
       <li><strong>2025.06.26</strong>: 1 paper was accepted to ICCV2025 (Corresponding Author).</li>
