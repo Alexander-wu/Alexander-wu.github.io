@@ -458,6 +458,35 @@ layout: single
   </div>
 
 </div>
+<!-- ================= PRE-PRINT ================= -->
+<h1 class="section-title">🌟 Pre-prints</h1>
+
+<div class="pub-card">
+  <div class="pub-img-col">
+    <div class="pub-badge">KDD 2026</div>
+    <img src="../images/Tritoncast.png" class="pub-img" alt="Paper Image">
+  </div>
+  <div class="pub-content-col">
+    <div class="pub-title">
+      <a href="https://tritoncast4earth.netlify.app/">Advanced Long-term Earth System Forecasting</a>
+    </div>
+    <div class="pub-authors">
+      Hao Wu, Yuan Gao, Ruijian Gou, Xian Wu, Chuhan Wu, Huahui Yi, Johannes Brandstetter, <strong>Fan Xu</strong>, Kun Wang, Penghao Zhao, Hao Jia, Qi Song, Xinliang Liu, Juncai He, Shuhao Cao, Huanshuo Dong, Yanfei Xiang, Fan Zhang, Haixin Wang, Xingjian Shi, Qiufeng Wang, Shuaipeng Li, Ruobing Xie, Feng Tao, Yuxu Lu, Yu Guo, Yuntian Chen, Yuxuan Liang, Qingsong Wen, Wanli Ouyang, Deliang Chen, Xiaomeng Huang
+    </div>
+    <div class="pub-venue">
+      (KDD 2026, CCF Rank A)
+    </div>
+    <div class="pub-links">
+      <a href="https://arxiv.org/abs/2505.19432">Paper</a>
+      <a href="https://github.com/Alexander-wu/TritonCast">Code</a>
+      <a href="https://huggingface.co/TritonCast">Hugging Face</a>
+      <a href="https://tritoncast4earth.netlify.app/">Project Page</a>
+    </div>
+  </div>
+</div>
+
+
+
 
 
 <!-- ================= SELECTED PUBLICATIONS ================= -->
