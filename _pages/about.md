@@ -465,7 +465,7 @@ layout: single
   <div class="pub-img-col">
     <div class="pub-badge">Arxiv 2026</div>
     <!-- 修改了下面这一行 -->
-    <img src="../images/temperature_850_animation.gif" class="pub-img" alt="Paper Animation">
+    <img src="../images/temperature_850_animation (2).gif" class="pub-img" alt="Paper Animation">
   </div>
   <div class="pub-content-col">
     <div class="pub-title">
