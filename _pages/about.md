@@ -464,7 +464,8 @@ layout: single
 <div class="pub-card">
   <div class="pub-img-col">
     <div class="pub-badge">Arxiv 2026</div>
-    <img src="../images/Tritoncast.png" class="pub-img" alt="Paper Image">
+    <!-- 修改了下面这一行 -->
+    <img src="../images/temperature_850_animation.gif" class="pub-img" alt="Paper Animation">
   </div>
   <div class="pub-content-col">
     <div class="pub-title">
@@ -484,8 +485,6 @@ layout: single
     </div>
   </div>
 </div>
-
-
 
 
 
