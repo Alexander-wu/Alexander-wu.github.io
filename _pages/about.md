@@ -344,7 +344,7 @@ layout: single
   <div class="bio-text-col">
     <!-- 修改点：移除了 (吴昊) -->
     <div class="bio-name">Hao Wu</div>
-    <div class="bio-sub">Ph.D. Student at Department. Computer Science (Incoming year-2026)</div>
+    <div class="bio-sub">Ph.D. Student</div>
     
     <div class="bio-desc">
       <p>
@@ -357,7 +357,7 @@ layout: single
         By late 2024, I applied my deep learning expertise to AI for Science, specifically accelerating partial differential equation (PDE) solving. I proposed <a href="https://dl.acm.org/doi/abs/10.1145/3637528.3671779">NMO</a> using manifold learning for efficiency and explored distillation techniques (@<a href="https://openaccess.thecvf.com/content/ICCV2025/html/Li_Frequency-Aligned_Knowledge_Distillation_for_Lightweight_Spatiotemporal_Forecasting_ICCV_2025_paper.html">ICCV2025</a>) for faster inference. In 2025, I collaborated with <a href="https://yuangao-yg.github.io/">Yuan Gao</a> to develop <a href="https://arxiv.org/abs/2505.19432">TritonCast</a>, an advanced AI model for long-term Earth system forecasting.
       </p>
       <p>
-        In 2026, I will return to computer science for my PhD, focusing on video generation and the post-training and application of LLMs, Agents, and VLMs.
+        In 2026, I will focuse on video generation and the post-training and application of LLMs, Agents, and VLMs.
       </p>
     </div>
 
