@@ -20,15 +20,34 @@ layout: single
 
 <!-- ================= GLOBAL STYLES ================= -->
 <style>
-  /* 0. 基础重置与高定质感 */
+  /* --- Apple Minimalist & Serif Academic Theme --- */
   :root {
-    --accent-color: #003366; /* 经典的学术深蓝 */
-    --text-primary: #111;
-    --text-secondary: #444;
-    --bg-page: #fafafa;
+    /* 核心色板 */
+    --accent-color: #0071e3; /* Apple Blue (更有活力的科技蓝) */
+    --accent-hover: #0077ed;
+    --text-primary: #1d1d1f; /* Apple Black */
+    --text-secondary: #86868b; /* Apple Grey */
+    --bg-page: #fbfbfd; /* 极淡的灰白背景 */
+    --bg-card: #ffffff;
+    --border-light: rgba(0, 0, 0, 0.04); /* 极细微的边界 */
+    --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.04); /* 弥散阴影 */
+    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.08);
+    --radius-card: 16px;
+    --radius-btn: 12px;
   }
 
-  /* 隐藏默认侧边栏 */
+  /* 基础重置 */
+  body, h1, h2, h3, h4, h5, h6, p, div, span, li, a, strong, b, button {
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    color: var(--text-primary);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased; /* 让字体渲染更平滑 */
+  }
+
+  body {
+    background-color: var(--bg-page);
+  }
+
   .sidebar { display: none !important; }
   
   .page__content {
@@ -36,51 +55,52 @@ layout: single
     max-width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-    background-color: var(--bg-page);
+    background-color: transparent;
   }
 
   .page__inner-wrap {
-    max-width: 1060px !important; /* 稍微加宽，适应变大的图片 */
+    max-width: 1080px !important;
     margin: 0 auto;
-    padding: 60px 40px;
+    padding: 80px 40px;
     float: none !important;
-  }
-
-  /* 1. 全局统一字体：Georgia / Times New Roman */
-  body, h1, h2, h3, h4, h5, h6, p, div, span, li, a, strong, b, button {
-    font-family: Georgia, 'Times New Roman', Times, serif !important;
-    color: var(--text-primary);
-    line-height: 1.6;
   }
 
   a { 
     color: var(--accent-color); 
     text-decoration: none; 
-    transition: all 0.2s ease; 
+    transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1); 
   }
   a:hover { 
-    color: #0056b3; 
-    text-decoration: underline; 
+    color: var(--accent-hover); 
+    text-decoration: none; 
+    opacity: 0.8;
   }
 
-  /* 2. 标题样式优化 (Serif风格) */
+  /* 标题样式：更干净，移除厚重下划线 */
   .section-title {
-    font-size: 30px; /* 稍微加大 */
-    font-weight: bold;
-    margin-top: 60px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 80px;
     margin-bottom: 30px;
-    color: #000;
+    color: #111;
     position: relative;
-    padding-bottom: 12px;
-    border-bottom: 2px solid #eaeaea;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.5px;
+  }
+  /* 仅保留极其隐约的分割线，保持整洁 */
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: rgba(0,0,0,0.06);
+    margin-top: 15px;
   }
 
   /* --- BIO 布局 --- */
   .bio-container {
     display: flex;
     justify-content: space-between;
-    gap: 60px;
+    gap: 70px; /* 增加间距 */
     margin-bottom: 60px;
     align-items: flex-start;
   }
@@ -88,26 +108,29 @@ layout: single
   .bio-text-col { flex: 1; }
   
   .bio-name {
-    font-size: 38px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 8px;
     color: #000;
+    letter-spacing: -0.02em;
   }
   
   .bio-sub {
-    font-size: 19px;
+    font-size: 20px;
     color: var(--text-secondary);
-    margin-bottom: 25px;
-    font-style: italic; /* 职位信息用斜体更有质感 */
+    margin-bottom: 30px;
+    font-style: italic;
+    font-weight: 400;
   }
 
   .bio-desc {
     font-size: 18px;
-    color: #222;
+    color: #333;
     text-align: justify;
-    line-height: 1.7;
+    line-height: 1.75;
   }
-
+  
+  /* 头像区域 */
   .bio-photo-col {
     flex: 0 0 240px !important;
     display: flex;
@@ -119,126 +142,138 @@ layout: single
     width: 200px;
     height: 200px; 
     border-radius: 50%;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    /* 更加柔和的高级阴影 */
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.15);
     object-fit: cover;
-    border: 4px solid #fff;
+    border: none; /* 移除白色粗边框，更现代 */
+    background-color: #fff;
   }
 
-  /* 按钮链接组 */
+  /* 按钮链接组：Apple 风格 Pill Button */
   .link-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 30px;
+    gap: 12px;
+    margin-top: 35px;
   }
   
   .link-btn {
     display: inline-flex;
     align-items: center;
-    padding: 6px 18px;
+    padding: 8px 20px;
     background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px; /* 稍微方一点的圆角，符合Serif气质 */
-    color: #333 !important;
-    font-size: 16px;
-    font-weight: bold;
-    transition: all 0.2s;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 98px; /* 胶囊圆角 */
+    color: var(--text-primary) !important;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
   }
   
-  .link-btn svg { margin-right: 8px; fill: #333; }
+  .link-btn svg { margin-right: 8px; fill: var(--text-primary); transition: fill 0.2s;}
 
   .link-btn:hover {
-    background-color: #f4f4f4;
-    border-color: var(--accent-color);
-    color: var(--accent-color) !important;
+    background-color: #111; /* 悬停变黑 */
+    border-color: #111;
+    color: #fff !important;
     text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
   }
+  .link-btn:hover svg { fill: #fff; }
 
   /* --- NEWS SECTION --- */
   .news-wrapper {
-    background: #fff;
-    border-radius: 6px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+    background: var(--bg-card);
+    border-radius: var(--radius-card);
+    border: 1px solid var(--border-light);
+    padding: 25px 30px;
+    box-shadow: var(--shadow-soft);
   }
   
   .news-scroll {
-    max-height: 300px;
+    max-height: 320px;
     overflow-y: auto;
     padding-right: 15px;
+    /* 自定义滚动条样式 (WebKit) */
+    scrollbar-width: thin;
+    scrollbar-color: #d1d1d6 transparent;
   }
+  .news-scroll::-webkit-scrollbar { width: 6px; }
+  .news-scroll::-webkit-scrollbar-thumb { background-color: #d1d1d6; border-radius: 3px; }
   
-  .news-scroll ul { padding-left: 20px; margin: 0; }
+  .news-scroll ul { padding-left: 18px; margin: 0; }
   .news-scroll li { 
-    margin-bottom: 12px; 
+    margin-bottom: 14px; 
     font-size: 17px; 
-    color: #333; 
+    color: #333;
+    padding-left: 5px;
   }
-  .news-scroll li strong { color: var(--accent-color); }
+  .news-scroll li strong { color: var(--accent-color); font-weight: 600; }
 
   /* --- EXPERIENCE --- */
   .exp-container {
-    background: #fff;
-    padding: 30px;
-    border-radius: 6px;
-    border: 1px solid #ddd;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+    background: var(--bg-card);
+    padding: 35px;
+    border-radius: var(--radius-card);
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-soft);
   }
 
   .exp-item {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #eee;
+    align-items: center; /* 垂直居中对齐 */
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
   }
   .exp-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
   
   .exp-logo {
-    width: 65px; 
-    height: 65px; 
-    margin-right: 25px;
+    width: 72px; 
+    height: 72px; 
+    margin-right: 30px;
     object-fit: contain;
-    border-radius: 6px;
-    border: 1px solid #eee;
-    padding: 5px;
+    border-radius: 14px; /* iOS App Icon 风格圆角 */
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 8px;
     background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   }
   
   .exp-content { flex: 1; }
-  .exp-title { font-weight: bold; font-size: 20px; color: #111; margin-bottom: 5px; }
-  .exp-subtitle { font-size: 18px; color: #555; margin-bottom: 5px; font-style: italic; }
-  .exp-date { font-size: 16px; color: #777; font-family: Georgia, serif !important; }
+  .exp-title { font-weight: 700; font-size: 20px; color: #000; margin-bottom: 4px; }
+  .exp-subtitle { font-size: 18px; color: #555; margin-bottom: 4px; font-style: italic; }
+  .exp-date { font-size: 15px; color: #888; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;}
 
-  /* --- PUBLICATIONS (图片已放大) --- */
+  /* --- PUBLICATIONS (Card Style Refined) --- */
   .pub-card {
     display: flex;
-    background: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 6px;
-    margin-bottom: 35px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-card);
+    margin-bottom: 40px;
     overflow: hidden;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: var(--shadow-soft);
   }
   
   .pub-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
-    border-color: #bbb;
+    transform: translateY(-4px) scale(1.005);
+    box-shadow: var(--shadow-hover);
+    border-color: rgba(0,0,0,0.08);
   }
 
   .pub-img-col {
-    /* 修改点：宽度从 320px 增加到 380px */
     flex: 0 0 380px; 
-    background: #fff; 
+    background: #fcfcfd; /* 图片区域稍微灰一点，突出图片 */
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid #eee;
-    padding: 10px; /* 减少内边距，给图片更多空间 */
+    border-right: 1px solid rgba(0,0,0,0.03);
+    padding: 20px;
   }
   
   .pub-img {
@@ -246,29 +281,32 @@ layout: single
     height: auto;
     object-fit: contain;
     display: block;
-    /* 修改点：稍微放宽高度限制，让大图展示更完整 */
-    max-height: 280px; 
+    max-height: 260px;
+    border-radius: 4px;
+    /* 图片本身加一点点阴影让它浮起来 */
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
   }
 
   .pub-badge {
     position: absolute;
-    top: 12px;
-    left: 12px;
-    background: #003366;
-    color: white;
-    padding: 4px 12px;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 4px;
+    top: 15px;
+    left: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    color: #000;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 20px;
     z-index: 2;
-    opacity: 0.95;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.05);
     font-family: Georgia, serif !important;
   }
 
   .pub-content-col {
     flex: 1;
-    padding: 25px 35px;
+    padding: 30px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -276,63 +314,82 @@ layout: single
 
   .pub-title {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 12px;
-    line-height: 1.3;
-    color: #111;
+    line-height: 1.35;
+    color: #000;
   }
-  .pub-title a { color: #111; }
-  .pub-title a:hover { color: var(--accent-color); text-decoration: underline; }
+  .pub-title a { color: #000; transition: color 0.2s; }
+  .pub-title a:hover { color: var(--accent-color); text-decoration: none; }
 
   .pub-authors {
     font-size: 17px;
     color: #444;
-    margin-bottom: 12px;
-    line-height: 1.5;
+    margin-bottom: 14px;
+    line-height: 1.6;
   }
-  .pub-authors strong { color: #000; text-decoration: underline; }
+  .pub-authors strong { color: #000; border-bottom: 2px solid rgba(0,0,0,0.1); text-decoration: none; }
 
   .pub-venue {
     font-size: 16px;
-    color: #c62828;
-    margin-bottom: 18px;
-    font-weight: bold;
+    color: #d70015; /* Apple Red for emphasis */
+    margin-bottom: 20px;
+    font-weight: 600;
     font-style: italic;
   }
 
+  .pub-links {
+    display: flex;
+    gap: 15px;
+  }
+  
   .pub-links a {
-    display: inline-block;
-    font-size: 15px;
-    font-weight: bold;
-    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 700;
     color: var(--accent-color);
     text-transform: uppercase;
     text-decoration: none;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding: 4px 0;
   }
-  .pub-links a:hover { text-decoration: underline; }
+  /* 链接下划线动效 */
+  .pub-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width 0.2s ease;
+  }
+  .pub-links a:hover::after { width: 100%; }
+  .pub-links a:hover { text-decoration: none; }
   
-  /* --- MISC --- */
+  /* --- MISC & TALKS --- */
   .misc-box {
-    background: #fbfbfb;
-    padding: 25px;
-    border-radius: 6px;
-    border: 1px solid #ddd;
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: var(--radius-card);
+    border: 1px solid var(--border-light);
     font-size: 17px;
+    box-shadow: var(--shadow-soft);
   }
 
   /* 移动端适配 */
   @media (max-width: 900px) {
-    .page__inner-wrap { padding: 30px 20px; }
-    .bio-container { flex-direction: column-reverse; gap: 30px; text-align: center; }
+    .page__inner-wrap { padding: 40px 20px; }
+    .bio-container { flex-direction: column-reverse; gap: 40px; text-align: center; }
     .bio-photo-col { width: 100%; margin: 0 auto; }
     .bio-text-col { width: 100%; }
+    .bio-desc { text-align: left; }
     .link-grid { justify-content: center; }
     
     .pub-card { flex-direction: column; }
-    /* 移动端图片宽度铺满 */
-    .pub-img-col { flex: 0 0 auto; width: 100%; border-right: none; border-bottom: 1px solid #eee; padding: 0; }
+    .pub-img-col { flex: 0 0 auto; width: 100%; border-right: none; border-bottom: 1px solid rgba(0,0,0,0.05); padding: 30px; }
     .pub-img { width: 100%; max-height: none; }
-    .pub-content-col { padding: 25px 20px; }
+    .pub-content-col { padding: 30px 25px; }
   }
 </style>
 
@@ -342,7 +399,6 @@ layout: single
   
   <!-- 左侧：文字介绍 -->
   <div class="bio-text-col">
-    <!-- 修改点：移除了 (吴昊) -->
     <div class="bio-name">Hao Wu</div>
     <div class="bio-sub">Ph.D. Student</div>
     
@@ -390,8 +446,8 @@ layout: single
   <div class="bio-photo-col"> 
     <img src="../images/wuhaodemo" class="bio-photo" alt="Hao Wu">
     <!-- 邮箱地址 -->
-    <div style="text-align: center; margin-top: 15px; font-size: 14px; color: #666;">
-      <a href="mailto:wuhao2022@mail.ustc.edu.cn" style="color: #666; text-decoration: none;">
+    <div style="text-align: center; margin-top: 20px; font-size: 15px; color: var(--text-secondary);">
+      <a href="mailto:wuhao2022@mail.ustc.edu.cn" style="color: inherit; text-decoration: none; border-bottom: 1px dotted #999;">
         wuhao2022@mail.ustc.edu.cn
       </a>
     </div>
@@ -464,7 +520,6 @@ layout: single
 <div class="pub-card">
   <div class="pub-img-col">
     <div class="pub-badge">Arxiv 2026</div>
-    <!-- 修改了下面这一行 -->
     <img src="../images/temperature_850_animation (2).gif" class="pub-img" alt="Paper Animation">
   </div>
   <div class="pub-content-col">
@@ -802,7 +857,7 @@ layout: single
 </div>
 
 <h1 class="section-title">💻 Academic Service</h1>
-<div class="misc-box" style="background: #fbfbfb;">
+<div class="misc-box" style="background: #ffffff;">
   <strong>Conference Reviewer / PC Member:</strong><br>
   NeurIPS (2023-2025), ICLR (2024-2025), ICML (2024-2025), CVPR (2025), ICCV (2025), AAAI (2025), ACM MM (2024-2025), AISTATS (2025).
 </div>
