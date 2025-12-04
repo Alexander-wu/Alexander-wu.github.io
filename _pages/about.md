@@ -869,3 +869,20 @@ layout: single
     <li>👑 Deeply interested in History.</li>
   </ul>
 </div>
+
+<!-- ================= VISITOR MAP ================= -->
+<div style="margin-top: 50px; text-align: center;">
+  <h1 class="section-title" style="margin-top: 0; margin-bottom: 20px; border-bottom: none;">🗺️ Visitor Map</h1>
+  
+  <!-- 将地图包裹在与上方 Misc 风格一致的卡片中 -->
+  <div class="misc-box" style="display: flex; justify-content: center; padding: 30px;">
+    
+    <!-- 
+      注意：这是 RevolverMaps 的标准代码。
+      你需要去 https://www.revolvermaps.com/ 获取你自己的代码并替换下面这一行。
+      建议选择 "Standard" 或 "Globe"，背景设为 "Transparent"，点颜色设为蓝色 (#0071e3) 以匹配网页风格。
+    -->
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5t60447171e&amp;m=0&amp;c=0071e3&amp;cr1=ffffff&amp;f=arial&amp;l=33&amp;bv=35" async="async"></script>
+    
+  </div>
+</div>
