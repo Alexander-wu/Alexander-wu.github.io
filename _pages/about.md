@@ -400,7 +400,7 @@ layout: single
   <!-- 左侧：文字介绍 -->
   <div class="bio-text-col">
     <div class="bio-name">Hao Wu</div>
-    <div class="bio-sub">Ph.D. Student</div>
+    <div class="bio-sub">Ph.D. Student at Tsinghua University</div>
     
     <div class="bio-desc">
       <p>
