@@ -408,7 +408,7 @@ layout: single
 
   <div class="bio-text-col">
     <div class="bio-name">Hao Wu</div>
-    <div class="bio-sub">Research Assistant at Tsinghua University</div>
+    <div class="bio-sub">Tsinghua University</div>
 
 
     <div class="bio-desc">
