@@ -408,7 +408,7 @@ layout: single
 
   <div class="bio-text-col">
     <div class="bio-name">Hao Wu</div>
-    <div class="bio-sub">Tsinghua University</div>
+    <div class="bio-sub">School of Computer Science, Carnegie Mellon University</div>
 
 
     <div class="bio-desc">
@@ -459,7 +459,7 @@ layout: single
     <!-- 邮箱地址 -->
     <div style="text-align: center; margin-top: 20px; font-size: 15px; color: var(--text-secondary);">
       <a href="mailto:wuhao2022@mail.ustc.edu.cn" style="color: inherit; text-decoration: none; border-bottom: 1px dotted #999;">
-        wuhao2022@mail.ustc.edu.cn
+        easylearninghao@gmail.com
       </a>
     </div>
   </div>
