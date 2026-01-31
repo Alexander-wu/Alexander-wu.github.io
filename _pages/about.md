@@ -17,7 +17,6 @@ layout: single
     --bg-page: #ffffff;
   }
 
-  /* 使用你指定的 Georgia 字体系列 */
   body, h1, h2, h3, p, div, span, a, li {
     font-family: Georgia, 'Times New Roman', Times, serif !important;
     color: var(--text-primary);
@@ -53,15 +52,16 @@ layout: single
     text-transform: uppercase;
     letter-spacing: 1px;
   }
-  .bio-text { font-size: 18px; margin-bottom: 25px; text-align: justify; }
+  .bio-text { font-size: 18px; margin-bottom: 20px; text-align: justify; }
 
   /* Experience List */
   .exp-row { display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 18px; }
-  .exp-date { color: var(--text-secondary); font-style: italic; }
+  .exp-date { color: var(--text-secondary); font-style: italic; white-space: nowrap; margin-left: 20px; }
 
   @media (max-width: 700px) {
     .profile-header { flex-direction: column; text-align: center; align-items: center; }
     .exp-row { flex-direction: column; margin-bottom: 20px; }
+    .exp-date { margin-left: 0; }
   }
 </style>
 
@@ -85,14 +85,19 @@ layout: single
 <!-- ================= BIOGRAPHY ================= -->
 <div class="section-title">Biography</div>
 <div class="bio-text">
-  I am about to embark on a new research journey and life at the <b>School of Computer Science, Carnegie Mellon University (CMU)</b>.
+  I am about to embark on a new research journey and life at the School of Computer Science, Carnegie Mellon University (CMU), and i select to quit Tsinghua University. 
 </div>
 <div class="bio-text">
-  My previous research was focused on <b>Scientific Computing (AI for Science)</b>, particularly in deep learning for physical simulations. Currently, I am shifting my research focus toward <b>LLM Post-training</b> and the application of <b>Autonomous Agents</b> in scientific domains.
+  My previous work was rooted in Scientific Computing (AI for Science), particularly in deep learning for physical simulations. Currently, I am transitioning my research focus toward LLM Post-training and the development of Autonomous Agents in scientific domains.
 </div>
 
 <!-- ================= EXPERIENCE ================= -->
-<div class="section-title">Research Experience</div>
+<div class="section-title">Experience</div>
+
+<div class="exp-row">
+  <span><b>Tsinghua University</b>, Doctoral Student</span>
+  <span class="exp-date">Prior to 2026</span>
+</div>
 
 <div class="exp-row">
   <span><b>Tencent</b>, Hunyuan Large Model Team, Research Intern</span>
@@ -104,6 +109,10 @@ layout: single
   <span class="exp-date">2023</span>
 </div>
 
+<div class="exp-row">
+  <span><b>USTC</b>, in Computer Science</span>
+  <span class="exp-date">Graduated 2025</span>
+</div>
 
 <!-- ================= SERVICE ================= -->
 <div class="section-title">Academic Service</div>
