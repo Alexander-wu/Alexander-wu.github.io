@@ -111,7 +111,7 @@ layout: single
   <!-- BIOGRAPHY (完全保留原话) -->
   <div class="section-title">Biography</div>
   <div class="bio-text">
-    I am about to embark on a new research journey and life at the School of Computer Science, Carnegie Mellon University (CMU), and i select to quit Tsinghua University.
+    I am about to embark on a new research journey and life at the School of Computer Science, Carnegie Mellon University (CMU).
   </div>
   <div class="bio-text">
     My previous work was rooted in Scientific Computing (AI for Science), particularly in deep learning for physical simulations. Currently, I am transitioning my research focus toward LLM Post-training and the development of Autonomous Agents in scientific domains.
@@ -119,11 +119,6 @@ layout: single
 
   <!-- EXPERIENCE -->
   <div class="section-title">Experience</div>
-
-  <div class="exp-row">
-    <span><b>Tsinghua University</b>, Doctoral Student</span>
-    <span class="exp-date">Prior to 2026</span>
-  </div>
 
   <div class="exp-row">
     <span><b>Tencent</b>, Hunyuan Large Model Team, Research Intern</span>
