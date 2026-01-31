@@ -8,49 +8,47 @@ layout: single
 
 <span class='anchor' id='about-me'></span>
 
-<!-- ================= MINIMALIST ACADEMIC STYLE ================= -->
 <style>
+  /* 1. 强制重置布局，解决两边没有留白的问题 */
+  /* 隐藏所有侧边栏 */
+  .sidebar, .page__sidebar, .sidebar__right {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  /* 强制父容器全宽，去掉干扰 */
+  body, .page, .page__content, .archive, .page__inner-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    float: none !important;
+    background-color: #ffffff !important; /* 确保背景纯白 */
+  }
+
+  /* 2. 定义核心内容区域，制造两边的大面积留白 */
+  .main-container {
+    max-width: 720px !important; /* 限制内容宽度，两边自然留白 */
+    margin: 0 auto !important;   /* 绝对居中 */
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* 3. 字体与样式 */
   :root {
     --link-color: #0071e3;
     --text-primary: #1d1d1f;
     --text-secondary: #6e6e73;
-    --bg-page: #ffffff;
   }
 
-  /* 基础字体设置 */
   body, h1, h2, h3, p, div, span, a, li {
     font-family: Georgia, 'Times New Roman', Times, serif !important;
     color: var(--text-primary);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-  }
-
-  body { 
-    background-color: var(--bg-page); 
-    margin: 0;
-    padding: 0;
-  }
-
-  /* 强制隐藏侧边栏并让内容居中，增加两边留白 */
-  .sidebar { display: none !important; }
-  
-  .page {
-    width: 100% !important;
-    padding-right: 0 !important;
-  }
-
-  .page__content {
-    float: none !important;
-    width: 100% !important;
-  }
-
-  /* 核心容器：缩小宽度至 800px 以增加两边留白 */
-  .page__inner-wrap { 
-    max-width: 800px !important; 
-    margin-left: auto !important; 
-    margin-right: auto !important; 
-    padding: 80px 50px !important; 
-    background-color: #fff;
   }
 
   /* Header Section */
@@ -84,68 +82,72 @@ layout: single
   .exp-date { color: var(--text-secondary); font-style: italic; white-space: nowrap; margin-left: 20px; }
 
   @media (max-width: 700px) {
-    .page__inner-wrap { padding: 40px 20px !important; }
     .profile-header { flex-direction: column; text-align: center; align-items: center; }
     .exp-row { flex-direction: column; margin-bottom: 20px; }
     .exp-date { margin-left: 0; }
   }
 </style>
 
-<!-- ================= HEADER ================= -->
-<div class="profile-header">
-  <img src="../images/wuhaodemo" class="profile-photo" alt="Hao Wu">
-  <div class="profile-info">
-    <div class="name">Hao Wu (吴昊)</div>
-    <div class="affiliation">School of Computer Science, Carnegie Mellon University</div>
-    
-    <div class="contact-info">
-      <div style="margin-bottom: 10px;">
-        <span class="email-text">Email: hw5@andrew.cmu.edu</span>
+<!-- ================= MAIN CONTENT WRAPPER ================= -->
+<div class="main-container">
+
+  <!-- HEADER -->
+  <div class="profile-header">
+    <img src="../images/wuhaodemo" class="profile-photo" alt="Hao Wu">
+    <div class="profile-info">
+      <div class="name">Hao Wu (吴昊)</div>
+      <div class="affiliation">School of Computer Science, Carnegie Mellon University</div>
+      
+      <div class="contact-info">
+        <div style="margin-bottom: 10px;">
+          <span class="email-text">Email: hw5@andrew.cmu.edu</span>
+        </div>
+        <a href="https://scholar.google.com/citations?user=HdXMhfcAAAAJ">Google Scholar</a>
+        <a href="https://github.com/Alexander-wu">GitHub</a>
       </div>
-      <a href="https://scholar.google.com/citations?user=HdXMhfcAAAAJ">Google Scholar</a>
-      <a href="https://github.com/Alexander-wu">GitHub</a>
     </div>
   </div>
-</div>
 
-<!-- ================= BIOGRAPHY ================= -->
-<div class="section-title">Biography</div>
-<div class="bio-text">
-  Following my doctoral research at <b>Tsinghua University</b>, I am about to embark on a new research journey and life at the <b>School of Computer Science, Carnegie Mellon University (CMU)</b>. 
-</div>
-<div class="bio-text">
-  My previous work was rooted in <b>Scientific Computing (AI for Science)</b>, particularly in deep learning for physical simulations. Currently, I am transitioning my research focus toward <b>LLM Post-training</b> and the development of <b>Autonomous Agents</b> in scientific domains.
-</div>
+  <!-- BIOGRAPHY (完全保留原话) -->
+  <div class="section-title">Biography</div>
+  <div class="bio-text">
+    I am about to embark on a new research journey and life at the School of Computer Science, Carnegie Mellon University (CMU), and i select to quit Tsinghua University.
+  </div>
+  <div class="bio-text">
+    My previous work was rooted in Scientific Computing (AI for Science), particularly in deep learning for physical simulations. Currently, I am transitioning my research focus toward LLM Post-training and the development of Autonomous Agents in scientific domains.
+  </div>
 
-<!-- ================= EXPERIENCE ================= -->
-<div class="section-title">Experience</div>
+  <!-- EXPERIENCE -->
+  <div class="section-title">Experience</div>
 
-<div class="exp-row">
-  <span><b>Tsinghua University</b>, Doctoral Student</span>
-  <span class="exp-date">Prior to 2026</span>
+  <div class="exp-row">
+    <span><b>Tsinghua University</b>, Doctoral Student</span>
+    <span class="exp-date">Prior to 2026</span>
+  </div>
+
+  <div class="exp-row">
+    <span><b>Tencent</b>, Hunyuan Large Model Team, Research Intern</span>
+    <span class="exp-date">2023 – 2025</span>
+  </div>
+
+  <div class="exp-row">
+    <span><b>HKUST (GZ)</b>, CityMind Lab, Research Intern</span>
+    <span class="exp-date">2023</span>
+  </div>
+
+  <div class="exp-row">
+    <span><b>USTC</b>, in Computer Science</span>
+    <span class="exp-date">Graduated 2025</span>
+  </div>
+
+  <!-- SERVICE -->
+  <div class="section-title">Academic Service</div>
+  <div class="bio-text" style="color: var(--text-secondary); font-size: 16px;">
+    Reviewer for NeurIPS (2023-2025), ICLR (2024-2025), ICML (2024-2025), CVPR, ICCV, AAAI, and ACM MM.
+  </div>
+
+  <footer style="margin-top: 100px; font-size: 13px; color: #bbb; text-align: center; border-top: 1px solid #fcfcfc; padding-top: 20px;">
+    Last updated: January 2026
+  </footer>
+
 </div>
-
-<div class="exp-row">
-  <span><b>Tencent</b>, Hunyuan Large Model Team, Research Intern</span>
-  <span class="exp-date">2023 – 2025</span>
-</div>
-
-<div class="exp-row">
-  <span><b>HKUST (GZ)</b>, CityMind Lab, Research Intern</span>
-  <span class="exp-date">2023</span>
-</div>
-
-<div class="exp-row">
-  <span><b>USTC</b>, B.S. in Computer Science</span>
-  <span class="exp-date">Graduated 2025</span>
-</div>
-
-<!-- ================= SERVICE ================= -->
-<div class="section-title">Academic Service</div>
-<div class="bio-text" style="color: var(--text-secondary); font-size: 16px;">
-  Reviewer for NeurIPS (2023-2025), ICLR (2024-2025), ICML (2024-2025), CVPR, ICCV, AAAI, and ACM MM.
-</div>
-
-<footer style="margin-top: 100px; font-size: 13px; color: #bbb; text-align: center; border-top: 1px solid #fcfcfc; padding-top: 20px;">
-  Last updated: January 2026
-</footer>
