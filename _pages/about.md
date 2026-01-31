@@ -8,51 +8,47 @@ layout: single
 
 <span class='anchor' id='about-me'></span>
 
-<!-- ================= MINIMALIST STYLE (Google Scholar / Academic Clean) ================= -->
+<!-- ================= MINIMALIST GOOGLE SCHOLAR STYLE ================= -->
 <style>
   :root {
-    --link-color: #1a0dab; /* Google Scholar Blue */
+    --link-color: #1a0dab;
     --text-main: #202124;
-    --text-muted: #70757a;
+    --text-muted: #5d6063;
     --bg-color: #ffffff;
   }
 
   body, p, div, span, a, li {
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    font-family: Arial, sans-serif !important;
     color: var(--text-main);
-    line-height: 1.5;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
 
   body { background-color: var(--bg-color); }
   .sidebar { display: none !important; }
-  .page__inner-wrap { max-width: 800px !important; margin: 0 auto; padding: 50px 20px; }
+  .page__inner-wrap { max-width: 800px !important; margin: 0 auto; padding: 60px 20px; }
 
-  /* Header Section */
+  /* Header */
   .profile-header { display: flex; gap: 40px; margin-bottom: 40px; align-items: flex-start; }
-  .profile-photo { width: 160px; height: 160px; border-radius: 4px; object-fit: cover; border: 1px solid #eee; }
+  .profile-photo { width: 150px; height: 150px; border-radius: 2px; object-fit: cover; border: 1px solid #f0f0f0; }
   .profile-info { flex: 1; }
-  .name { font-size: 32px; font-weight: 700; margin-bottom: 8px; color: #000; }
-  .affiliation { font-size: 18px; color: var(--text-main); margin-bottom: 4px; }
-  .email { font-size: 16px; color: var(--text-muted); margin-bottom: 15px; }
-
+  .name { font-size: 30px; font-weight: bold; margin-bottom: 5px; color: #000; }
+  .affiliation { font-size: 18px; margin-bottom: 15px; }
+  
   /* Links */
-  .social-links a { color: var(--link-color); text-decoration: none; margin-right: 15px; font-size: 15px; font-weight: 500; }
+  .social-links a { color: var(--link-color); text-decoration: none; margin-right: 15px; font-size: 15px; }
   .social-links a:hover { text-decoration: underline; }
 
-  /* Content Sections */
-  .section-head { font-size: 20px; font-weight: 700; margin-top: 40px; margin-bottom: 15px; border-bottom: 1px solid #ebebeb; padding-bottom: 8px; color: #000; }
-  .bio-text { font-size: 16px; margin-bottom: 20px; text-align: justify; }
+  /* Sections */
+  .section-head { font-size: 19px; font-weight: bold; margin-top: 35px; margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+  .bio-text { font-size: 16px; margin-bottom: 20px; }
 
-  /* Lists */
-  .list-item { margin-bottom: 12px; display: flex; justify-content: space-between; align-items: flex-start; }
-  .list-content { flex: 1; font-size: 16px; }
-  .list-date { font-size: 15px; color: var(--text-muted); margin-left: 20px; white-space: nowrap; }
+  /* List Items */
+  .item-row { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 16px; }
+  .item-date { color: var(--text-muted); font-size: 15px; }
 
   @media (max-width: 600px) {
     .profile-header { flex-direction: column; text-align: center; align-items: center; }
-    .list-item { flex-direction: column; }
-    .list-date { margin-left: 0; margin-top: 4px; }
   }
 </style>
 
@@ -60,9 +56,8 @@ layout: single
 <div class="profile-header">
   <img src="../images/wuhaodemo" class="profile-photo" alt="Hao Wu">
   <div class="profile-info">
-    <div class="name">Hao Wu</div>
-    <div class="affiliation">Carnegie Mellon University</div>
-    <div class="email">easylearninghao@gmail.com</div>
+    <div class="name">Hao Wu (吴昊)</div>
+    <div class="affiliation">School of Computer Science, Carnegie Mellon University</div>
     <div class="social-links">
       <a href="https://scholar.google.com/citations?user=HdXMhfcAAAAJ">Google Scholar</a>
       <a href="https://github.com/Alexander-wu">GitHub</a>
@@ -71,39 +66,38 @@ layout: single
   </div>
 </div>
 
-<!-- ================= ABOUT ME ================= -->
-<div class="section-head">About Me</div>
+<!-- ================= BIOGRAPHY ================= -->
+<div class="section-head">Biography</div>
 <div class="bio-text">
-  I am an incoming researcher at the <b>School of Computer Science, Carnegie Mellon University (CMU)</b>. 
+  I am about to embark on a new research journey and life at the <b>School of Computer Science, Carnegie Mellon University</b>.
   <br><br>
-  My research background is in <b>Scientific Computing (AI for Science)</b>, with a focus on deep learning applications in physics and Earth system modeling. 
-  Currently, I am shifting my research focus toward <b>LLM Post-training</b> and the development of <b>Autonomous Agents</b> for scientific discovery.
+  My previous research was focused on <b>Scientific Computing (AI for Science)</b>. Currently, my research interests center on <b>LLM Post-training</b> and the application of <b>Autonomous Agents</b> in scientific domains.
 </div>
 
 <!-- ================= EXPERIENCE ================= -->
-<div class="section-head">Experience</div>
+<div class="section-head">Research Experience</div>
 
-<div class="list-item">
-  <div class="list-content"><b>Tencent</b>, Hunyuan Large Model Team, Research Intern</div>
-  <div class="list-date">2023 – 2025</div>
+<div class="item-row">
+  <span><b>Tencent</b>, Hunyuan Large Model Team, Research Intern</span>
+  <span class="item-date">2023 – 2025</span>
 </div>
 
-<div class="list-item">
-  <div class="list-content"><b>HKUST (GZ)</b>, CityMind Lab, Research Intern</div>
-  <div class="list-date">2023</div>
+<div class="item-row">
+  <span><b>HKUST (GZ)</b>, CityMind Lab, Research Intern</span>
+  <span class="item-date">2023</span>
 </div>
 
-<div class="list-item">
-  <div class="list-content"><b>USTC</b>, B.S. in Computer Science</div>
-  <div class="list-date">Graduated 2025</div>
+<div class="item-row">
+  <span><b>USTC</b>, B.S. in Computer Science</span>
+  <span class="item-date">2021 – 2025</span>
 </div>
 
-<!-- ================= SERVICES ================= -->
+<!-- ================= SERVICE ================= -->
 <div class="section-head">Academic Service</div>
 <div class="bio-text" style="color: var(--text-muted);">
-  Reviewer for NeurIPS, ICLR, ICML, CVPR, ICCV, AAAI, and ACM MM.
+  Reviewer for NeurIPS, ICLR, ICML, CVPR, ICCV, AAAI, and ACM Multimedia.
 </div>
 
-<footer style="margin-top: 80px; font-size: 12px; color: #999; text-align: center;">
-  Updated Jan 2026
+<footer style="margin-top: 100px; font-size: 12px; color: #999; text-align: center; border-top: 1px solid #f9f9f9; padding-top: 20px;">
+  Last updated: Jan 2026
 </footer>
