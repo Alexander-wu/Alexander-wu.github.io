@@ -74,24 +74,6 @@ layout: single
   My previous research was focused on <b>Scientific Computing (AI for Science)</b>. Currently, my research interests center on <b>LLM Post-training</b> and the application of <b>Autonomous Agents</b> in scientific domains.
 </div>
 
-<!-- ================= EXPERIENCE ================= -->
-<div class="section-head">Research Experience</div>
-
-<div class="item-row">
-  <span><b>Tencent</b>, Hunyuan Large Model Team, Research Intern</span>
-  <span class="item-date">2023 – 2025</span>
-</div>
-
-<div class="item-row">
-  <span><b>HKUST (GZ)</b>, CityMind Lab, Research Intern</span>
-  <span class="item-date">2023</span>
-</div>
-
-<div class="item-row">
-  <span><b>USTC</b>, B.S. in Computer Science</span>
-  <span class="item-date">2021 – 2025</span>
-</div>
-
 <!-- ================= SERVICE ================= -->
 <div class="section-head">Academic Service</div>
 <div class="bio-text" style="color: var(--text-muted);">
