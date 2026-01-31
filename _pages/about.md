@@ -104,10 +104,6 @@ layout: single
   <span class="exp-date">2023</span>
 </div>
 
-<div class="exp-row">
-  <span><b>USTC</b>, B.S. in Computer Science</span>
-  <span class="exp-date">2021 – 2025</span>
-</div>
 
 <!-- ================= SERVICE ================= -->
 <div class="section-title">Academic Service</div>
