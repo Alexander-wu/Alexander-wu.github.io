@@ -96,7 +96,7 @@ layout: single
     <img src="../images/wuhaodemo" class="profile-photo" alt="Hao Wu">
     <div class="profile-info">
       <div class="name">Hao Wu (吴昊)</div>
-<div class="affiliation" style="font-size: 0.97em;">
+<div class="affiliation" style="font-size: 0.98em;">
     School of Computer Science, Carnegie Mellon University
 </div>      
       <div class="contact-info">
