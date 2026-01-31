@@ -17,6 +17,7 @@ layout: single
     --bg-page: #ffffff;
   }
 
+  /* 基础字体设置 */
   body, h1, h2, h3, p, div, span, a, li {
     font-family: Georgia, 'Times New Roman', Times, serif !important;
     color: var(--text-primary);
@@ -24,9 +25,33 @@ layout: single
     -webkit-font-smoothing: antialiased;
   }
 
-  body { background-color: var(--bg-page); }
+  body { 
+    background-color: var(--bg-page); 
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 强制隐藏侧边栏并让内容居中，增加两边留白 */
   .sidebar { display: none !important; }
-  .page__inner-wrap { max-width: 850px !important; margin: 0 auto; padding: 70px 30px; }
+  
+  .page {
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+
+  .page__content {
+    float: none !important;
+    width: 100% !important;
+  }
+
+  /* 核心容器：缩小宽度至 800px 以增加两边留白 */
+  .page__inner-wrap { 
+    max-width: 800px !important; 
+    margin-left: auto !important; 
+    margin-right: auto !important; 
+    padding: 80px 50px !important; 
+    background-color: #fff;
+  }
 
   /* Header Section */
   .profile-header { display: flex; gap: 50px; margin-bottom: 40px; align-items: flex-start; }
@@ -59,6 +84,7 @@ layout: single
   .exp-date { color: var(--text-secondary); font-style: italic; white-space: nowrap; margin-left: 20px; }
 
   @media (max-width: 700px) {
+    .page__inner-wrap { padding: 40px 20px !important; }
     .profile-header { flex-direction: column; text-align: center; align-items: center; }
     .exp-row { flex-direction: column; margin-bottom: 20px; }
     .exp-date { margin-left: 0; }
@@ -85,10 +111,10 @@ layout: single
 <!-- ================= BIOGRAPHY ================= -->
 <div class="section-title">Biography</div>
 <div class="bio-text">
-  I am about to embark on a new research journey and life at the School of Computer Science, Carnegie Mellon University (CMU), and i select to quit Tsinghua University. 
+  Following my doctoral research at <b>Tsinghua University</b>, I am about to embark on a new research journey and life at the <b>School of Computer Science, Carnegie Mellon University (CMU)</b>. 
 </div>
 <div class="bio-text">
-  My previous work was rooted in Scientific Computing (AI for Science), particularly in deep learning for physical simulations. Currently, I am transitioning my research focus toward LLM Post-training and the development of Autonomous Agents in scientific domains.
+  My previous work was rooted in <b>Scientific Computing (AI for Science)</b>, particularly in deep learning for physical simulations. Currently, I am transitioning my research focus toward <b>LLM Post-training</b> and the development of <b>Autonomous Agents</b> in scientific domains.
 </div>
 
 <!-- ================= EXPERIENCE ================= -->
@@ -110,7 +136,7 @@ layout: single
 </div>
 
 <div class="exp-row">
-  <span><b>USTC</b>, in Computer Science</span>
+  <span><b>USTC</b>, B.S. in Computer Science</span>
   <span class="exp-date">Graduated 2025</span>
 </div>
 
