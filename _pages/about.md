@@ -97,7 +97,7 @@ layout: single
     <div class="profile-info">
       <div class="name">Hao Wu (吴昊)</div>
 <div class="affiliation" style="font-size: 0.98em;">
-    School of Computer Science, Carnegie Mellon University
+    School of Computer Science, Carnegie Mellon University (CMU)
 </div>      
       <div class="contact-info">
         <div style="margin-bottom: 10px;">
