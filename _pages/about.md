@@ -96,8 +96,9 @@ layout: single
     <img src="../images/wuhaodemo" class="profile-photo" alt="Hao Wu">
     <div class="profile-info">
       <div class="name">Hao Wu (吴昊)</div>
-      <div class="affiliation">School of Computer Science, Carnegie Mellon University</div>
-      
+<div class="affiliation" style="font-size: 0.9em;">
+    School of Computer Science, Carnegie Mellon University
+</div>      
       <div class="contact-info">
         <div style="margin-bottom: 10px;">
           <span class="email-text">Email: hw5@andrew.cmu.edu</span>
