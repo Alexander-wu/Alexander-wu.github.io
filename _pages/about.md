@@ -120,19 +120,29 @@ layout: single
 
   <!-- EXPERIENCE -->
   <div class="section-title">Experience</div>
+  <div class="exp-row">
+    <span><b>Tencent</b>, Jarvis Lab, Research Intern</span>
+    <span class="exp-date">2025.8 – Present</span>
+  </div>
+
+  
+  <div class="exp-row">
+    <span><b>Tsinghua University</b>, AI4Earth Lab, Visiting Intern</span>
+    <span class="exp-date">2023.10 – 2025.12</span>
+  </div>
 
   <div class="exp-row">
     <span><b>Tencent</b>, Hunyuan Large Model Team, Research Intern</span>
-    <span class="exp-date">2023 – 2025</span>
+    <span class="exp-date">2023.7 – 2025.7</span>
   </div>
 
   <div class="exp-row">
     <span><b>HKUST (GZ)</b>, CityMind Lab, Research Intern</span>
-    <span class="exp-date">2023</span>
+    <span class="exp-date">2023.3-2023.9</span>
   </div>
 
   <div class="exp-row">
-    <span><b>USTC</b>, in Computer Science</span>
+    <span><b>USTC</b>, in Computer Science (Outstanding Graduate; National Scholarship Recipient)</span>
     <span class="exp-date">Graduated 2025</span>
   </div>
 
