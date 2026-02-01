@@ -149,7 +149,7 @@ layout: single
   <!-- SERVICE -->
   <div class="section-title">Academic Service</div>
   <div class="bio-text" style="color: var(--text-secondary); font-size: 16px;">
-    Reviewer for NeurIPS (2023-2025), ICLR (2024-2025), ICML (2024-2025), CVPR, ICCV, AAAI, and ACM MM.
+    Reviewer for NeurIPS (2023-2025), ICLR (2024-2026), ICML (2024-2026), CVPR, ICCV, AAAI, and ACM MM.
   </div>
 
   <footer style="margin-top: 100px; font-size: 13px; color: #bbb; text-align: center; border-top: 1px solid #fcfcfc; padding-top: 20px;">
