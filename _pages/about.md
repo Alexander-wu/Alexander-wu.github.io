@@ -97,11 +97,11 @@ layout: single
     <div class="profile-info">
       <div class="name">Hao Wu (吴昊)</div>
 <div class="affiliation" style="font-size: 0.98em;">
-    School of Computer Science, Carnegie Mellon University (CMU)
+    Tencent, University of Science and Technology of China
 </div>      
       <div class="contact-info">
         <div style="margin-bottom: 10px;">
-          <span class="email-text">Email: hw5@andrew.cmu.edu</span>
+          <span class="email-text">Email: wuhao2022@mail.ustc.edu.cn</span>
         </div>
         <a href="https://scholar.google.com/citations?user=HdXMhfcAAAAJ">Google Scholar</a>
         <a href="https://github.com/Alexander-wu">GitHub</a>
@@ -112,7 +112,7 @@ layout: single
   <!-- BIOGRAPHY (完全保留原话) -->
   <div class="section-title">Biography</div>
   <div class="bio-text">
-    I am about to embark on a new research journey and life at the School of Computer Science, Carnegie Mellon University (CMU).
+    I am Hao Wu.
   </div>
   <div class="bio-text">
     My previous work was rooted in Scientific Computing (AI for Science), particularly in deep learning for physical simulations. Currently, I am transitioning my research focus toward LLM Post-training and the development of Autonomous Agents in scientific domains.
