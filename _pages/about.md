@@ -115,7 +115,7 @@ layout: single
     I am Hao Wu.
   </div>
   <div class="bio-text">
-    My previous work was rooted in Scientific Computing (AI for Science), particularly in deep learning for physical simulations. Currently, I am transitioning my research focus toward LLM Post-training and the development of Autonomous Agents in scientific domains.
+    My previous work was rooted in Scientific Computing (AI for Science), particularly in deep learning for physical simulations. Currently, I am transitioning my research focus toward Video World Models and the development of Autonomous Agents in scientific domains.
   </div>
 
   <!-- EXPERIENCE -->
