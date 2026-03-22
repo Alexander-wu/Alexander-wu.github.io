@@ -112,10 +112,7 @@ layout: single
   <!-- BIOGRAPHY (完全保留原话) -->
   <div class="section-title">Biography</div>
   <div class="bio-text">
-    I am Hao Wu.
-  </div>
-  <div class="bio-text">
-    My previous work was rooted in Scientific Computing (AI for Science), particularly in deep learning for physical simulations. Currently, I am transitioning my research focus toward Video World Models and the development of Autonomous Agents in scientific domains.
+    I am Hao Wu. Currently, My research focus on Video World Models and the development of Autonomous Agents in scientific domains.
   </div>
 
   <!-- EXPERIENCE -->
