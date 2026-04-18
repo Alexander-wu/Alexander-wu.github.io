@@ -8,10 +8,18 @@
     name="description"
     content="Hao Wu is a researcher at Tencent working on scientific AI, multimodal large language models, agent systems, robot world models, and large-scale spatiotemporal forecasting."
   >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply saved theme before paint to avoid FOUC
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'dark' || (!t && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -21,9 +29,23 @@
         <a href="#about">Home</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
         <a href="#service">Service</a>
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <span class="theme-toggle-icon theme-toggle-sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M12 3v2.2M12 18.8V21M3 12h2.2M18.8 12H21M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="theme-toggle-icon theme-toggle-moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.5 14.5A8 8 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
       </nav>
     </div>
   </header>
@@ -33,7 +55,7 @@
       <div class="hero-panel">
         <div class="hero-top">
           <div class="profile-photo-wrap">
-            <img src="Image/wuhao" alt="Portrait of Hao Wu" class="profile-photo">
+            <img src="Image/wuhao.jpg" alt="Portrait of Hao Wu" class="profile-photo">
           </div>
           <div class="hero-main">
             <h1>Hao Wu</h1>
@@ -167,11 +189,6 @@
             </div>
             <div class="news-item">
               <span class="news-dot"></span>
-              <span class="news-date">2025.06</span>
-              <div class="news-text">Graduated from the joint training program between <strong>USTC</strong> and <strong>Tencent</strong>, and received the Outstanding Graduate honor.</div>
-            </div>
-            <div class="news-item">
-              <span class="news-dot"></span>
               <span class="news-date">2025.05</span>
               <div class="news-text">As co-first author, one paper was accepted to <strong>ICML</strong>. Congrats to all collaborators!</div>
             </div>
@@ -215,18 +232,35 @@
               <span class="news-date">2023.07</span>
               <div class="news-text">As co-first author, one paper was accepted to <strong>NeurIPS</strong>. Congrats to all collaborators!</div>
             </div>
-            <div class="news-item">
-              <span class="news-dot"></span>
-              <span class="news-date">2022.10</span>
-              <div class="news-text">Received the First-Class Scholarship at the <strong>University of Science and Technology of China</strong>.</div>
-            </div>
-            <div class="news-item">
-              <span class="news-dot"></span>
-              <span class="news-date">2022.09</span>
-              <div class="news-text">Received the National Scholarship at the <strong>University of Science and Technology of China</strong>, ranking in the top 1% in China.</div>
-            </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="awards" class="section-block">
+      <h2>Selected Awards &amp; Honors</h2>
+      <div class="awards-grid">
+        <article class="award-card">
+          <div class="award-year">2025</div>
+          <div class="award-content">
+            <div class="award-title">Outstanding Graduate</div>
+            <div class="award-org">USTC &times; Tencent Joint Training Program</div>
+          </div>
+        </article>
+        <article class="award-card">
+          <div class="award-year">2022</div>
+          <div class="award-content">
+            <div class="award-title">National Scholarship <span class="award-rank">Top 1% in China</span></div>
+            <div class="award-org">University of Science and Technology of China</div>
+          </div>
+        </article>
+        <article class="award-card">
+          <div class="award-year">2022</div>
+          <div class="award-content">
+            <div class="award-title">First-Class Scholarship</div>
+            <div class="award-org">University of Science and Technology of China</div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -305,14 +339,32 @@
         </a>
       </div>
       <div class="paper-list">
-        <article class="paper-card">
+        <article class="paper-card paper-card-featured">
           <div class="paper-thumb">
             <img src="Image/Figure_R1.png" alt="Robot world model result gif">
           </div>
           <div class="paper-content">
             <h3 class="paper-title">RoboAlign-R1: Distilled Multimodal Reward Alignment for Robot Video World Models</h3>
             <div class="paper-authors">Hao Wu et al. <span class="paper-role">First Author</span></div>
-            <div class="paper-meta">Ongoing</div>
+            <div class="paper-meta"><span class="paper-venue paper-venue-review">Under Review</span></div>
+            <div class="paper-links">
+              <a class="paper-link" href="https://roboalign-r1.netlify.app/" target="_blank" rel="noreferrer">
+                <span class="paper-link-icon" aria-hidden="true">↗</span>
+                <span>Project Page</span>
+              </a>
+              <a class="paper-link paper-link-muted" href="#" aria-disabled="true">
+                <span class="paper-link-icon" aria-hidden="true">□</span>
+                <span>PDF</span>
+              </a>
+              <a class="paper-link paper-link-muted" href="#" aria-disabled="true">
+                <span class="paper-link-icon" aria-hidden="true">⟨/⟩</span>
+                <span>Code</span>
+              </a>
+              <a class="paper-link paper-link-muted" href="#" aria-disabled="true">
+                <span class="paper-link-icon" aria-hidden="true">“”</span>
+                <span>BibTeX</span>
+              </a>
+            </div>
           </div>
         </article>
 
@@ -323,7 +375,17 @@
           <div class="paper-content">
             <h3 class="paper-title">Safety-Aware Rollouts with Self-Reflection and Structured Rewards</h3>
             <div class="paper-authors">Huahui Yi, Kun Wang, Haolong Hu, Moayad Aloqaily, Liang Lin, Junhao Dong, Qiankun Li, Xing Fan, Hao Wu, Yang Liu, and Qingsong Wen <span class="paper-role paper-role-corresponding"><span class="paper-role-icon" aria-hidden="true">↳</span>Corresponding Author</span></div>
-            <div class="paper-meta">TPAMI, under review</div>
+            <div class="paper-meta"><span class="paper-venue">TPAMI</span><span class="paper-venue paper-venue-review">Under Review</span></div>
+            <div class="paper-links">
+              <a class="paper-link paper-link-muted" href="#" aria-disabled="true">
+                <span class="paper-link-icon" aria-hidden="true">□</span>
+                <span>PDF</span>
+              </a>
+              <a class="paper-link paper-link-muted" href="#" aria-disabled="true">
+                <span class="paper-link-icon" aria-hidden="true">“”</span>
+                <span>BibTeX</span>
+              </a>
+            </div>
           </div>
         </article>
 
@@ -333,8 +395,22 @@
           </div>
           <div class="paper-content">
             <h3 class="paper-title">TritonCast: Advanced Long-term Earth System Forecasting</h3>
-            <div class="paper-authors">Hao Wu, Yuan Gao, Ruijian Gou, Xian Wu, Chuhan Wu, Huahui Yi, Johannes Brandstetter, Fan Xu, Niklas Boers, Kun Wang, Penghao Zhao, Hao Jia, Qi Song, Xinliang Liu, Juncai He, Shuhao Cao, Huanshuo Dong, Yanfei Xiang, Fan Zhang, Haixin Wang, Xingjian Shi, Qiufeng Wang, Shuaipeng Li, Ruobing Xie, Feng Tao, Yuxu Lu, Yu Guo, Yuntian Chen, Yuxuan Liang, Qingsong Wen, Wanli Ouyang, Deliang Chen, and Xiaomeng Huang</div>
-            <div class="paper-meta">NMI, under revisions</div>
+            <div class="paper-authors">Hao Wu, Yuan Gao, Ruijian Gou, Xian Wu, Chuhan Wu, Huahui Yi, Johannes Brandstetter, Fan Xu, Niklas Boers, Kun Wang, Penghao Zhao, Hao Jia, Qi Song, Xinliang Liu, Juncai He, Shuhao Cao, Huanshuo Dong, Yanfei Xiang, Fan Zhang, Haixin Wang, Xingjian Shi, Qiufeng Wang, Shuaipeng Li, Ruobing Xie, Feng Tao, Yuxu Lu, Yu Guo, Yuntian Chen, Yuxuan Liang, Qingsong Wen, Wanli Ouyang, Deliang Chen, and Xiaomeng Huang <span class="paper-role">First Author</span></div>
+            <div class="paper-meta"><span class="paper-venue">Nature Machine Intelligence</span><span class="paper-venue paper-venue-review">Under Revision</span></div>
+            <div class="paper-links">
+              <a class="paper-link paper-link-muted" href="#" aria-disabled="true">
+                <span class="paper-link-icon" aria-hidden="true">□</span>
+                <span>PDF</span>
+              </a>
+              <a class="paper-link paper-link-muted" href="#" aria-disabled="true">
+                <span class="paper-link-icon" aria-hidden="true">⟨/⟩</span>
+                <span>Code</span>
+              </a>
+              <a class="paper-link paper-link-muted" href="#" aria-disabled="true">
+                <span class="paper-link-icon" aria-hidden="true">“”</span>
+                <span>BibTeX</span>
+              </a>
+            </div>
           </div>
         </article>
 
@@ -345,7 +421,21 @@
           <div class="paper-content">
             <h3 class="paper-title">Frequency-Aligned Knowledge Distillation for Lightweight Spatiotemporal Forecasting</h3>
             <div class="paper-authors">Yuqi Li, Chuanguang Yang, Hansheng Zeng, Zeyu Dong, Zhulin An, Yongjun Xu, Yingli Tian, and Hao Wu <span class="paper-role paper-role-corresponding"><span class="paper-role-icon" aria-hidden="true">↳</span>Corresponding Author</span></div>
-            <div class="paper-meta">ICCV 2025</div>
+            <div class="paper-meta"><span class="paper-venue paper-venue-accepted">ICCV 2025</span></div>
+            <div class="paper-links">
+              <a class="paper-link paper-link-muted" href="#" aria-disabled="true">
+                <span class="paper-link-icon" aria-hidden="true">□</span>
+                <span>PDF</span>
+              </a>
+              <a class="paper-link paper-link-muted" href="#" aria-disabled="true">
+                <span class="paper-link-icon" aria-hidden="true">⟨/⟩</span>
+                <span>Code</span>
+              </a>
+              <a class="paper-link paper-link-muted" href="#" aria-disabled="true">
+                <span class="paper-link-icon" aria-hidden="true">“”</span>
+                <span>BibTeX</span>
+              </a>
+            </div>
           </div>
         </article>
       </div>
@@ -362,9 +452,26 @@
 
   <footer id="contact" class="site-footer">
     <div class="container footer-inner">
-      <div>Last updated: Mar 2026</div>
+      <div>Last updated: Apr 2026</div>
       <div>Contact: <a href="mailto:easylearninghao@gmail.com">easylearninghao@gmail.com</a></div>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        if (next === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+    })();
+  </script>
 </body>
 </html>
