@@ -496,8 +496,8 @@ html[data-theme="dark"] .theme-toggle-moon { display: inline-flex; }
 /* ===== Research gallery ===== */
 .research-gallery {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 20px;
 }
 
 .research-figure {
