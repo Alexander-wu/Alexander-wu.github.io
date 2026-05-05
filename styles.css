@@ -1195,3 +1195,39 @@ html[data-theme="dark"] .news-item:hover {
     text-align: left;
   }
 }
+
+/* === Job market banner === */
+.job-market-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #d62828;
+  font-weight: 600;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  padding: 12px 16px;
+  margin: 0 0 18px 0;
+  border: 1.5px solid #d62828;
+  border-left: 5px solid #d62828;
+  border-radius: 8px;
+  background: rgba(214, 40, 40, 0.06);
+}
+
+.job-market-banner strong {
+  color: #b00020;
+}
+
+.job-market-banner .job-market-icon {
+  font-size: 1.1rem;
+  line-height: 1.55;
+}
+
+html[data-theme="dark"] .job-market-banner {
+  color: #ff7a7a;
+  border-color: #ff7a7a;
+  background: rgba(255, 122, 122, 0.10);
+}
+
+html[data-theme="dark"] .job-market-banner strong {
+  color: #ff9a9a;
+}
