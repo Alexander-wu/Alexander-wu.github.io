@@ -298,9 +298,9 @@ html[data-theme="dark"] .theme-toggle-moon { display: inline-flex; }
 }
 
 .link-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
 }
 
 .info-link {
@@ -308,8 +308,9 @@ html[data-theme="dark"] .theme-toggle-moon { display: inline-flex; }
   align-items: center;
   justify-content: center;
   gap: 10px;
-  min-height: 40px;
-  padding: 0 14px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
   border-radius: var(--radius-sm);
   border: 1px solid var(--line-strong);
   background: var(--card-soft);
