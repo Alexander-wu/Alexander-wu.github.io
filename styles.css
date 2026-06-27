@@ -299,7 +299,7 @@ html[data-theme="dark"] .theme-toggle-moon { display: inline-flex; }
 
 .link-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -329,29 +329,6 @@ html[data-theme="dark"] .theme-toggle-moon { display: inline-flex; }
   transform: translateY(-1px);
 }
 
-.info-link-cv {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #ffffff;
-}
-
-.info-link-cv:hover {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #ffffff;
-  filter: brightness(1.08);
-}
-
-.info-link-cv .info-icon {
-  opacity: 1;
-}
-
-html[data-theme="dark"] .info-link-cv,
-html[data-theme="dark"] .info-link-cv:hover {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #0b1220;
-}
 
 .info-icon {
   display: inline-flex;
