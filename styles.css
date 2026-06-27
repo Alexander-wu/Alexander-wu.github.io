@@ -298,17 +298,22 @@ html[data-theme="dark"] .theme-toggle-moon { display: inline-flex; }
 }
 
 .link-grid {
-  display: flex;
+  display: inline-flex;
   flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
   gap: 12px;
+  width: auto;
 }
 
 .info-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  flex: 0 0 44px;
   width: 44px;
+  min-width: 44px;
+  max-width: 44px;
   height: 44px;
   padding: 0;
   border-radius: var(--radius-sm);
@@ -1140,8 +1145,7 @@ html[data-theme="dark"] .news-item:hover {
     font-size: 2rem;
   }
 
-  .hero-top,
-  .link-grid {
+  .hero-top {
     grid-template-columns: 1fr;
   }
 
