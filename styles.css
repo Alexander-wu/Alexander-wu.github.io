@@ -1504,3 +1504,14 @@ html[data-theme="dark"] .job-market-banner strong {
   .basketball-interest { grid-template-columns: 1fr; gap: 16px; }
   .basketball-video { width: min(100%, 240px); justify-self: center; }
 }
+
+/* Inline university seals in the biography. */
+.bio-school-logo {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  border-radius: 50%;
+  vertical-align: -5px;
+  background: #fff;
+}
