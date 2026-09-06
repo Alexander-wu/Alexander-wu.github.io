@@ -1477,14 +1477,14 @@ html[data-theme="dark"] .job-market-banner strong {
 /* Personal interests */
 .basketball-interest {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
-  gap: 32px;
+  grid-template-columns: 1fr;
+  gap: 16px;
   align-items: center;
 }
 .basketball-copy h3 { margin: 0 0 14px; color: var(--text); }
 .basketball-copy p { margin: 0 0 16px; color: var(--text-soft); line-height: 1.75; }
 .basketball-copy strong { color: var(--text); }
-.basketball-video { margin: 0; }
+.basketball-video { margin: 0; width: min(100%, 240px); justify-self: center; }
 .basketball-video video {
   display: block;
   width: 100%;
@@ -1502,5 +1502,5 @@ html[data-theme="dark"] .job-market-banner strong {
 }
 @media (max-width: 640px) {
   .basketball-interest { grid-template-columns: 1fr; gap: 16px; }
-  .basketball-video { width: min(100%, 320px); justify-self: center; }
+  .basketball-video { width: min(100%, 240px); justify-self: center; }
 }
