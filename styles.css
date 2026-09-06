@@ -705,8 +705,8 @@ html[data-theme="dark"] .citation-counter strong {
 
 .experience-card {
   display: grid;
-  grid-template-columns: 92px minmax(0, 1fr);
-  gap: 20px;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 24px;
   align-items: center;
   padding: 20px 22px;
   border: 1px solid var(--line);
@@ -728,18 +728,56 @@ html[data-theme="dark"] .citation-counter strong {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 14px;
   height: 72px;
-  padding: 8px;
+  padding: 9px 14px;
   border-radius: 10px;
-  background: var(--card-soft);
+  background: #ffffff;
   border: 1px solid var(--line);
 }
 
 .experience-logo img {
   display: block;
-  max-width: 100%;
-  max-height: 56px;
+  flex: 0 0 auto;
   object-fit: contain;
+}
+
+.experience-logo-tencent {
+  width: 102px;
+  height: auto;
+}
+
+.experience-logo-divider {
+  flex: 0 0 1px;
+  width: 1px;
+  height: 36px;
+  background: #d8dee8;
+}
+
+.experience-logo-unit {
+  width: auto;
+  max-width: 54px;
+  max-height: 54px;
+}
+
+.experience-logo-lightspeed {
+  max-width: 48px;
+  max-height: 54px;
+}
+
+.experience-logo-jarvis {
+  width: 48px;
+  height: 49px;
+}
+
+.experience-logo-hunyuan {
+  width: 50px;
+  height: 50px;
+}
+
+html[data-theme="dark"] .experience-logo {
+  background: #ffffff;
+  border-color: #3a4560;
 }
 
 .experience-content {
@@ -1342,6 +1380,15 @@ html[data-theme="dark"] .news-item:hover {
 
   .award-card {
     text-align: left;
+  }
+
+  .experience-card {
+    gap: 14px;
+  }
+
+  .experience-logo {
+    width: min(210px, 100%);
+    justify-self: start;
   }
 }
 
