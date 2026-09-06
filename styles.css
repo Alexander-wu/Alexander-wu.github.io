@@ -785,6 +785,22 @@ html[data-theme="dark"] .citation-counter strong {
   height: auto;
 }
 
+.experience-logo-partners {
+  gap: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.experience-logo-hkust {
+  width: 86px;
+  height: auto;
+}
+
+.experience-logo-boson {
+  width: 82px;
+  height: auto;
+}
+
 html[data-theme="dark"] .experience-logo {
   background: #ffffff;
   border-color: #3a4560;
