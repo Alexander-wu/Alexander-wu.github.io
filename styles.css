@@ -835,7 +835,9 @@ html[data-theme="dark"] .experience-logo {
 }
 
 .experience-project-link {
+  color: var(--link);
   font-weight: 700;
+  border-bottom: 1px dotted currentColor;
 }
 
 /* ===== News ===== */
