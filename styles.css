@@ -602,6 +602,20 @@ html[data-theme="dark"] .citation-counter strong {
   object-fit: cover;
 }
 
+.collaboration-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 11px;
+  border: 1px solid rgba(111, 159, 197, 0.45);
+  border-radius: 999px;
+  background: rgba(111, 159, 197, 0.1);
+  color: var(--accent-warm);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
 .section-block h3 {
   margin: 24px 0 10px;
   font-family: var(--serif);
