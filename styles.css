@@ -15,8 +15,8 @@
   --accent-warm: #6f9fc5;   /* soft blue for status highlights */
   --review: #8a6d2b;        /* muted ochre for "under review" */
   --accepted: #0f6f43;      /* muted green for accepted */
-  --container: 1120px;
-  --shell-container: 1200px;
+  --container: 1000px;
+  --shell-container: 1080px;
   --shadow-soft: 0 1px 0 rgba(20, 33, 61, 0.04), 0 10px 24px rgba(20, 33, 61, 0.05);
   --shadow-card: 0 1px 0 rgba(20, 33, 61, 0.04), 0 14px 30px rgba(20, 33, 61, 0.06);
   --radius: 14px;
