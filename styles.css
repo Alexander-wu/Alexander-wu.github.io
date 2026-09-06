@@ -1489,7 +1489,7 @@ html[data-theme="dark"] .job-market-banner strong {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 9 / 16;
+  aspect-ratio: 708 / 438;
   border: 1px solid var(--line);
   border-radius: var(--radius-sm);
   background: #000;
