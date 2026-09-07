@@ -1157,6 +1157,11 @@ html[data-theme="dark"] .news-item:hover {
   object-fit: cover;
 }
 
+.paper-thumb-contain img {
+  object-fit: contain;
+  background: #fff;
+}
+
 .paper-content {
   display: grid;
   gap: 10px;
