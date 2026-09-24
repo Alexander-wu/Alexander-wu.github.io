@@ -1,0 +1,63 @@
+name: Update citations and deploy homepage
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: homepage-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check citation parsing and failure handling
+        run: python -m unittest discover -s scripts -p 'test_*.py'
+      - name: Fetch latest Google Scholar count
+        id: citations
+        if: github.event_name != 'push'
+        continue-on-error: true
+        timeout-minutes: 3
+        run: python scripts/update_citations.py
+      - name: Save successful refresh
+        if: steps.citations.outcome == 'success'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add citation-data.json index.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh Google Scholar citations'
+            git push origin HEAD:main
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: '.'
+      - name: Publish site including refreshed data
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Report failed refresh after preserving the site
+        if: steps.citations.outcome == 'failure'
+        run: |
+          echo '::error::Scholar refresh failed. The last successful count and timestamp were preserved; see the fetch step.'
+          exit 1

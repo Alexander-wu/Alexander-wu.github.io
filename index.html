@@ -100,9 +100,9 @@
                 </span>
               </button>
             </div>
-            <a class="citation-counter" href="https://scholar.google.com/citations?user=HdXMhfcAAAAJ&amp;hl=en" target="_blank" rel="noreferrer" title="Updated automatically from Google Scholar">
+            <a class="citation-counter" href="https://scholar.google.com/citations?user=HdXMhfcAAAAJ&amp;hl=en" target="_blank" rel="noreferrer" title="Google Scholar citations; automatic sync every 6 hours">
               <span class="citation-counter-label">Google Scholar Citations</span>
-              <strong id="scholar-citation-count" aria-live="polite">1,446</strong>
+              <strong id="scholar-citation-count" aria-live="polite">1,550</strong>
             </a>
           </div>
         </div>
@@ -543,8 +543,14 @@
           return response.json();
         })
         .then(function (data) {
-          if (Number.isInteger(data.citations) && data.citations >= 0) {
+          if (data.scholar_id === 'HdXMhfcAAAAJ' && Number.isInteger(data.citations) && data.citations >= 0) {
             count.textContent = data.citations.toLocaleString('en-US');
+            var updated = data.updated_at ? new Date(data.updated_at) : null;
+            if (updated && !isNaN(updated.getTime())) {
+              var stale = Date.now() - updated.getTime() > 48 * 60 * 60 * 1000;
+              count.parentElement.title = 'Last synced from Google Scholar: ' + updated.toLocaleString() +
+                (stale ? '. Sync delayed; click to view the source.' : '. Automatic sync every 6 hours.');
+            }
           }
         })
         .catch(function () {
