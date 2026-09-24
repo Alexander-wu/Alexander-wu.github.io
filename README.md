@@ -19,26 +19,24 @@ This is a static academic homepage that can be deployed directly on GitHub Pages
 
 ## Google Scholar citations
 
-The homepage reads `citation-data.json`; JavaScript cannot fetch Scholar directly
-because the site is static and Scholar does not provide browser CORS access.
-The **Update citations and deploy homepage** Actions workflow runs every six hours
-(at minute 17 UTC) and can also be started with **Run workflow**. GitHub may delay
-scheduled jobs, and Google Scholar itself may lag; this is periodic sync, not a
-live Google Scholar API.
+The homepage reads `citation-data.json`. `scripts/update_citations.py` fetches
+this profile's all-time count using the Python standard library, with bounded
+retries and timeouts. A successful fetch updates both JSON and the HTML fallback.
+The badge tooltip shows the last successful fetch time; after 48 hours it flags
+the data as delayed. Blocked responses preserve the previous data and timestamp.
 
-- `python scripts/update_citations.py` fetches this profile's **all-time** citation
-  count using the Python standard library, with bounded retries and timeouts.
-- A successful fetch updates both JSON and the HTML fallback, with `updated_at`
-  recording the successful fetch time. Hover over the badge to see that time.
-- A blocked response or parse failure preserves the previous count and timestamp.
-  The workflow still deploys the site, then reports the refresh failure in Actions.
-- Pages uses **GitHub Actions** as the publishing source. The same workflow
-  explicitly deploys after refreshing data: commits made with `GITHUB_TOKEN`
-  do not trigger a second Pages build by themselves. Ordinary pushes also deploy.
-- If the timestamp is over 48 hours old, the tooltip indicates a delayed sync.
-  Check the failed workflow's fetch step; no CAPTCHA/proxy bypass is attempted.
+Pages uses **GitHub Actions** as its publishing source. Every push explicitly
+deploys the site. The manual **Run workflow** action also attempts a Scholar
+refresh before deploying, and reports a failure if Google blocks the request.
 
-Run parser and failure-path checks with:
+On 2026-09-25, fetching succeeded on the owner's Mac (1,550 citations) but
+Google returned HTTP 403 to GitHub-hosted runners. Cloud scheduling is therefore
+not enabled. The optional `scripts/sync_citations_local.sh` supports a dedicated
+local clone via `CITATION_SYNC_DIR`, using existing `gh` authentication. Installing
+a local six-hour timer requires the owner's confirmation; the Mac must be awake
+and online. The helper refuses to overwrite tracked local changes.
+
+Run checks with:
 
 ```sh
 python -m unittest discover -s scripts -p 'test_*.py'

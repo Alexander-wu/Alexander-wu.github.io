@@ -2,8 +2,6 @@ name: Update citations and deploy homepage
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: '17 */6 * * *'
   workflow_dispatch:
 
 concurrency:
